@@ -72,8 +72,8 @@ def generate_controlled_data(n_records=50):
 
     df_b = pd.DataFrame(data_b_list, columns=['ID', 'Compania', 'Nombre_Producto', 'Anio_Lanzamiento'])
     
-    df_a.to_csv('data/file_a.csv', index=False)
-    df_b.to_csv('data/file_b.csv', index=False)
+    df_a.to_csv('src/data/file_a.csv', index=False)
+    df_b.to_csv('src/data/file_b.csv', index=False)
     
     print("✅ Archivos generados exitosamente en la carpeta 'data/':")
     print(" - 'file_a.csv' (Base de datos)")
