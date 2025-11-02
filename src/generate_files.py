@@ -80,6 +80,6 @@ def generate_controlled_data(n_records=50):
     print(" - 'file_b.csv' (Base de datos con variaciones controladas)")
 
 if __name__ == "__main__":
-    if not os.path.exists('data'):
-        os.makedirs('data')
+    if not os.path.exists('src/data/'):
+        os.makedirs('src/data/')
     generate_controlled_data(n_records=100)
