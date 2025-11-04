@@ -10,3 +10,6 @@ Este dataset es útil para pruebas de:
 - Fuzzy matching.
 - Detección y corrección de typos.
 - Procesos ETL y validación.
+- Modelos de ML basados en calidad de datos.
+
+---
