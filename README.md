@@ -6,4 +6,5 @@ El objetivo es simular escenarios reales donde existen inconsistencias en los da
 <br>
 
 Este dataset es útil para pruebas de:
-- Normalización y limpieza de datos  
+- Normalización y limpieza de datos.
+- Fuzzy matching.
