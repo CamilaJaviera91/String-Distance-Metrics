@@ -20,3 +20,4 @@ Este dataset es útil para pruebas de:
 - Contiene:
     - `producto`
     - `categoria`
+    - `pais`
