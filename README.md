@@ -21,3 +21,4 @@ Este dataset es útil para pruebas de:
     - `producto`
     - `categoria`
     - `pais`
+    - `anio`
