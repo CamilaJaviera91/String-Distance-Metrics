@@ -23,3 +23,4 @@ Este dataset es útil para pruebas de:
     - `pais`
     - `anio`
     - `marca`
+    - `precio_usd`
