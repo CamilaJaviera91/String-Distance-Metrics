@@ -22,3 +22,4 @@ Este dataset es útil para pruebas de:
     - `categoria`
     - `pais`
     - `anio`
+    - `marca`
