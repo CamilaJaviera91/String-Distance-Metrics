@@ -17,3 +17,4 @@ Este dataset es útil para pruebas de:
 ## 📂 **Descripción de las Bases**
 
 ### **1. Base con precios (`base_categoria_con_precio.csv`)**
+- Contiene:
