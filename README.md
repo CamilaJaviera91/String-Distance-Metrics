@@ -18,3 +18,4 @@ Este dataset es útil para pruebas de:
 
 ### **1. Base con precios (`base_categoria_con_precio.csv`)**
 - Contiene:
+    - `producto`
