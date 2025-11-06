@@ -28,4 +28,4 @@ Este dataset es útil para pruebas de:
 Los precios son generados de forma aleatoria pero **dependiendo del rango de cada categoría**, lo que agrega realismo.
 
 - Ejemplo de rangos:
-    
+    - Electrónica: 80 – 1500 USD.
