@@ -29,4 +29,5 @@ Los precios son generados de forma aleatoria pero **dependiendo del rango de cad
 
 - Ejemplo de rangos:
     - Electrónica: 80 – 1500 USD.
-    - Computación: 90 – 2000 USD 
+    - Computación: 90 – 2000 USD.
+    - Belleza: 5 – 200 USD.
