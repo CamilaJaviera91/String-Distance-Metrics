@@ -24,3 +24,5 @@ Este dataset es útil para pruebas de:
     - `anio`
     - `marca`
     - `precio_usd`
+
+Los precios son generados de forma aleatoria pero **dependiendo del rango de cada categoría**, lo que agrega realismo.
