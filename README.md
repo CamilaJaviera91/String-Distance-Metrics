@@ -29,6 +29,7 @@ Los precios son generados de forma aleatoria pero **dependiendo del rango de cad
 
 - Ejemplo de rangos:
     - Electrónica: 80 – 1500 USD.
-    - Hogar: 10 - 300 USD
+    - Hogar: 10 - 300 USD.
+    - Deporte: 15 - 400 USD.
     - Computación: 90 – 2000 USD.
     - Belleza: 5 – 200 USD.
