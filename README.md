@@ -34,3 +34,4 @@ Los precios son generados de forma aleatoria pero **dependiendo del rango de cad
     - Juguetería: 5 - 120 USD.
     - Computación: 90 – 2000 USD.
     - Belleza: 5 – 200 USD.
+    - Automotriz: 20 - 800 USD.
