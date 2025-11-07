@@ -41,3 +41,4 @@ Los precios son generados de forma aleatoria pero **dependiendo del rango de cad
 - Contiene:
     - `producto`
     - `categoria` 
+    - `pais` 
