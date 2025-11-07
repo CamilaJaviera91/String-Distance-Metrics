@@ -37,3 +37,5 @@ Los precios son generados de forma aleatoria pero **dependiendo del rango de cad
     - Automotriz: 20 - 800 USD.
 
 ### **2. Base sin precios y con typos (`base_categoria_sin_precio.csv`)**
+
+- Incluye:
