@@ -51,3 +51,4 @@ Los typos son **realistas**, mezclando:
 - Eliminación de letras.
 - Duplicación.
 - Intercambio de letras.
+- Errores comunes reales (ej.: *Samsung → Sansung*)
