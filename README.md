@@ -48,3 +48,4 @@ Los precios son generados de forma aleatoria pero **dependiendo del rango de cad
 
 Los typos son **realistas**, mezclando:
 - Teclas cercanas.
+- Eliminación de letras.
