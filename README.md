@@ -60,3 +60,5 @@ Esto simula un escenario real donde los datos provienen de múltiples fuentes y 
 ---
 
 ## 🧠 **Lógica Principal del Código**
+
+### ✔ **1. Generación de productos y categorías**
