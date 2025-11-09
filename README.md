@@ -66,3 +66,4 @@ Se crean 50 productos con una categoría asociada (Electrónica, Hogar, Deporte,
 
 ### ✔ **2. Generación de la base con precios**
 - Combina todas las combinaciones de:
+    - producto
