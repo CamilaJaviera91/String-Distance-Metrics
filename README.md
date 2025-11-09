@@ -62,3 +62,4 @@ Esto simula un escenario real donde los datos provienen de múltiples fuentes y 
 ## 🧠 **Lógica Principal del Código**
 
 ### ✔ **1. Generación de productos y categorías**
+Se crean 50 productos con una categoría asociada (Electrónica, Hogar, Deporte, etc.).
