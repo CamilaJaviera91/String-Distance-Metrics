@@ -68,3 +68,4 @@ Se crean 50 productos con una categoría asociada (Electrónica, Hogar, Deporte,
 - Combina todas las combinaciones de:
     - producto
     - país
+    - año
