@@ -58,3 +58,5 @@ Los typos son **realistas**, mezclando:
 Esto simula un escenario real donde los datos provienen de múltiples fuentes y contienen inconsistencias.
 
 ---
+
+## 🧠 **Lógica Principal del Código**
