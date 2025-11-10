@@ -79,3 +79,4 @@ La misma estructura de combinaciones, pero sin precio.
 - Una función genera errores tipográficos realistas utilizando:
     - Mapas de teclas cercanas (“a” → “qws”).
     - Reemplazos comunes predefinidos.
+    - Manipulación de caracteres
