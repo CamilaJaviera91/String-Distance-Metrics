@@ -74,3 +74,5 @@ y asigna un precio coherente según su categoría.
 
 ### ✔ **3. Generación de la base sin precios**
 La misma estructura de combinaciones, pero sin precio.
+
+### ✔ **4. Inyección de typos**
