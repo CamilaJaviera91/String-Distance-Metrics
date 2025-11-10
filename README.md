@@ -76,3 +76,4 @@ y asigna un precio coherente según su categoría.
 La misma estructura de combinaciones, pero sin precio.
 
 ### ✔ **4. Inyección de typos**
+- Una función genera errores tipográficos realistas utilizando:
