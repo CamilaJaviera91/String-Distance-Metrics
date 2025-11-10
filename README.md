@@ -78,3 +78,4 @@ La misma estructura de combinaciones, pero sin precio.
 ### ✔ **4. Inyección de typos**
 - Una función genera errores tipográficos realistas utilizando:
     - Mapas de teclas cercanas (“a” → “qws”).
+    - Reemplazos comunes predefinidos.
