@@ -80,3 +80,5 @@ La misma estructura de combinaciones, pero sin precio.
     - Mapas de teclas cercanas (“a” → “qws”).
     - Reemplazos comunes predefinidos.
     - Manipulación de caracteres
+
+---
