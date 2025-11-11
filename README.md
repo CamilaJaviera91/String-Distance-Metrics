@@ -82,3 +82,5 @@ La misma estructura de combinaciones, pero sin precio.
     - Manipulación de caracteres
 
 ---
+
+## ✨ Autor
