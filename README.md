@@ -86,3 +86,4 @@ La misma estructura de combinaciones, pero sin precio.
 ## ✨ Autor
 
 Camila Javiera Muñoz Navarro <br>
+Ingeniera de Datos <br>
