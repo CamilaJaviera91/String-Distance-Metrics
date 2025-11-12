@@ -15,3 +15,5 @@ def generar_typo_realista(texto):
         "s": "wedxza",
         "d": "erfcxs",
         "e": "wsdfr",
+        "o": "iklp",
+        "n": "bhjm",
