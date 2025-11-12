@@ -24,3 +24,5 @@ def generar_typo_realista(texto):
          "u": "yhji",
         "i": "ujko"
     }
+
+    # Reemplazos comunes manuales
