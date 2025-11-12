@@ -7,3 +7,4 @@ import pandas as pd
 
 def generar_typo_realista(texto):
     texto = list(texto)
+    tipo = random.choice(["teclado", "drop", "dup", "swap", "replace_comun"])
