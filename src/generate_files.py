@@ -17,3 +17,5 @@ def generar_typo_realista(texto):
         "e": "wsdfr",
         "o": "iklp",
         "n": "bhjm",
+        "m": "njk",
+        "p": "ol",
