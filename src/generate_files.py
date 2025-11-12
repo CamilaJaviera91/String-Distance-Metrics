@@ -11,3 +11,5 @@ def generar_typo_realista(texto):
 
     # Teclas cercanas (errores comunes de tipeo)
     teclas_cercanas = {
+        "a": "qwsz",
+        "s": "wedxza",
