@@ -21,3 +21,6 @@ def generar_typo_realista(texto):
         "p": "ol",
         "l": "kop",
         "g": "fhty",
+         "u": "yhji",
+        "i": "ujko"
+    }
