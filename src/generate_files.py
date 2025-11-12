@@ -13,3 +13,5 @@ def generar_typo_realista(texto):
     teclas_cercanas = {
         "a": "qwsz",
         "s": "wedxza",
+        "d": "erfcxs",
+        "e": "wsdfr",
