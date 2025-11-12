@@ -6,3 +6,4 @@ import pandas as pd
 # ---------------------------------------------------
 
 def generar_typo_realista(texto):
+    texto = list(texto)
