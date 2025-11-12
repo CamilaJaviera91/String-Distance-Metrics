@@ -10,3 +10,4 @@ def generar_typo_realista(texto):
     tipo = random.choice(["teclado", "drop", "dup", "swap", "replace_comun"])
 
     # Teclas cercanas (errores comunes de tipeo)
+    teclas_cercanas = {
