@@ -29,3 +29,4 @@ def generar_typo_realista(texto):
     reemplazos_comunes = {
         "Samsung": "Sansung",
         "Apple": "Appel",
+        "Sony": "Soni",
