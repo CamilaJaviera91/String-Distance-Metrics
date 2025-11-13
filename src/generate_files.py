@@ -33,3 +33,4 @@ def generar_typo_realista(texto):
         "Huawei": "Huawe",
         "Xiaomi": "Xaiomi",
         "Dell": "Del",
+        "HP": "HPP",
