@@ -36,3 +36,5 @@ def generar_typo_realista(texto):
         "HP": "HPP",
         "LG": "L-G"
     }
+
+    # Opción: usar reemplazo típico real
