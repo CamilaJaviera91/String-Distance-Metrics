@@ -26,3 +26,5 @@ def generar_typo_realista(texto):
     }
 
     # Reemplazos comunes manuales
+    reemplazos_comunes = {
+        "Samsung": "Sansung",
