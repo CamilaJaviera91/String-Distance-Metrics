@@ -38,3 +38,4 @@ def generar_typo_realista(texto):
     }
 
     # Opción: usar reemplazo típico real
+    palabra_original = "".join(texto)
