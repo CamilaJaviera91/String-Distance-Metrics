@@ -39,3 +39,4 @@ def generar_typo_realista(texto):
 
     # Opción: usar reemplazo típico real
     palabra_original = "".join(texto)
+    if tipo == "replace_comun" and palabra_original in reemplazos_comunes:
