@@ -43,3 +43,4 @@ def generar_typo_realista(texto):
         return reemplazos_comunes[palabra_original]
     
     # Error tipo teclado
+    if tipo == "teclado":
