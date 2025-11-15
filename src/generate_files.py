@@ -44,3 +44,4 @@ def generar_typo_realista(texto):
     
     # Error tipo teclado
     if tipo == "teclado":
+        i = random.randint(0, len(texto) - 1)
