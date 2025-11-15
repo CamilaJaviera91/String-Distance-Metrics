@@ -48,3 +48,4 @@ def generar_typo_realista(texto):
         letra = texto[i].lower()
         if letra in teclas_cercanas:
             texto[i] = random.choice(teclas_cercanas[letra])
+        return "".join(texto)
