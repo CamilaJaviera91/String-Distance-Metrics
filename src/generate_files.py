@@ -46,3 +46,4 @@ def generar_typo_realista(texto):
     if tipo == "teclado":
         i = random.randint(0, len(texto) - 1)
         letra = texto[i].lower()
+        if letra in teclas_cercanas:
