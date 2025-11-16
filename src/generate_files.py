@@ -49,3 +49,5 @@ def generar_typo_realista(texto):
         if letra in teclas_cercanas:
             texto[i] = random.choice(teclas_cercanas[letra])
         return "".join(texto)
+    
+    # Eliminar una letra
