@@ -51,3 +51,4 @@ def generar_typo_realista(texto):
         return "".join(texto)
     
     # Eliminar una letra
+    if tipo == "drop":
