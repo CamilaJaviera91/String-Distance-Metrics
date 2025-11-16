@@ -56,5 +56,6 @@ def generar_typo_realista(texto):
         return "".join(texto[:i] + texto[i+1:])
     
     # Duplicar una letra
-     if tipo == "dup":
+    if tipo == "dup":
         i = random.randint(0, len(texto) - 1)
+        return "".join(texto[:i] + [texto[i]] + texto[i:])
