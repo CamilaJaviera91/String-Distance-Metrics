@@ -57,3 +57,4 @@ def generar_typo_realista(texto):
     
     # Duplicar una letra
      if tipo == "dup":
+        i = random.randint(0, len(texto) - 1)
