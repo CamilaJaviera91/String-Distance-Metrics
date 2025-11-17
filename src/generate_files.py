@@ -65,3 +65,5 @@ def generar_typo_realista(texto):
         i = random.randint(0, len(texto) - 2)
         texto[i], texto[i+1] = texto[i+1], texto[i]
         return "".join(texto)
+    
+    return "".join(texto)
