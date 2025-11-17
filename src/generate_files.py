@@ -61,3 +61,4 @@ def generar_typo_realista(texto):
         return "".join(texto[:i] + [texto[i]] + texto[i:])
     
     # Intercambiar letras vecinas
+    if tipo == "swap" and len(texto) >= 2:
