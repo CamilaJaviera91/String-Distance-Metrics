@@ -64,3 +64,4 @@ def generar_typo_realista(texto):
     if tipo == "swap" and len(texto) >= 2:
         i = random.randint(0, len(texto) - 2)
         texto[i], texto[i+1] = texto[i+1], texto[i]
+        return "".join(texto)
