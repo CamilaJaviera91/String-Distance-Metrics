@@ -71,3 +71,5 @@ def generar_typo_realista(texto):
 # ---------------------------------------------------
 # 1. Definir categorías y productos (50 productos)
 # ---------------------------------------------------
+
+categorias = ["Electrónica", "Hogar", "Deporte", "Juguetería", "Computación", "Belleza", "Automotriz"]
