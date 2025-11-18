@@ -73,3 +73,5 @@ def generar_typo_realista(texto):
 # ---------------------------------------------------
 
 categorias = ["Electrónica", "Hogar", "Deporte", "Juguetería", "Computación", "Belleza", "Automotriz"]
+
+productos = [
