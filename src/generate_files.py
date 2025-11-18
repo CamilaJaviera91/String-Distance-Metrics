@@ -74,6 +74,5 @@ def generar_typo_realista(texto):
 
 categorias = ["Electrónica", "Hogar", "Deporte", "Juguetería", "Computación", "Belleza", "Automotriz"]
 
-productos = [
-    {"producto": f"Producto_{i}", "categoria": random.choice(categorias)}
+productos = [{"producto": f"Producto_{i}", "categoria": random.choice(categorias)}
     for i in range(1, 51)]
