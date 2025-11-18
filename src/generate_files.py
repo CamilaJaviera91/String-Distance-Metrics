@@ -78,3 +78,5 @@ productos = [{"producto": f"Producto_{i}", "categoria": random.choice(categorias
              for i in range(1, 51)]
 
 paises = ["Chile", "Peru", "Colombia", "Mexico", "Argentina", "Brasil"]
+
+marcas = ["Samsung", "Apple", "Sony", "LG", "Xiaomi", "Huawei", "HP", "Dell"]
