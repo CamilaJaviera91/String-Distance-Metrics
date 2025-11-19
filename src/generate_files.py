@@ -82,3 +82,7 @@ paises = ["Chile", "Peru", "Colombia", "Mexico", "Argentina", "Brasil"]
 marcas = ["Samsung", "Apple", "Sony", "LG", "Xiaomi", "Huawei", "HP", "Dell"]
 
 anios = list(range(2018, 2025))
+
+# ---------------------------------------------------
+# 2. Rango de precios por categoría
+# ---------------------------------------------------
