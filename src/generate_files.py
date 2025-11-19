@@ -90,7 +90,7 @@ anios = list(range(2018, 2025))
 precios_categoria = {"Electrónica": (80, 1500),
                      "Hogar": (10, 300),
                      "Deporte": (15, 400),
-    "Juguetería": (5, 120),
+                     "Juguetería": (5, 120),
     "Computación": (90, 2000),
     "Belleza": (5, 200),
     "Automotriz": (20, 800),
