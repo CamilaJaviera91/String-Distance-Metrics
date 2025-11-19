@@ -94,3 +94,4 @@ precios_categoria = {
     "Juguetería": (5, 120),
     "Computación": (90, 2000),
     "Belleza": (5, 200),
+    "Automotriz": (20, 800),
