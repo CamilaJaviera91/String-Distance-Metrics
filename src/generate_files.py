@@ -89,3 +89,4 @@ anios = list(range(2018, 2025))
 
 precios_categoria = {
     "Electrónica": (80, 1500),
+    "Hogar": (10, 300),
