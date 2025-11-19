@@ -92,3 +92,4 @@ precios_categoria = {
     "Hogar": (10, 300),
     "Deporte": (15, 400),
     "Juguetería": (5, 120),
+    "Computación": (90, 2000),
