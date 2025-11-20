@@ -102,3 +102,5 @@ precios_categoria = {"Electrónica": (80, 1500),
 data1 = []
 for p in productos:
     for pais in paises:
+        for anio in anios:
+            
