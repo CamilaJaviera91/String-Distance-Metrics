@@ -106,3 +106,5 @@ for p in productos:
             marca = random.choice(marcas)
 
             minimo, maximo = precios_categoria[p["categoria"]]
+
+            precio = round(random.uniform(minimo, maximo), 2)
