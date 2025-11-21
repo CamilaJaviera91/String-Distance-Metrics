@@ -113,5 +113,5 @@ for p in productos:
                           "pais": pais,
                           "anio": anio,
                           "marca": marca,
-                "precio_usd": precio
+                          "precio_usd": precio
                 })
