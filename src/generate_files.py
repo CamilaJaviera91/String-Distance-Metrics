@@ -116,3 +116,4 @@ for p in productos:
                 "anio": anio,
                 "marca": marca,
                 "precio_usd": precio
+                })
