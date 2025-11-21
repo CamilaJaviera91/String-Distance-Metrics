@@ -116,3 +116,7 @@ for p in productos:
                           "precio_usd": precio})
 
 df1 = pd.DataFrame(data1)
+
+# ---------------------------------------------------
+# 4. Crear base sin precio (con typos en ~30%)
+# ---------------------------------------------------
