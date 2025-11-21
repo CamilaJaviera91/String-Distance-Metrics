@@ -124,3 +124,4 @@ df1 = pd.DataFrame(data1)
 data2 = []
 for p in productos:
     for pais in paises:
+        for anio in anios:
