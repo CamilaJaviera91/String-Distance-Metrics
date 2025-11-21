@@ -109,8 +109,7 @@ for p in productos:
 
             precio = round(random.uniform(minimo, maximo), 2)
 
-            data1.append({
-                "producto": p["producto"],
+            data1.append({"producto": p["producto"],
                 "categoria": p["categoria"],
                 "pais": pais,
                 "anio": anio,
