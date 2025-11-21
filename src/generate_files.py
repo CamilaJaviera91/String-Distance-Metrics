@@ -112,6 +112,6 @@ for p in productos:
             data1.append({"producto": p["producto"],
                           "pais": pais,
                           "anio": anio,
-                "marca": marca,
+                          "marca": marca,
                 "precio_usd": precio
                 })
