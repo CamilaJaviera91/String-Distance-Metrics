@@ -113,3 +113,4 @@ for p in productos:
                 "producto": p["producto"],
                 "categoria": p["categoria"],
                 "pais": pais,
+                "anio": anio,
