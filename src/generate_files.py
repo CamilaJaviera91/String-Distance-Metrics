@@ -128,3 +128,4 @@ for p in productos:
             marca = random.choice(marcas)
 
             # 30% de probabilidad de typo
+            if random.random() < 0.30:
