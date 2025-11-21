@@ -110,3 +110,5 @@ for p in productos:
             precio = round(random.uniform(minimo, maximo), 2)
 
             data1.append({
+                "producto": p["producto"],
+                
