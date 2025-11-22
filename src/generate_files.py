@@ -136,3 +136,4 @@ for p in productos:
                 "categoria": p["categoria"],
                 "pais": pais,
                 "anio": anio,
+                "marca": marca
