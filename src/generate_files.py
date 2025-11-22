@@ -133,7 +133,7 @@ for p in productos:
 
             data2.append({"producto": p["producto"],
                           "categoria": p["categoria"],
-                "pais": pais,
+                          "pais": pais,
                 "anio": anio,
                 "marca": marca
                 })
