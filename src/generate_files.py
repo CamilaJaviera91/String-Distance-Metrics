@@ -136,3 +136,5 @@ for p in productos:
                           "pais": pais,
                           "anio": anio,
                           "marca": marca})
+
+df2 = pd.DataFrame(data2)
