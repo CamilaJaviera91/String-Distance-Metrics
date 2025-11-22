@@ -132,7 +132,7 @@ for p in productos:
                 marca = generar_typo_realista(marca)
 
             data2.append({"producto": p["producto"],
-                "categoria": p["categoria"],
+                          "categoria": p["categoria"],
                 "pais": pais,
                 "anio": anio,
                 "marca": marca
