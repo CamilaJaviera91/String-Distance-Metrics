@@ -130,3 +130,5 @@ for p in productos:
             # 30% de probabilidad de typo
             if random.random() < 0.30:
                 marca = generar_typo_realista(marca)
+
+            data2.append({
