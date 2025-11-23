@@ -143,3 +143,5 @@ df2 = pd.DataFrame(data2)
 # ---------------------------------------------------
 # Mostrar ejemplos
 # ---------------------------------------------------
+
+print("Primera base (con categorías y precios):")
