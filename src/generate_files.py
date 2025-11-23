@@ -147,3 +147,5 @@ df2 = pd.DataFrame(data2)
 print("Primera base (con categorías y precios):")
 
 print(df1.head())
+
+print("\nSegunda base (con typos realistas):")
