@@ -158,3 +158,5 @@ print(df2.head())
 # ---------------------------------------------------
 
 df1.to_csv("base_categoria_con_precio.csv", index=False)
+
+df2.to_csv("base_categoria_sin_precio.csv", index=False)
