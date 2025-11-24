@@ -151,3 +151,8 @@ print(df1.head())
 print("\nSegunda base (con typos realistas):")
 
 print(df2.head())
+
+
+# ---------------------------------------------------
+# Guardar los archivos
+# ---------------------------------------------------
