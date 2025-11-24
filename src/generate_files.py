@@ -156,3 +156,5 @@ print(df2.head())
 # ---------------------------------------------------
 # Guardar los archivos
 # ---------------------------------------------------
+
+df1.to_csv("base_categoria_con_precio.csv", index=False)
