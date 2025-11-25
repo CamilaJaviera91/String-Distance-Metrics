@@ -45,6 +45,7 @@ def generar_typo_realista(texto):
         "Mexico": "Mexio",
         "Argentina": "Argntina",
         "Brasil": "Brsil"
+     }
 
     # Opción: usar reemplazo típico real
     palabra_original = "".join(texto)
