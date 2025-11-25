@@ -39,6 +39,8 @@ def generar_typo_realista(texto):
 
     # Reemplazos comunes manuales para países
     reemplazos_comunes_paises = {
+        "Chile": "Chle",
+        
 
     # Opción: usar reemplazo típico real
     palabra_original = "".join(texto)
