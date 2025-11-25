@@ -42,6 +42,7 @@ def generar_typo_realista(texto):
         "Chile": "Chle",
         "Peru": "Pru",
         "Colombia": "Colomia",
+        "Mexico": "Mexio",
 
     # Opción: usar reemplazo típico real
     palabra_original = "".join(texto)
