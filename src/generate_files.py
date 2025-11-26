@@ -6,7 +6,7 @@ import pandas as pd
 # ---------------------------------------------------
 
 def generar_typo_realista(texto):
-    texto = list(texto)
+    texto_list = list(texto)
     tipo = random.choice(["teclado", "drop", "dup", "swap", "replace_comun"])
 
     # Teclas cercanas (errores comunes de tipeo)
@@ -59,7 +59,7 @@ def generar_typo_realista(texto):
         i = random.randint(0, len(texto) - 1)
         letra = texto[i].lower()
         if letra in teclas_cercanas:
-            texto_list[i] = random.choice(teclas_cercanas[letra])
+            texto[i] = random.choice(teclas_cercanas[letra])
         return "".join(texto)
     
     # Eliminar una letra
