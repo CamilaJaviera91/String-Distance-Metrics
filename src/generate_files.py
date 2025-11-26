@@ -51,6 +51,7 @@ def generar_typo_realista(texto):
     palabra_original = "".join(texto)
     if tipo == "replace_comun" and palabra_original in reemplazos_comunes:
         return reemplazos_comunes[palabra_original]
+    if palabra_original in reemplazos_comunes_paises:
     
     # Error tipo teclado
     if tipo == "teclado":
