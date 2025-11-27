@@ -70,7 +70,7 @@ def generar_typo_realista(texto):
     # Duplicar una letra
     if tipo == "dup":
         i = random.randint(0, len(texto) - 1)
-        return "".join(texto[:i] + [texto[i]] + texto[i:])
+        return "".join(texto_list[:i] + [texto_list[i]] + texto_list[i:])
     
     # Intercambiar letras vecinas
     if tipo == "swap" and len(texto) >= 2:
