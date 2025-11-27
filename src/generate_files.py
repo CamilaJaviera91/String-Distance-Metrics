@@ -75,7 +75,7 @@ def generar_typo_realista(texto):
     # Intercambiar letras vecinas
     if tipo == "swap" and len(texto_list) >= 2:
         i = random.randint(0, len(texto_list) - 2)
-        texto[i], texto[i+1] = texto[i+1], texto[i]
+        texto_list[i], texto_list[i+1] = texto_list[i+1], texto_list[i]
         return "".join(texto)
     
     return "".join(texto)
