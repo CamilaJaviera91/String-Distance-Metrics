@@ -78,7 +78,7 @@ def generar_typo_realista(texto):
         texto_list[i], texto_list[i+1] = texto_list[i+1], texto_list[i]
         return "".join(texto_list)
     
-    return "".join(texto)
+    return "".join(texto_list)
 
 # ---------------------------------------------------
 # 1. Definir categorías y productos (50 productos)
