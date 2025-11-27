@@ -56,7 +56,7 @@ def generar_typo_realista(texto):
     
     # Error tipo teclado
     if tipo == "teclado":
-        i = random.randint(0, len(texto) - 1)
+        i = random.randint(0, len(texto_list) - 1)
         letra = texto_list[i].lower()
         if letra in teclas_cercanas:
             texto_list[i] = random.choice(teclas_cercanas[letra])
