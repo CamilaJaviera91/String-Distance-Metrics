@@ -21,12 +21,12 @@ def generar_typo_realista(texto):
         "p": "ol",
         "l": "kop",
         "g": "fhty",
-         "u": "yhji",
+        "u": "yhji",
         "i": "ujko"
     }
 
-    # Reemplazos comunes manuales
-    reemplazos_comunes = {
+    # Reemplazos comunes manuales para marcas
+    reemplazos_comunes_marcas = {
         "Samsung": "Sansung",
         "Apple": "Appel",
         "Sony": "Soni",
@@ -45,15 +45,17 @@ def generar_typo_realista(texto):
         "Mexico": "Mexio",
         "Argentina": "Argntina",
         "Brasil": "Brsil"
-     }
+    }
 
-    # Opción: usar reemplazo típico real
-    palabra_original = "".join(texto)
-    if tipo == "replace_comun" and palabra_original in reemplazos_comunes:
-        return reemplazos_comunes[palabra_original]
-    if palabra_original in reemplazos_comunes_paises:
-        return reemplazos_comunes_paises[palabra_original]
-    
+    palabra_original = "".join(texto_list)
+
+    # Reemplazo común (marca o país)
+    if tipo == "replace_comun":
+        if palabra_original in reemplazos_comunes_marcas:
+            return reemplazos_comunes_marcas[palabra_original]
+        if palabra_original in reemplazos_comunes_paises:
+            return reemplazos_comunes_paises[palabra_original]
+
     # Error tipo teclado
     if tipo == "teclado":
         i = random.randint(0, len(texto_list) - 1)
@@ -61,23 +63,23 @@ def generar_typo_realista(texto):
         if letra in teclas_cercanas:
             texto_list[i] = random.choice(teclas_cercanas[letra])
         return "".join(texto_list)
-    
+
     # Eliminar una letra
     if tipo == "drop":
         i = random.randint(0, len(texto_list) - 1)
         return "".join(texto_list[:i] + texto_list[i+1:])
-    
+
     # Duplicar una letra
     if tipo == "dup":
         i = random.randint(0, len(texto_list) - 1)
         return "".join(texto_list[:i] + [texto_list[i]] + texto_list[i:])
-    
+
     # Intercambiar letras vecinas
     if tipo == "swap" and len(texto_list) >= 2:
         i = random.randint(0, len(texto_list) - 2)
         texto_list[i], texto_list[i+1] = texto_list[i+1], texto_list[i]
         return "".join(texto_list)
-    
+
     return "".join(texto_list)
 
 # ---------------------------------------------------
@@ -99,16 +101,18 @@ anios = list(range(2018, 2025))
 # 2. Rango de precios por categoría
 # ---------------------------------------------------
 
-precios_categoria = {"Electrónica": (80, 1500),
-                     "Hogar": (10, 300),
-                     "Deporte": (15, 400),
-                     "Juguetería": (5, 120),
-                     "Computación": (90, 2000),
-                     "Belleza": (5, 200),
-                     "Automotriz": (20, 800),}
+precios_categoria = {
+    "Electrónica": (80, 1500),
+    "Hogar": (10, 300),
+    "Deporte": (15, 400),
+    "Juguetería": (5, 120),
+    "Computación": (90, 2000),
+    "Belleza": (5, 200),
+    "Automotriz": (20, 800),
+}
 
 # ---------------------------------------------------
-# 3. Crear base con precio
+# 3. Crear base con precio (SIN typos)
 # ---------------------------------------------------
 
 data1 = []
@@ -116,21 +120,22 @@ for p in productos:
     for pais in paises:
         for anio in anios:
             marca = random.choice(marcas)
-
             minimo, maximo = precios_categoria[p["categoria"]]
-
             precio = round(random.uniform(minimo, maximo), 2)
 
-            data1.append({"producto": p["producto"],
-                          "pais": pais,
-                          "anio": anio,
-                          "marca": marca,
-                          "precio_usd": precio})
+            data1.append({
+                "producto": p["producto"],
+                "categoria": p["categoria"],
+                "pais": pais,
+                "anio": anio,
+                "marca": marca,
+                "precio_usd": precio
+            })
 
 df1 = pd.DataFrame(data1)
 
 # ---------------------------------------------------
-# 4. Crear base sin precio (con typos en ~30%)
+# 4. Crear base sin precio (con typos en marcas y países)
 # ---------------------------------------------------
 
 data2 = []
@@ -138,37 +143,39 @@ for p in productos:
     for pais in paises:
         for anio in anios:
             marca = random.choice(marcas)
+            pais_con_typo = pais
 
-            # 30% de probabilidad de typo
+            # 30% typos en marcas
             if random.random() < 0.30:
                 marca = generar_typo_realista(marca)
 
-            data2.append({"producto": p["producto"],
-                          "categoria": p["categoria"],
-                          "pais": pais,
-                          "anio": anio,
-                          "marca": marca})
+            # 30% typos en países
+            if random.random() < 0.30:
+                pais_con_typo = generar_typo_realista(pais)
+
+            data2.append({
+                "producto": p["producto"],
+                "categoria": p["categoria"],
+                "pais": pais_con_typo,
+                "anio": anio,
+                "marca": marca
+            })
 
 df2 = pd.DataFrame(data2)
-
 
 # ---------------------------------------------------
 # Mostrar ejemplos
 # ---------------------------------------------------
 
 print("Primera base (con categorías y precios):")
-
 print(df1.head())
 
-print("\nSegunda base (con typos realistas):")
-
+print("\nSegunda base (con typos en marcas y países):")
 print(df2.head())
-
 
 # ---------------------------------------------------
 # Guardar los archivos
 # ---------------------------------------------------
 
 df1.to_csv("base_categoria_con_precio.csv", index=False)
-
 df2.to_csv("base_categoria_sin_precio.csv", index=False)
