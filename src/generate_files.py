@@ -1,5 +1,6 @@
 import random
 import pandas as pd
+import os
 
 # ---------------------------------------------------
 # Función para generar typos más realistas
@@ -176,6 +177,9 @@ print(df2.head())
 # ---------------------------------------------------
 # Guardar los archivos
 # ---------------------------------------------------
+
+# Crear carpeta si no existe
+os.makedirs("src/data", exist_ok=True)
 
 df1.to_csv("src/data/base_categoria_con_precio.csv", index=False)
 df2.to_csv("src/data/base_categoria_sin_precio.csv", index=False)
