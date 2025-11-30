@@ -179,7 +179,7 @@ print(df2.head())
 # ---------------------------------------------------
 
 # Crear carpeta si no existe
-os.makedirs("src/data", exist_ok=True)
+os.makedirs("src/data/raw", exist_ok=True)
 
-df1.to_csv("src/data/base_categoria_con_precio.csv", index=False)
-df2.to_csv("src/data/base_categoria_sin_precio.csv", index=False)
+df1.to_csv("src/data/raw/base_categoria_con_precio.csv", index=False)
+df2.to_csv("src/data/raw/base_categoria_sin_precio.csv", index=False)
