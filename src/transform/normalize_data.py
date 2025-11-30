@@ -50,3 +50,28 @@ SELECT
     , anio
 FROM productos_sin_precio;
 """)
+
+# ------------------------------------------------
+# 4. Ensure clean folder exists
+# ------------------------------------------------
+os.makedirs("src/data/clean", exist_ok=True)
+
+# ------------------------------------------------
+# 5. Export to CLEAN CSV files
+# ------------------------------------------------
+
+# Productos con precio
+con.execute("""
+COPY productos_normalizados
+TO 'src/data/clean/productos_con_precio.csv'
+WITH (HEADER, DELIMITER ',');
+""")
+
+# Productos sin precio
+con.execute("""
+COPY clientes_normalizados
+TO 'src/data/clean/productos_sin_precio.csv'
+WITH (HEADER, DELIMITER ',');
+""")
+
+print("CSV clean generados correctamente.")
