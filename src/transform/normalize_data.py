@@ -2,6 +2,16 @@ import duckdb
 import os
 
 # ------------------------------------------------
+# 0. Asegurar estructura de carpetas antes de conectar
+# ------------------------------------------------
+
+# Crear carpeta data si no existe (donde estará warehouse.db)
+os.makedirs("data", exist_ok=True)
+
+# Crear carpeta clean si no existe
+os.makedirs("src/data/clean", exist_ok=True)
+
+# ------------------------------------------------
 # 1. Conectarse a la base DuckDB
 # ------------------------------------------------
 # Se crea (o abre) el archivo warehouse.db donde se guardarán las tablas
@@ -29,50 +39,43 @@ FROM read_csv_auto('src/data/raw/base_categoria_sin_precio.csv');
 # ------------------------------------------------
 # Esto facilita el matching con algoritmos como Levenshtein o Soundex
 
-# Normalización del archivos
 con.execute("""
-            CREATE OR REPLACE TABLE con_precio_normalizados AS
-            SELECT
-            UPPER(producto) AS producto
-            , UPPER(categoria) AS categoria
-            , UPPER(pais) AS pais
-            , UPPER(marca) AS marca
-            , anio
-            , precio_usd
-            FROM con_precio;
-            """)
+CREATE OR REPLACE TABLE con_precio_normalizados AS
+SELECT
+    UPPER(producto) AS producto,
+    UPPER(categoria) AS categoria,
+    UPPER(pais) AS pais,
+    UPPER(marca) AS marca,
+    anio,
+    precio_usd
+FROM con_precio;
+""")
 
 con.execute("""
-            CREATE OR REPLACE TABLE sin_precio_normalizados AS
-            SELECT
-            UPPER(producto) AS producto
-            , UPPER(categoria) AS categoria
-            , UPPER(pais) AS pais
-            , UPPER(marca) AS marca
-            , anio
-            FROM sin_precio;
-            """)
+CREATE OR REPLACE TABLE sin_precio_normalizados AS
+SELECT
+    UPPER(producto) AS producto,
+    UPPER(categoria) AS categoria,
+    UPPER(pais) AS pais,
+    UPPER(marca) AS marca,
+    anio
+FROM sin_precio;
+""")
 
 # ------------------------------------------------
-# 4. Crear carpeta 'clean' si no existe
-# ------------------------------------------------
-# Asegura que la carpeta de salida esté disponible antes de exportar
-os.makedirs("src/data/clean", exist_ok=True)
-
-# ------------------------------------------------
-# 5. Exportar los archivos limpios (CSV CLEAN)
+# 4. Exportar los archivos limpios (CSV CLEAN)
 # ------------------------------------------------
 
 # Exportar productos normalizados con precio
 con.execute("""
-COPY productos_normalizados
+COPY con_precio_normalizados
 TO 'src/data/clean/productos_con_precio.csv'
 WITH (HEADER, DELIMITER ',');
 """)
 
 # Exportar productos normalizados sin precio
 con.execute("""
-COPY clientes_normalizados
+COPY sin_precio_normalizados
 TO 'src/data/clean/productos_sin_precio.csv'
 WITH (HEADER, DELIMITER ',');
 """)
