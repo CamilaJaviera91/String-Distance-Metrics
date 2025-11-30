@@ -13,15 +13,15 @@ con = duckdb.connect('data/warehouse.db')
 # Estas vistas permiten consultar los CSV sin cargarlos permanentemente
 
 con.execute("""
-CREATE OR REPLACE VIEW productos_raw AS
+CREATE OR REPLACE VIEW con_precio AS
 SELECT *
-FROM read_csv_auto('src/data/raw/productos.csv');
+FROM read_csv_auto('src/data/raw/base_categoria_con_precio.csv');
 """)
 
 con.execute("""
-CREATE OR REPLACE VIEW clientes_raw AS
+CREATE OR REPLACE VIEW sin_precio AS
 SELECT *
-FROM read_csv_auto('src/data/raw/clientes.csv');
+FROM read_csv_auto('src/data/raw/base_categoria_sin_precio.csv');
 """)
 
 # ------------------------------------------------
@@ -29,29 +29,29 @@ FROM read_csv_auto('src/data/raw/clientes.csv');
 # ------------------------------------------------
 # Esto facilita el matching con algoritmos como Levenshtein o Soundex
 
-# Normalización del archivo de productos
+# Normalización del archivos
 con.execute("""
-CREATE OR REPLACE TABLE productos_normalizados AS
-SELECT
-    UPPER(producto) AS producto,
-    UPPER(categoria) AS categoria,
-    UPPER(pais) AS pais,
-    UPPER(marca) AS marca,
-    anio -- se mantiene igual porque es numérico
-FROM productos_raw;
-""")
+            CREATE OR REPLACE TABLE con_precio_normalizados AS
+            SELECT
+            UPPER(producto) AS producto
+            , UPPER(categoria) AS categoria
+            , UPPER(pais) AS pais
+            , UPPER(marca) AS marca
+            , anio
+            , precio_usd
+            FROM con_precio;
+            """)
 
-# Normalización del archivo de clientes
 con.execute("""
-CREATE OR REPLACE TABLE clientes_normalizados AS
-SELECT
-    UPPER(nombre) AS nombre,
-    UPPER(apellido) AS apellido,
-    UPPER(pais) AS pais,
-    UPPER(email) AS email,
-    edad -- dato numérico, no se transforma
-FROM clientes_raw;
-""")
+            CREATE OR REPLACE TABLE sin_precio_normalizados AS
+            SELECT
+            UPPER(producto) AS producto
+            , UPPER(categoria) AS categoria
+            , UPPER(pais) AS pais
+            , UPPER(marca) AS marca
+            , anio
+            FROM sin_precio;
+            """)
 
 # ------------------------------------------------
 # 4. Crear carpeta 'clean' si no existe
@@ -70,7 +70,7 @@ TO 'src/data/clean/productos_con_precio.csv'
 WITH (HEADER, DELIMITER ',');
 """)
 
-# Exportar clientes normalizados o productos sin precio (ajusta nombre según tu caso)
+# Exportar productos normalizados sin precio
 con.execute("""
 COPY clientes_normalizados
 TO 'src/data/clean/productos_sin_precio.csv'
