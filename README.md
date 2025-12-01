@@ -22,7 +22,7 @@ Este dataset es útil para pruebas de:
     - `categoria`
     - `pais`
     - `anio`
-    - `marca`
+    - `marca` *(con errores tipográficos en ~30% de los registros)*
     - `precio_usd`
 
 Los precios son generados de forma aleatoria pero **dependiendo del rango de cada categoría**, lo que agrega realismo.
