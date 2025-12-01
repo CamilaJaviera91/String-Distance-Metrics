@@ -74,7 +74,7 @@ Se crean 50 productos con una categoría asociada (Electrónica, Hogar, Deporte,
 y asigna un precio coherente según su categoría.
 
 ### ✔ **3. Generación de la base sin precios**
-La misma estructura de combinaciones, pero sin precio.
+La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
 
 ### ✔ **4. Inyección de typos**
 - Una función genera errores tipográficos realistas utilizando:
