@@ -51,7 +51,8 @@ Los typos son **realistas**, mezclando:
 - Eliminación de letras.
 - Duplicación.
 - Swap/intercambio de caracteres.
-- Errores comunes reales (ej.: *Samsung → Sansung*)
+- Reemplazos comunes reales:
+    - Ejemplo: `SAMSUBG → SANSUNG`, `ADIDAS → ADIDSA`
 
 <br>
 
