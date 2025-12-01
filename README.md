@@ -50,7 +50,7 @@ Los typos son **realistas**, mezclando:
 - Teclas cercanas.
 - Eliminación de letras.
 - Duplicación.
-- Intercambio de letras.
+- Swap/intercambio de caracteres.
 - Errores comunes reales (ej.: *Samsung → Sansung*)
 
 <br>
