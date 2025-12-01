@@ -42,7 +42,7 @@ Los precios son generados de forma aleatoria pero **dependiendo del rango de cad
     - `producto`
     - `categoria` 
     - `pais`
-    - `marca` (con errores tipográficos en aprox. 30% de los registros)
+    - `marca` *(con errores tipográficos en aprox. 30% de los registros)*
 
 <br>
 
