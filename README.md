@@ -77,7 +77,7 @@ y asigna un precio coherente según su categoría.
 La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
 
 ### ✔ **4. Inyección de typos**
-- Una función genera errores tipográficos realistas utilizando:
+- La función de typos utiliza:
     - Mapas de teclas cercanas (“a” → “qws”).
     - Reemplazos comunes predefinidos.
     - Manipulación de caracteres
