@@ -80,7 +80,7 @@ La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
 - La función de typos utiliza:
     - Mapas de teclas cercanas de teclado.
     - Normalización (*solo mayúsculas*) para facilitar fuzzy matching.
-    - Manipulación de caracteres
+    - Exportación a `src/data/clean` como:
 
 ---
 
