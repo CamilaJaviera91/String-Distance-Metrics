@@ -81,6 +81,8 @@ La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
     - Mapas de teclas cercanas de teclado.
     - Normalización (*solo mayúsculas*) para facilitar fuzzy matching.
     - Exportación a `src/data/clean` como:
+        - `productos_con_precio.csv`
+        - `productos_sin_precio.csv`
 
 ---
 
