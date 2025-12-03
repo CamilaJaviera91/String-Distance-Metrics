@@ -85,6 +85,10 @@ La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
 
 ---
 
+## Pipeline de Limpieza (Opcional)
+
+---
+
 ## ✨ Autor
 
 Camila Javiera Muñoz Navarro <br>
