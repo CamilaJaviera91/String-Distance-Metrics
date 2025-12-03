@@ -94,6 +94,8 @@ La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
     - `productos_con_precio.csv`
     - `productos_sin_precio.csv`
 
+Este proceso permite ejecutar métricas de similitud de forma más efectiva.
+
 ---
 
 ## ✨ Autor
