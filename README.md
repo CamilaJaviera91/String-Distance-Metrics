@@ -87,7 +87,8 @@ La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
 
 ## Pipeline de Limpieza 
 
-1. Lectura de ambas bases desde `src/data/raw` mediante read_csv_auto()
+1. Lectura de ambas bases desde `src/data/raw` mediante `read_csv_auto()`
+2. Creación de vistas RAW
 
 ---
 
