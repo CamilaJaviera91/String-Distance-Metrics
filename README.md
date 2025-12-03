@@ -83,7 +83,6 @@ La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
     - Reemplazos frecuentes en la vida real
     - Aleatoriedad controlada (*~30%*)
 
-
 ---
 
 ## ✨ Autor
