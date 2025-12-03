@@ -89,6 +89,7 @@ La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
 
 1. Lectura de ambas bases desde `src/data/raw` mediante `read_csv_auto()`
 2. Creación de vistas RAW
+3. Normalización (*solo mayúsculas*) para facilitar fuzzy matching
 
 ---
 
