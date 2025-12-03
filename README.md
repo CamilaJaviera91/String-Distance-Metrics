@@ -91,6 +91,8 @@ La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
 2. Creación de vistas RAW.
 3. Normalización (*solo mayúsculas*) para facilitar fuzzy matching.
 4. Exportación a `src/data/clean` como:
+    - `productos_con_precio.csv`
+    - `productos_sin_precio.csv`
 
 ---
 
