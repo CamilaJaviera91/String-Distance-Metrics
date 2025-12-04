@@ -6,14 +6,7 @@ Este proyecto genera dos datasets sintéticos con información de productos, pa�
 
 Los datasets permiten probar algoritmos y herramientas como:
 
-<br>
-
-Este dataset es útil para pruebas de:
-- Normalización y limpieza de datos.
-- Fuzzy matching.
-- Detección y corrección de typos.
-- Procesos ETL y validación.
-- Modelos de ML basados en calidad de datos.
+- ✨ Fuzzy Matching: Levenshtein, Soundex, Jaro-Winkler, LCS
 
 ---
 
