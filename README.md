@@ -14,6 +14,14 @@ Los datasets permiten probar algoritmos y herramientas como:
 
 ---
 
+## 📦 Estructura del Proyecto
+
+```
+
+```
+
+---
+
 ## 📂 **Descripción de las Bases**
 
 ### **1. Base con precios (`base_categoria_con_precio.csv`)**
