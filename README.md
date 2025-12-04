@@ -17,7 +17,15 @@ Los datasets permiten probar algoritmos y herramientas como:
 ## 📦 Estructura del Proyecto
 
 ```
-
+src/
+ ├── data/
+ │    ├── raw/
+ │    └── clean/
+ ├── generate/
+ │    └── generate_data.py
+ ├── transform/
+ │    └── normalize_data.py
+ └── README.md
 ```
 
 ---
