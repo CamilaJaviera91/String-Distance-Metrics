@@ -75,6 +75,10 @@ Los typos son **realistas**, mezclando:
 
 Esto simula un escenario real donde los datos provienen de múltiples fuentes y contienen inconsistencias.
 
+<br>
+
+Ideal para fuzzy matching.
+
 ---
 
 ## 🧠 **Lógica Principal del Código**
