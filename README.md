@@ -20,6 +20,8 @@ Los datasets permiten probar algoritmos y herramientas como:
 src/
  ├── data/
  │    ├── clean/
+ │    │    ├── productos_con_precio.csv
+ │    │    └── productos_sin_precio.csv
  │    └── raw/
  ├── generate/
  │    └── generate_data.py
