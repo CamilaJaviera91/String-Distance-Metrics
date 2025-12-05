@@ -43,14 +43,14 @@ src/
 
 Los precios son generados de forma aleatoria pero **dependiendo del rango de cada categoría**, lo que agrega realismo.
 
-|Categoría  | Rango (USD) |
+| Categoría | Rango (USD) |
 |-----------|-------------|
 |Electrónica| 80 – 1500   |
-|Hogar      | 10 - 300    |
-|Deporte    | 15 - 400    |
+|   Hogar   | 10 - 300    |
+|  Deporte  | 15 - 400    |
 |Juguetería | 5 - 120     |
 |Computación| 90 – 2000   |
-|Belleza    | 5 – 200     |
+|  Belleza  | 5 – 200     |
 |Automotriz | 20 - 800    |
 
 ### **2. Base sin precios y con typos (`base_categoria_sin_precio.csv`)**
