@@ -23,6 +23,8 @@ src/
  │    │    ├── productos_con_precio.csv
  │    │    └── productos_sin_precio.csv
  │    └── raw/
+ │    │    ├── base_categoria_con_precio.csv
+ │    │    └── base_categoria_sin_precio.csv
  ├── generate/
  │    └── generate_data.py
  ├── transform/
