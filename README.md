@@ -29,7 +29,8 @@ src/
  │    └── generate_data.py
  ├── transform/
  │    └── normalize_data.py
- └── README.md
+ ├── README.md
+ └── requirements.txt
 ```
 
 ---
