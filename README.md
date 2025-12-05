@@ -17,6 +17,8 @@ Los datasets permiten probar algoritmos y herramientas como:
 ## 📦 Estructura del Proyecto
 
 ```
+data/
+ ├── warehouse.db
 src/
  ├── data/
  │    ├── clean/
