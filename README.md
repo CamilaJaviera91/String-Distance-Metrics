@@ -19,8 +19,8 @@ Los datasets permiten probar algoritmos y herramientas como:
 ```
 src/
  ├── data/
- │    ├── raw/
- │    └── clean/
+ │    ├── clean/
+ │    └── raw/
  ├── generate/
  │    └── generate_data.py
  ├── transform/
