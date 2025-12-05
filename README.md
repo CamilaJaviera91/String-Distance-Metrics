@@ -17,22 +17,23 @@ Los datasets permiten probar algoritmos y herramientas como:
 ## 📦 Estructura del Proyecto
 
 ```
-data/
- ├── warehouse.db
-src/
- ├── data/
- │    ├── clean/
- │    │    ├── productos_con_precio.csv
- │    │    └── productos_sin_precio.csv
- │    └── raw/
- │         ├── base_categoria_con_precio.csv
- │         └── base_categoria_sin_precio.csv
- ├── generate/
- │    └── generate_data.py
- ├── transform/
- │    └── normalize_data.py
- ├── README.md
- └── requirements.txt
+..
+├── data/
+│   ├── warehouse.db
+└── src/
+    ├── data/
+    │    ├── clean/
+    │    │    ├── productos_con_precio.csv
+    │    │    └── productos_sin_precio.csv
+    │    └── raw/
+    │         ├── base_categoria_con_precio.csv
+    │         └── base_categoria_sin_precio.csv
+    ├── generate/
+    │    └── generate_data.py
+    ├── transform/
+    │    └── normalize_data.py
+    ├── README.md
+    └── requirements.txt
 ```
 
 ---
