@@ -69,7 +69,9 @@ Los typos son **realistas**, mezclando:
 - Duplicación.
 - Swap/intercambio de caracteres.
 - Reemplazos comunes reales:
-    - Ejemplo: `SAMSUBG → SANSUNG`, `ADIDAS → ADIDSA`
+    - Ejemplo: 
+        - `SAMSUBG → SANSUNG`
+        - `ADIDAS → ADIDSA`
 
 <br>
 
