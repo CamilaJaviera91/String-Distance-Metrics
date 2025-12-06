@@ -18,22 +18,44 @@ Los datasets permiten probar algoritmos y herramientas como:
 
 ```
 ..
+String-Distance-Metrics/
+│
+├── string_distance_metrics/
+│   ├── __init__.py
+│   ├── generators/
+│   │   ├── __init__.py
+│   │   └── typo_generator.py
+│   │
+│   ├── distances/
+│   │   ├── __init__.py
+│   │   ├── levenshtein.py
+│   │   ├── jaro_winkler.py
+│   │   └── damerau_levenshtein.py
+│   │
+│   ├── cleaning/
+│   │   ├── __init__.py
+│   │   └── normalizer.py
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       └── helpers.py
+│
+├── tests/
+│   ├── test_typo_generator.py
+│   ├── test_levenshtein.py
+│   └── test_normalizer.py
+│
+├── examples/
+│   └── 01_basic_usage.ipynb
+│
 ├── data/
-│   ├── warehouse.db
-└── src/
-    ├── data/
-    │    ├── clean/
-    │    │    ├── productos_con_precio.csv
-    │    │    └── productos_sin_precio.csv
-    │    └── raw/
-    │         ├── base_categoria_con_precio.csv
-    │         └── base_categoria_sin_precio.csv
-    ├── generate/
-    │    └── generate_data.py
-    ├── transform/
-    │    └── normalize_data.py
-    ├── README.md
-    └── requirements.txt
+│   ├── raw/
+│   ├── dirty/
+│   └── clean/
+│
+├── requirements.txt
+└── README.md
+
 ```
 
 ---
