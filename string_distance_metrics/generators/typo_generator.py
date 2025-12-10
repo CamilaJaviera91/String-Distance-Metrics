@@ -26,3 +26,6 @@ def generate_realistic_typo(text: str) -> str:
 
     elif typo_type == "dup":
         text_list.insert(idx, char)
+    
+    elif typo_type == "swap" and idx < len(text_list) - 1:
+        text_list[idx], text_list[idx + 1] = text_list[idx + 1], text_list[idx]
