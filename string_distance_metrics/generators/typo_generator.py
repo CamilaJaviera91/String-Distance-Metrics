@@ -32,3 +32,5 @@ def generate_realistic_typo(text: str) -> str:
 
     elif typo_type == "replace_common":
         text_list[idx] = random.choice("abcdefghijklmnñopqrstuvwxyz")
+
+    return "".join(text_list)
