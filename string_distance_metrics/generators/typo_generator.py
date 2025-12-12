@@ -8,7 +8,7 @@ def generate_realistic_typo(text: str) -> str:
 
     keyboard_neighbors = {"a": ["s", "q", "z"], 
                           "s": ["a", "d", "w", "x"],
-        "e": ["w", "r", "d"], "o": ["i", "p", "l"],
+                          "e": ["w", "r", "d"], "o": ["i", "p", "l"],
         "n": ["b", "m", "h"],
     }
 
