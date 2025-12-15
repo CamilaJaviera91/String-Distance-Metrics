@@ -4,7 +4,7 @@ Este proyecto genera dos datasets sintéticos con información de productos, pa�
 
 <br>
 
-Los datasets permiten probar algoritmos y herramientas como:
+- Los datasets permiten probar algoritmos y herramientas como:
 
 - ✨ Fuzzy Matching: Levenshtein, Soundex, Jaro-Winkler, LCS
 - 🧼 Procesos de normalización y limpieza
