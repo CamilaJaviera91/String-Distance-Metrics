@@ -93,7 +93,7 @@ String-Distance-Metrics/
 
 <br>
 
-Los typos son **realistas**, mezclando:
+- Los typos son **realistas**, mezclando:
 - Teclas cercanas.
 - Eliminación de letras.
 - Duplicación.
