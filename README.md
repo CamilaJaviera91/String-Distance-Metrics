@@ -100,7 +100,7 @@ String-Distance-Metrics/
     - Swap/intercambio de caracteres.
     - Reemplazos comunes reales:
         - Ejemplo: 
-        - `SAMSUBG → SANSUNG`
+            - `SAMSUBG → SANSUNG`
         - `ADIDAS → ADIDSA`
 
 <br>
