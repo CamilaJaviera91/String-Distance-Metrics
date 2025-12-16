@@ -97,7 +97,7 @@ String-Distance-Metrics/
     - Teclas cercanas.
     - Eliminación de letras.
     - Duplicación.
-- Swap/intercambio de caracteres.
+    - Swap/intercambio de caracteres.
 - Reemplazos comunes reales:
     - Ejemplo: 
         - `SAMSUBG → SANSUNG`
