@@ -71,7 +71,7 @@ String-Distance-Metrics/
     - `marca`
     - `precio_usd`
 
-Los precios son generados de forma aleatoria pero **dependiendo del rango de cada categoría**, lo que agrega realismo.
+- Los precios son generados de forma aleatoria pero **dependiendo del rango de cada categoría**, lo que agrega realismo.
 
 | Categoría | Rango (USD) |
 |-----------|-------------|
