@@ -101,7 +101,7 @@ String-Distance-Metrics/
     - Reemplazos comunes reales:
         - Ejemplo: 
             - `SAMSUBG → SANSUNG`
-        - `ADIDAS → ADIDSA`
+            - `ADIDAS → ADIDSA`
 
 <br>
 
