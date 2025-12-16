@@ -98,7 +98,7 @@ String-Distance-Metrics/
     - Eliminación de letras.
     - Duplicación.
     - Swap/intercambio de caracteres.
-- Reemplazos comunes reales:
+    - Reemplazos comunes reales:
     - Ejemplo: 
         - `SAMSUBG → SANSUNG`
         - `ADIDAS → ADIDSA`
