@@ -109,7 +109,7 @@ String-Distance-Metrics/
 
 <br>
 
-Ideal para fuzzy matching.
+- Ideal para fuzzy matching.
 
 ---
 
