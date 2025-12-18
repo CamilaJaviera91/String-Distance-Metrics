@@ -127,7 +127,7 @@ String-Distance-Metrics/
 - Asigna un precio coherente según su categoría.
 
 ### ✔ **3. Generación de la base sin precios**
-La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
+- La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
 
 ### ✔ **4. Inyección de typos**
 - La función de typos utiliza:
