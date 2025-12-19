@@ -9,7 +9,7 @@ Este proyecto genera dos datasets sintéticos con información de productos, pa�
     - Fuzzy Matching: Levenshtein, Soundex, Jaro-Winkler, LCS
     - Procesos de normalización y limpieza
     - Pipelines ETL
-    - 🔍 Data Quality
+    - Data Quality
     - 🧪 Modelos de ML afectados por ruido en los datos
 
 ---
