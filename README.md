@@ -10,7 +10,7 @@ Este proyecto genera dos datasets sintéticos con información de productos, pa�
     - Procesos de normalización y limpieza
     - Pipelines ETL
     - Data Quality
-    - 🧪 Modelos de ML afectados por ruido en los datos
+    - Modelos de ML afectados por ruido en los datos
 
 ---
 
