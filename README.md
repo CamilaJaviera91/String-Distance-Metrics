@@ -147,7 +147,7 @@ String-Distance-Metrics/
     - `productos_con_precio.csv`
     - `productos_sin_precio.csv`
 
-Este proceso permite ejecutar métricas de similitud de forma más efectiva.
+- Este proceso permite ejecutar métricas de similitud de forma más efectiva.
 
 ---
 
