@@ -151,7 +151,7 @@ String-Distance-Metrics/
 
 ---
 
-## ✨ Autor
+## Autor
 
 Camila Javiera Muñoz Navarro <br>
 Ingeniera de Datos <br>
