@@ -14,7 +14,7 @@ Este proyecto genera dos datasets sintéticos con información de productos, pa�
 
 ---
 
-## 📦 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 ..
