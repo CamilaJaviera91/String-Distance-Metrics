@@ -2,8 +2,6 @@
 
 Este proyecto genera dos datasets sintéticos con información de productos, países, marcas y categorías, diseñados para simular escenarios reales donde existen errores tipográficos, inconsistencias de **formato y datos faltantes**.
 
-<br>
-
 - Los datasets permiten probar algoritmos y herramientas como:
 
     - Fuzzy Matching: Levenshtein, Soundex, Jaro-Winkler, LCS
