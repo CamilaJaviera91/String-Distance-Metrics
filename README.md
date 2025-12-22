@@ -81,7 +81,7 @@ String-Distance-Metrics/
 |  Belleza  | 5 – 200     |
 |Automotriz | 20 - 800    |
 
-### **2. Base sin precios y con typos (`base_categoria_sin_precio.csv`)**
+### **Base sin precios y con typos (`base_categoria_sin_precio.csv`)**
 
 - Contiene:
     - `producto`
