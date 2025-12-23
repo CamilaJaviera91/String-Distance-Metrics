@@ -107,7 +107,7 @@ String-Distance-Metrics/
 
 ## **Lógica Principal del Código**
 
-### **1. Generación de productos y categorías**
+### **Generación de productos y categorías**
 - Se crean 50 productos con una categoría asociada (Electrónica, Hogar, Deporte, etc.).
 
 ### **2. Generación de la base con precios**
