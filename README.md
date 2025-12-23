@@ -99,8 +99,6 @@ String-Distance-Metrics/
             - `SAMSUBG → SANSUNG`
             - `ADIDAS → ADIDSA`
 
-<br>
-
 - Esto simula un escenario real donde los datos provienen de múltiples fuentes y contienen inconsistencias.
 
 <br>
