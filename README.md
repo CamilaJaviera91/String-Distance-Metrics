@@ -89,8 +89,6 @@ String-Distance-Metrics/
     - `pais`
     - `marca` *(con errores tipográficos en aprox. 30% de los registros)*
 
-<br>
-
 - Los typos son **realistas**, mezclando:
     - Teclas cercanas.
     - Eliminación de letras.
