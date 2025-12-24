@@ -135,7 +135,7 @@ String-Distance-Metrics/
 1. Lectura de ambas bases desde `src/data/raw` mediante `read_csv_auto()`.
 2. Creación de vistas RAW.
 3. Normalización (*solo mayúsculas*) para facilitar fuzzy matching.
-4. Exportación a `src/data/clean` como:
+4. Exportación a `src/data/clean`:
     - `productos_con_precio.csv`
     - `productos_sin_precio.csv`
 
