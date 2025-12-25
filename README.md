@@ -9,6 +9,7 @@ Este proyecto genera dos **datasets** sintéticos con información de **producto
         - Soundex
         - Jaro-Winkler
         - LCS
+        - Metaphone
     - Procesos de normalización y limpieza
     - Pipelines ETL
     - Data Quality
