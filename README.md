@@ -5,7 +5,8 @@ Este proyecto genera dos **datasets** sintéticos con información de **producto
 - Los **datasets** permiten probar algoritmos y herramientas como:
 
     - Fuzzy Matching: 
-        - Levenshtein, Soundex, Jaro-Winkler, LCS
+        - Levenshtein
+        - Soundex, Jaro-Winkler, LCS
     - Procesos de normalización y limpieza
     - Pipelines ETL
     - Data Quality
