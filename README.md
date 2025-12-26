@@ -6,7 +6,7 @@ Este proyecto genera dos **datasets** sintéticos con información de **producto
 
     - Fuzzy Matching: 
         - Levenshtein
-        - Soundex
+        - Soundex.
         - Jaro-Winkler.
         - LCS.
         - Metaphone.
