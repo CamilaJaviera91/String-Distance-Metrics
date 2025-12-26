@@ -8,7 +8,7 @@ Este proyecto genera dos **datasets** sintéticos con información de **producto
         - Levenshtein
         - Soundex
         - Jaro-Winkler
-        - LCS
+        - LCS.
         - Metaphone.
     - Procesos de normalización y limpieza.
     - Pipelines ETL.
