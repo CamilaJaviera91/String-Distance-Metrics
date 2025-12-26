@@ -12,7 +12,7 @@ Este proyecto genera dos **datasets** sintéticos con información de **producto
         - Metaphone
     - Procesos de normalización y limpieza
     - Pipelines ETL
-    - Data Quality
+    - Data Quality.
     - Modelos de ML afectados por ruido en los datos.
 
 ---
