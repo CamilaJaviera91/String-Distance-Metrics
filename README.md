@@ -10,7 +10,7 @@ Este proyecto genera dos **datasets** sintéticos con información de **producto
         - Jaro-Winkler
         - LCS
         - Metaphone
-    - Procesos de normalización y limpieza
+    - Procesos de normalización y limpieza.
     - Pipelines ETL.
     - Data Quality.
     - Modelos de ML afectados por ruido en los datos.
