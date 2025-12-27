@@ -118,6 +118,7 @@ String-Distance-Metrics/
     - Electrónica
     - Hogar
     - Deporte
+    - Juguetería
 
 ### **Generación de la base con precios**
 - Combina todas las combinaciones de:
