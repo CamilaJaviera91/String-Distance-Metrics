@@ -92,7 +92,8 @@ String-Distance-Metrics/
     - `producto`
     - `categoria` 
     - `pais`
-    - `marca` *(con errores tipográficos en aprox. 30% de los registros)*
+    - `marca` 
+    - *(con errores tipográficos en aprox. 30% de los registros)*
 
 - Los typos son **realistas**, mezclando:
     - Teclas cercanas.
