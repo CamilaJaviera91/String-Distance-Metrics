@@ -107,7 +107,7 @@ String-Distance-Metrics/
 
 - Esto simula un **escenario real** donde los datos provienen de múltiples fuentes y contienen inconsistencias.
 
-- Ideal para fuzzy matching.
+- Ideal para **fuzzy matching**.
 
 ---
 
