@@ -116,6 +116,7 @@ String-Distance-Metrics/
 ### **Generación de productos y categorías**
 - Se crean 50 productos con una categoría asociada:
     - Electrónica
+    - Hogar
 
 ### **Generación de la base con precios**
 - Combina todas las combinaciones de:
