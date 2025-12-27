@@ -119,6 +119,7 @@ String-Distance-Metrics/
     - Hogar
     - Deporte
     - Juguetería
+    - Computación
 
 ### **Generación de la base con precios**
 - Combina todas las combinaciones de:
