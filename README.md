@@ -121,6 +121,7 @@ String-Distance-Metrics/
     - Juguetería
     - Computación
     - Belleza
+    - Automotriz
 
 ### **Generación de la base con precios**
 - Combina todas las combinaciones de:
