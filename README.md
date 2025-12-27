@@ -95,7 +95,7 @@ String-Distance-Metrics/
     - `marca` 
     - *(con errores tipográficos en aprox. 30% de los registros)*
 
-- Los typos son **realistas**, mezclando:
+- Los typos son **realistas**:
     - Teclas cercanas.
     - Eliminación de letras.
     - Duplicación.
