@@ -117,6 +117,7 @@ String-Distance-Metrics/
 - Se crean 50 productos con una categoría asociada:
     - Electrónica
     - Hogar
+    - Deporte
 
 ### **Generación de la base con precios**
 - Combina todas las combinaciones de:
