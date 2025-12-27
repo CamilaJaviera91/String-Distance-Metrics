@@ -120,6 +120,7 @@ String-Distance-Metrics/
     - Deporte
     - Juguetería
     - Computación
+    - Belleza
 
 ### **Generación de la base con precios**
 - Combina todas las combinaciones de:
