@@ -105,7 +105,7 @@ String-Distance-Metrics/
             - `SAMSUBG → SANSUNG`
             - `ADIDAS → ADIDSA`
 
-- Esto simula un escenario real donde los datos provienen de múltiples fuentes y contienen inconsistencias.
+- Esto simula un **escenario real** donde los datos provienen de múltiples fuentes y contienen inconsistencias.
 
 - Ideal para fuzzy matching.
 
