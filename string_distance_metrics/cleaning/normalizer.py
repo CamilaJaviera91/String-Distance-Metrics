@@ -1,1 +1,3 @@
 import unicodedata
+
+def normalize_string(text: str) -> str:
