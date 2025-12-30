@@ -6,3 +6,4 @@ def normalize_string(text: str) -> str:
         return text
     
     text = text.lower()
+    text = unicodedata.normalize("NFD", text)
