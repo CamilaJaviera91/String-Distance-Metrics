@@ -1,6 +1,6 @@
 # String Distance Metrics
 
-Este proyecto genera dos **datasets** sintéticos con información de **productos, países, marcas y categorías**, diseñados para simular escenarios reales donde existen errores **tipográficos**, inconsistencias de **formato y datos faltantes**.
+Este repositorio contiene una **colección de métodos y algoritmos de métricas de distancia y similitud** diseñados para cuantificar qué tan similares o diferentes son dos cadenas de texto (*string matching* / *string similarity*). Estas métricas son útiles para tareas como limpieza de datos, fuzzy matching, deduplicación y análisis de calidad de datos.
 
 - Los **datasets** permiten probar algoritmos y herramientas como:
 
