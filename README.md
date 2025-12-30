@@ -28,7 +28,7 @@ Este proyecto ofrece una implementación centralizada de algoritmos de **distanc
 - Normalizar texto para mejor comparación  
 - Medir similitud entre campos de datos
 
-
+Este tipo de herramientas se utiliza en *data cleaning*, *record linkage*, *entity matching*, y procesos de integración de datos donde los valores de texto no coinciden exactamente.
 
 ---
 
