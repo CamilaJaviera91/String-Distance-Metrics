@@ -23,6 +23,13 @@
 
 Este proyecto ofrece una implementación centralizada de algoritmos de **distancia entre cadenas de texto**, además de utilidades para:
 
+- Generar datasets sintéticos  
+- Introducir errores tipográficos realistas  
+- Normalizar texto para mejor comparación  
+- Medir similitud entre campos de datos
+
+
+
 ---
 
 ## Estructura del Proyecto
