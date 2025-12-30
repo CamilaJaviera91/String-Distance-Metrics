@@ -19,6 +19,12 @@
 
 ---
 
+## Descripción
+
+Este proyecto ofrece una implementación centralizada de algoritmos de **distancia entre cadenas de texto**, además de utilidades para:
+
+---
+
 ## Estructura del Proyecto
 
 ```
