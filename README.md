@@ -36,7 +36,7 @@ Este tipo de herramientas se utiliza en *data cleaning*, *record linkage*, *enti
 
 - Generación de typos realistas para simular errores humanos
 - Implementaciones propias de algoritmos de distancia
-
+- Funciones de normalización de texto
 
 
 ---
