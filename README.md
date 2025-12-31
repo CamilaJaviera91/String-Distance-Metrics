@@ -38,6 +38,7 @@ Este tipo de herramientas se utiliza en *data cleaning*, *record linkage*, *enti
 - Implementaciones propias de algoritmos de distancia
 - Funciones de normalización de texto
 - Arquitectura modular para integrar más métricas o pipelines
+- Tests automatizados para asegurar calidad de código
 
 
 ---
