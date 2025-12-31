@@ -32,6 +32,10 @@ Este tipo de herramientas se utiliza en *data cleaning*, *record linkage*, *enti
 
 ---
 
+## Características
+
+---
+
 ## Estructura del Proyecto
 
 ```
