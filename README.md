@@ -34,6 +34,9 @@ Este tipo de herramientas se utiliza en *data cleaning*, *record linkage*, *enti
 
 ## Características
 
+- Generación de typos realistas para simular errores humanos
+
+
 ---
 
 ## Estructura del Proyecto
