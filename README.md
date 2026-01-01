@@ -185,3 +185,5 @@ String-Distance-Metrics/
 
 Camila Javiera Muñoz Navarro <br>
 Ingeniera de Datos <br>
+
+---
