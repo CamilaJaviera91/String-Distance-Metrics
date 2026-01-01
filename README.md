@@ -189,3 +189,5 @@ Ingeniera de Datos <br>
 ---
 
 ## Contribuciones
+
+¡Las contribuciones son bienvenidas!
