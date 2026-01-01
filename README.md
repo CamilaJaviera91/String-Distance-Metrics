@@ -193,3 +193,4 @@ Ingeniera de Datos <br>
 - ¡Las contribuciones son bienvenidas!
 - Si quieres agregar nuevas métricas, mejorar documentación o ampliar tests:
     1. Haz un fork del repositorio
+    2. Crea una rama con tu feature
