@@ -190,4 +190,5 @@ Ingeniera de Datos <br>
 
 ## Contribuciones
 
-¡Las contribuciones son bienvenidas!
+- ¡Las contribuciones son bienvenidas!
+- Si quieres agregar nuevas métricas, mejorar documentación o ampliar tests:
