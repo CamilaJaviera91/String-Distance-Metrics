@@ -194,4 +194,4 @@ Ingeniera de Datos <br>
 - Si quieres agregar nuevas métricas, mejorar documentación o ampliar tests:
     1. Haz un fork del repositorio
     2. Crea una rama con tu feature
-    3. Abre un Pull Request con descripción clara de los cambios
+    3. Abre un *Pull Request* con descripción clara de los cambios
