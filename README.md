@@ -199,3 +199,5 @@ Ingeniera de Datos <br>
 ---
 
 ## Licencia
+
+Este proyecto está bajo la licencia MIT.
