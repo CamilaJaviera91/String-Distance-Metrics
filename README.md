@@ -25,10 +25,10 @@ Estas métricas son especialmente útiles en tareas de **limpieza de datos, fuzz
 
 El proyecto ofrece una implementación centralizada de algoritmos de **distancia entre cadenas de texto**, junto con utilidades para:
 
-- Generar datasets sintéticos  
-- Introducir errores tipográficos realistas  
-- Normalizar texto para mejor comparación  
-- Medir similitud entre campos de datos
+- Generar datasets sintéticos
+- Inyectar errores tipográficos realistas
+- Normalizar texto para mejorar la comparación
+- Medir similitud entre campos textuales
 
 Este tipo de herramientas se utiliza en *data cleaning*, *record linkage*, *entity matching*, y procesos de integración de datos donde los valores de texto no coinciden exactamente.
 
