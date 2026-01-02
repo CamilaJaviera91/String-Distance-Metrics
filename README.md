@@ -2,7 +2,7 @@
 
 Este repositorio contiene una **colección de métodos y algoritmos de métricas de distancia y similitud entre cadenas de texto**, diseñados para cuantificar qué tan similares o diferentes son dos strings (*string matching / string similarity*).
 
-Las métricas incluidas permiten comparar textos que pueden contener **errores tipográficos, diferencias de formato y ruido de datos**, lo cual es común cuando se trabaja con datasets reales.
+Estas métricas son especialmente útiles en tareas de **limpieza de datos, fuzzy matching, deduplicación, data quality** y en escenarios donde los datos textuales contienen **errores tipográficos, diferencias de formato y ruido**, algo común en datasets reales provenientes de múltiples fuentes.
 
 - Tecnologías utilizadas:
 
