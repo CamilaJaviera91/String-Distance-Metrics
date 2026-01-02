@@ -8,16 +8,17 @@ Estas métricas son especialmente útiles en tareas de **limpieza de datos, fuzz
 
 ## Tecnologías y enfoques utilizados
 
-    - Fuzzy Matching: 
-        - Levenshtein.
-        - Soundex.
-        - Jaro-Winkler.
-        - LCS.
-        - Metaphone.
-    - Procesos de normalización y limpieza.
-    - Pipelines ETL.
-    - Data Quality.
-    - Modelos de ML afectados por ruido en los datos.
+- **Fuzzy Matching**
+  - Levenshtein
+  - Soundex
+  - Jaro-Winkler
+  - Longest Common Subsequence (LCS)
+  - Metaphone
+- Procesos de **normalización y limpieza de texto**
+- Pipelines ETL
+- Análisis de **Data Quality**
+- Evaluación del impacto del ruido en modelos de Machine Learning
+
 
 ---
 
