@@ -23,7 +23,7 @@ Estas métricas son especialmente útiles en tareas de **limpieza de datos, fuzz
 
 ## Descripción
 
-Este proyecto ofrece una implementación centralizada de algoritmos de **distancia entre cadenas de texto**, además de utilidades para:
+El proyecto ofrece una implementación centralizada de algoritmos de **distancia entre cadenas de texto**, junto con utilidades para:
 
 - Generar datasets sintéticos  
 - Introducir errores tipográficos realistas  
