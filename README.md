@@ -197,3 +197,5 @@ Ingeniera de Datos <br>
     3. Abre un *Pull Request* con descripción clara de los cambios
 
 ---
+
+## Licencia
