@@ -4,7 +4,7 @@
 
 - Las métricas incluidas permiten comparar textos que pueden contener **errores tipográficos, diferencias de formato y ruido de datos**, lo cual es común cuando se trabaja con datasets reales.
 
-- se Utilizará:
+- Tecnologías utilizadas:
 
     - Fuzzy Matching: 
         - Levenshtein.
