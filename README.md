@@ -116,14 +116,15 @@ Los precios se generan de forma aleatoria, pero respetando **rangos realistas po
 |  Belleza  | 5 – 200     |
 |Automotriz | 20 - 800    |
 
-### **Base sin precios y con typos (`base_categoria_sin_precio.csv`)**
+---
+
+### Base sin precios y con typos (`base_categoria_sin_precio.csv`)
 
 - Contiene:
     - `producto`
     - `categoria` 
     - `pais`
     - `marca` 
-    - *(con errores tipográficos en aprox. 30% de los registros)*
 
 - Los typos son **realistas**:
     - Teclas cercanas.
