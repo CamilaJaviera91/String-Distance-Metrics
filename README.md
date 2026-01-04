@@ -156,7 +156,8 @@ Este dataset simula un escenario real donde los datos provienen de distintas fue
   - Belleza
   - Automotriz
 
-### **Generación de la base con precios**
+### Generación de la base con precios
+
 - Combina todas las combinaciones de:
     - producto
     - país
