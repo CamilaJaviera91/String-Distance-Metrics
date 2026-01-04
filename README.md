@@ -94,7 +94,8 @@ String-Distance-Metrics/
 
 ### Base con precios (`base_categoria_con_precio.csv`)
 
-- Contiene los siguientes campos:
+Contiene los siguientes campos:
+
     - `producto`
     - `categoria`
     - `pais`
@@ -102,7 +103,8 @@ String-Distance-Metrics/
     - `marca`
     - `precio_usd`
 
-- Los precios son generados de forma aleatoria pero dependiendo del **rango de cada categoría**, lo que agrega realismo.
+Los precios se generan de forma aleatoria, pero respetando **rangos realistas por categoría**, lo que permite simular escenarios cercanos a datos reales.
+
 
 | Categoría | Rango (USD) |
 |-----------|-------------|
