@@ -164,8 +164,9 @@ Este dataset simula un escenario real donde los datos provienen de distintas fue
   - año
 - Se asigna un precio coherente según la categoría del producto.
 
-### **Generación de la base sin precios**
-- La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
+### Generación de la base sin precios
+
+- Se utiliza la misma lógica de combinaciones, excluyendo la columna `precio_usd`.
 
 ### **Inyección de typos**
 - La función de typos utiliza:
