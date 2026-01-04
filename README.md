@@ -195,15 +195,16 @@ Este pipeline facilita la aplicación posterior de métricas de similitud de man
 
 **Camila Javiera Muñoz Navarro**  
 Ingeniera de Datos  
+
 ---
 
 ## Contribuciones
 
-- ¡Las contribuciones son bienvenidas!
-- Si quieres agregar nuevas métricas, mejorar documentación o ampliar tests:
-    1. Haz un fork del repositorio
-    2. Crea una rama con tu feature
-    3. Abre un *Pull Request* con descripción clara de los cambios
+¡Las contribuciones son bienvenidas!
+
+1. Haz un fork del repositorio
+2. Crea una rama con tu feature
+3. Abre un Pull Request con una descripción clara de los cambios
 
 ---
 
