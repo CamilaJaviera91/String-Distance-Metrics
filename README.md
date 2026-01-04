@@ -126,6 +126,8 @@ Los precios se generan de forma aleatoria, pero respetando **rangos realistas po
     - `pais`
     - `marca` 
 
+Aproximadamente un **30% de los registros contienen errores tipográficos realistas**, tales como:
+
 - Los typos son **realistas**:
     - Teclas cercanas.
     - Eliminación de letras.
