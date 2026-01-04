@@ -210,4 +210,4 @@ Ingeniera de Datos
 
 ## Licencia
 
-Este proyecto está bajo la licencia MIT.
+Este proyecto está bajo la licencia **MIT**.
