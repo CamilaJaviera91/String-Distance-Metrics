@@ -147,14 +147,14 @@ Este dataset simula un escenario real donde los datos provienen de distintas fue
 
 ### Generación de productos y categorías
 
-- Se crean 50 productos con una categoría asociada:
-    - Electrónica
-    - Hogar
-    - Deporte
-    - Juguetería
-    - Computación
-    - Belleza
-    - Automotriz
+- Se generan **50** productos asociados a una categoría:
+  - Electrónica
+  - Hogar
+  - Deporte
+  - Juguetería
+  - Computación
+  - Belleza
+  - Automotriz
 
 ### **Generación de la base con precios**
 - Combina todas las combinaciones de:
