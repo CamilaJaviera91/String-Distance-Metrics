@@ -178,16 +178,16 @@ Este dataset simula un escenario real donde los datos provienen de distintas fue
 
 ---
 
-## Pipeline de Limpieza 
+## Pipeline de Limpieza y Normalización
 
-1. Lectura de ambas bases desde `data/raw` mediante `read_csv_auto()`.
+1. Lectura de ambas bases desde `data/raw`.
 2. Creación de vistas RAW.
-3. Normalización (*solo mayúsculas*) para facilitar fuzzy matching.
+3. Normalización del texto (mayúsculas, limpieza básica).
 4. Exportación a `data/clean`:
-    - `productos_con_precio.csv`
-    - `productos_sin_precio.csv`
+   - `productos_con_precio.csv`
+   - `productos_sin_precio.csv`
 
-- Este proceso permite ejecutar métricas de similitud de forma más efectiva.
+Este pipeline facilita la aplicación posterior de métricas de similitud de manera más efectiva.
 
 ---
 
