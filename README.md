@@ -193,9 +193,8 @@ Este pipeline facilita la aplicación posterior de métricas de similitud de man
 
 ## Autor
 
-Camila Javiera Muñoz Navarro <br>
-Ingeniera de Datos <br>
-
+**Camila Javiera Muñoz Navarro**  
+Ingeniera de Datos  
 ---
 
 ## Contribuciones
