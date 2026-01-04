@@ -158,12 +158,11 @@ Este dataset simula un escenario real donde los datos provienen de distintas fue
 
 ### Generación de la base con precios
 
-- Combina todas las combinaciones de:
-    - producto
-    - país
-    - año
-
-- Asigna un precio coherente según su categoría.
+- Se crean combinaciones de:
+  - producto
+  - país
+  - año
+- Se asigna un precio coherente según la categoría del producto.
 
 ### **Generación de la base sin precios**
 - La misma estructura de combinaciones, pero sin la columna de `precio_usd`.
