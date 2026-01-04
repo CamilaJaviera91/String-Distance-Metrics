@@ -92,7 +92,8 @@ String-Distance-Metrics/
 
 ## Descripción de las Bases de Datos
 
-### **Base con precios (`base_categoria_con_precio.csv`)**
+### Base con precios (`base_categoria_con_precio.csv`)
+
 - Contiene:
     - `producto`
     - `categoria`
