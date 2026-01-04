@@ -94,7 +94,7 @@ String-Distance-Metrics/
 
 ### Base con precios (`base_categoria_con_precio.csv`)
 
-- Contiene:
+- Contiene los siguientes campos:
     - `producto`
     - `categoria`
     - `pais`
