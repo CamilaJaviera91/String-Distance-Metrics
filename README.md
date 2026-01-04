@@ -145,7 +145,8 @@ Este dataset simula un escenario real donde los datos provienen de distintas fue
 
 ## Lógica Principal del Código
 
-### **Generación de productos y categorías**
+### Generación de productos y categorías
+
 - Se crean 50 productos con una categoría asociada:
     - Electrónica
     - Hogar
