@@ -140,6 +140,7 @@ Aproximadamente un **30% de los registros contienen errores tipográficos realis
 - `ADIDAS → ADIDSA`
 
 Este dataset simula un escenario real donde los datos provienen de distintas fuentes con inconsistencias, siendo ideal para pruebas de **fuzzy matching y record linkage**.
+
 ---
 
 ## **Lógica Principal del Código**
