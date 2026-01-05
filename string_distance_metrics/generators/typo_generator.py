@@ -6,11 +6,11 @@ def generate_realistic_typo(text: str) -> str:
 
     typo_type = random.choice(["keyboard", "drop", "dup", "swap", "replace_common"])
 
-    keyboard_neighbors = {"a": ["s", "q", "z"], 
-                          "s": ["a", "d", "w", "x"],
-                          "e": ["w", "r", "d"], 
-                          "o": ["i", "p", "l"],
-                          "n": ["b", "m", "h"],}
+    keyboard_neighbors = {"q": ["w", "a"], "w": ["q", "e", "s"], "e": ["w", "r", "d"], 
+                          "r": ["e", "t", "f"], "t": ["r", "y", "g"], "y": ["t", "u", "h"], 
+                          "u": ["y", "i", "j"], "i": ["u", "o", "k"], "o": ["i", "p", "l"], 
+                          "p": ["o", "l", "ñ"], "a": ["q", "s", "z"], 
+                          "s": ["a", "d", "w", "x", "z"],}
 
     if not text_list:
         return text
