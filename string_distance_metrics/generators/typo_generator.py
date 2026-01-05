@@ -6,11 +6,16 @@ def generate_realistic_typo(text: str) -> str:
 
     typo_type = random.choice(["keyboard", "drop", "dup", "swap", "replace_common"])
 
-    keyboard_neighbors = {"q": ["w", "a"], "w": ["q", "e", "s"], "e": ["w", "r", "d"], 
-                          "r": ["e", "t", "f"], "t": ["r", "y", "g"], "y": ["t", "u", "h"], 
-                          "u": ["y", "i", "j"], "i": ["u", "o", "k"], "o": ["i", "p", "l"], 
-                          "p": ["o", "l", "ñ"], "a": ["q", "s", "z"], 
-                          "s": ["a", "d", "w", "x", "z"], "d": ["e", "s", "f", "x", "c"]}
+    keyboard_neighbors = {"q": ["w", "a", "1", "2"],
+                          "w": ["q", "e", "a", "s", "2", "3"],
+                          "e": ["w", "r", "s", "d", "3", "4"],
+                          "r": ["e", "t", "d", "f", "4", "5"],
+                          "t": ["r", "y", "f", "g", "5", "6"],
+                          "y": ["t", "u", "g", "h", "6", "7"],
+                          "u": ["y", "i", "h", "j", "7", "8"],
+                          "i": ["u", "o", "j", "k", "8", "9"],
+                          "o": ["i", "p", "k", "l", "9", "0"],
+                          "p": ["o", "l", "ñ", "0"],}
 
     if not text_list:
         return text
