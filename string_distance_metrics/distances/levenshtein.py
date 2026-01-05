@@ -18,3 +18,12 @@ def levenshtein_distance(a: str, b: str) -> int:
         previous_row = current_row
 
     return previous_row[-1]
+
+def levenshtein_ratio(a: str, b: str) -> float:
+    dist = levenshtein_distance(a, b)
+    max_len = max(len(a), len(b))
+    
+    if max_len == 0:
+        return 1.0 # Cadenas vacías son idénticas
+        
+    return 1 - (dist / max_len)
