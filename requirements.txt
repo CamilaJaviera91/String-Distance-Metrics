@@ -1,4 +1,2 @@
 pandas
 duckdb
-unittest
-distance
