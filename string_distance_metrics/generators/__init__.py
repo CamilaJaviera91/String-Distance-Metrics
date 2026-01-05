@@ -1,1 +1,1 @@
-from typo_generator import generate_realistic_typo
+from .typo_generator import generate_realistic_typo

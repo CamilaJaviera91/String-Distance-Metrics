@@ -1,1 +1,1 @@
-from normalizer import normalize_string
+from .normalizer import normalize_string
