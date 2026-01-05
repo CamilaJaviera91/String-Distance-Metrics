@@ -10,7 +10,7 @@ def generate_realistic_typo(text: str) -> str:
                           "r": ["e", "t", "f"], "t": ["r", "y", "g"], "y": ["t", "u", "h"], 
                           "u": ["y", "i", "j"], "i": ["u", "o", "k"], "o": ["i", "p", "l"], 
                           "p": ["o", "l", "ñ"], "a": ["q", "s", "z"], 
-                          "s": ["a", "d", "w", "x", "z"],}
+                          "s": ["a", "d", "w", "x", "z"], "d": ["e", "s", "f", "x", "c"]}
 
     if not text_list:
         return text
