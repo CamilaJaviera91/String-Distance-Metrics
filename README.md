@@ -27,7 +27,7 @@ El proyecto ofrece una implementación centralizada de algoritmos de **distancia
 
 - Generar datasets sintéticos.
 - Inyectar errores tipográficos realistas.
-- Normalizar texto para mejorar la comparación
+- Normalizar texto para mejorar la comparación.
 - Medir similitud entre campos textuales
 
 Este tipo de herramientas se utiliza comúnmente en procesos de *data cleaning*, *record linkage*, *entity matching* y en la integración de datos heterogéneos.
