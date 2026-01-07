@@ -1,3 +1,9 @@
+![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+
+---
+
 # String Distance Metrics
 
 Este repositorio contiene una **colección de métodos y algoritmos de métricas de distancia y similitud entre cadenas de texto**, diseñados para cuantificar qué tan similares o diferentes son dos strings (*string matching / string similarity*).
