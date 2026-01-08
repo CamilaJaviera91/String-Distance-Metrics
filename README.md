@@ -131,7 +131,7 @@ Los precios se generan de forma aleatoria, pero respetando **rangos realistas po
 
 Aproximadamente un **30% de los registros contienen errores tipográficos realistas**, tales como:
 
-- Teclas cercanas en el teclado
+- Teclas cercanas en el teclado.
 - Eliminación de caracteres
 - Duplicación de letras
 - Intercambio de caracteres (swap)
