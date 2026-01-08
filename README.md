@@ -133,7 +133,7 @@ Aproximadamente un **30% de los registros contienen errores tipográficos realis
 
 - Teclas cercanas en el teclado.
 - Eliminación de caracteres.
-- Duplicación de letras
+- Duplicación de letras.
 - Intercambio de caracteres (swap)
 - Reemplazos comunes en la vida real
 
