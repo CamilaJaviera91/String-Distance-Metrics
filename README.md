@@ -43,7 +43,7 @@ Este tipo de herramientas se utiliza comúnmente en procesos de *data cleaning*,
 - Implementaciones propias de métricas de distancia.
 - Funciones de normalización textual.
 - Arquitectura modular para extender métricas o pipelines.
-- Tests automatizados para asegurar calidad de código
+- Tests automatizados para asegurar calidad de código.
 
 ---
 
