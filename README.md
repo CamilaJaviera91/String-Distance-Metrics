@@ -40,7 +40,7 @@ Este tipo de herramientas se utiliza comúnmente en procesos de *data cleaning*,
 ## Características
 
 - Generación de typos realistas que simulan errores humanos.
-- Implementaciones propias de métricas de distancia
+- Implementaciones propias de métricas de distancia.
 - Funciones de normalización textual
 - Arquitectura modular para extender métricas o pipelines
 - Tests automatizados para asegurar calidad de código
