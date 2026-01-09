@@ -207,7 +207,7 @@ Ingeniera de Datos
 
 1. Haz un fork del repositorio
 2. Crea una rama con tu feature
-3. Abre un Pull Request con una descripción clara de los cambios
+3. Abre un Pull Request con una descripción clara de los cambios.
 
 ---
 
