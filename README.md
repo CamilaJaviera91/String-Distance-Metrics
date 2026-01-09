@@ -177,7 +177,7 @@ Este dataset simula un escenario real donde los datos provienen de distintas fue
   - mapas de teclas cercanas.
   - manipulación directa de caracteres.
   - reglas comunes de error humano.
-  - aleatoriedad controlada (~30%)
+  - aleatoriedad controlada (~30%).
 
 ---
 
