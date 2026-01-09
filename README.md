@@ -174,7 +174,7 @@ Este dataset simula un escenario real donde los datos provienen de distintas fue
 ### Inyección de typos
 
 - Se aplica una función de generación de errores basada en:
-  - mapas de teclas cercanas
+  - mapas de teclas cercanas.
   - manipulación directa de caracteres
   - reglas comunes de error humano
   - aleatoriedad controlada (~30%)
