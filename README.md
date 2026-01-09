@@ -14,7 +14,7 @@ Estas métricas son especialmente útiles en tareas de **limpieza de datos, fuzz
 
 ## Documentación Visual de Algoritmos
 
-- **Sugerencia:**
+- Sugerencia:
 
 | Métrica | Caso de Uso Ideal |
 | :--- | :--- |
