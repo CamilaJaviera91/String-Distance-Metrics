@@ -19,7 +19,6 @@ Estas métricas son especialmente útiles en tareas de **limpieza de datos, fuzz
 | Métrica      | Caso de Uso Ideal                                              |
 | ------------ | -------------------------------------------------------------- |
 | Levenshtein  | Errores de escritura general (inserción, borrado).             |
-| Levenshtein  | Útil para intercambios de letras adyacentes (transposiciones). |
 | Jaro-Winkler | Ideal para nombres propios o strings cortos.                   |
 | Soundex      | Similitud fonética (como suenan las palabras).                 |
 | Metaphone    | Similitud fonética (como suenan las palabras).                 |
