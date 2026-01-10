@@ -16,7 +16,7 @@ Estas métricas son especialmente útiles en tareas de **limpieza de datos, fuzz
 
 - Sugerencia:
 
-| Métrica | Caso de Uso Ideal |
+| Métrica      | Caso de Uso Ideal |
 | ------------ | --- |
 | Levenshtein  | Errores de escritura general (inserción, borrado). |
 | Levenshtein  | Útil para intercambios de letras adyacentes (transposiciones). |
