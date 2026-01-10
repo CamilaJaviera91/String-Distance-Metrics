@@ -19,7 +19,7 @@ Estas métricas son especialmente útiles en tareas de **limpieza de datos, fuzz
 | Métrica | Caso de Uso Ideal |
 | --- | --- |
 | Levenshtein | Errores de escritura general (inserción, borrado). |
-| **Damerau-Levenshtein** | Útil para intercambios de letras adyacentes (transposiciones). |
+| **Damerau-Levenshtein | Útil para intercambios de letras adyacentes (transposiciones). |
 | **Jaro-Winkler** | Ideal para nombres propios o strings cortos. |
 | **Soundex / Metaphone** | Similitud fonética (como suenan las palabras). |
 
