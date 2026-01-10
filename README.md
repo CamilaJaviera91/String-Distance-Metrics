@@ -100,12 +100,12 @@ String-Distance-Metrics/
 
 Contiene los siguientes campos:
 
-    - `producto`
-    - `categoria`
-    - `pais`
-    - `anio`
-    - `marca`
-    - `precio_usd`
+    - producto
+    - categoria
+    - pais
+    - anio
+    - marca
+    - precio_usd
 
 Los precios se generan de forma aleatoria, pero respetando **rangos realistas por categoría**, lo que permite simular escenarios cercanos a datos reales.
 
