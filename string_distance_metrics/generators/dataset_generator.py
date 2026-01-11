@@ -1,3 +1,15 @@
 import pandas as pd
 import random
 from generators.typo_generator import generate_realistic_typo
+
+def generate_base_data(n_rows=100):
+
+    config_categorias = {
+        "Electrónica": (80, 1500),
+        "Hogar": (10, 300),
+        "Deporte": (15, 400),
+        "Juguetería": (5, 120),
+        "Computación": (90, 2000),
+        "Belleza": (5, 200),
+        "Automotriz": (20, 800)
+    }
