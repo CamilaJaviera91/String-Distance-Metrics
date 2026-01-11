@@ -48,3 +48,7 @@ def generate_base_data(n_rows=100):
             "precio_usd": round(random.uniform(rango[0], rango[1]), 2)
         }
         data.append(registro)
+
+    df = pd.DataFrame(data)
+    df.to_csv("base_categoria_con_precio.csv", index=False, encoding='utf-8')
+    return df
