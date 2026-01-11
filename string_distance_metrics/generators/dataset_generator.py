@@ -37,9 +37,8 @@ def generate_base_data(n_rows=100):
         rango = config_categorias[cat]
         nombre_original = random.choice(productos_base[cat])
         
-        # Metadatos comunes
         comun = {
-            "id_referencia": i, # ID para poder cruzar las bases después
+            "id_referencia": i,
             "categoria": cat,
             "pais": random.choice(paises),
             "anio": random.choice([2024, 2025]),
@@ -47,22 +46,27 @@ def generate_base_data(n_rows=100):
             "precio_usd": round(random.uniform(rango[0], rango[1]), 2)
         }
 
-        # 1. Registro para Base Limpia
         reg_clean = comun.copy()
         reg_clean["producto"] = nombre_original
         data_clean.append(reg_clean)
 
-        # 2. Registro para Base con Typos
         reg_typo = comun.copy()
         reg_typo["producto"] = generate_realistic_typo(nombre_original)
         data_typo.append(reg_typo)
 
-    # Crear y guardar los dos archivos
     df_clean = pd.DataFrame(data_clean)
     df_typo = pd.DataFrame(data_typo)
 
-    df_clean.to_csv("base_maestra_limpia.csv", index=False, encoding='utf-8')
-    df_typo.to_csv("base_usuario_con_typos.csv", index=False, encoding='utf-8')
+    ruta = "string_distance_metrics/data"
+
+    if not os.path.exists(ruta):
+        os.makedirs(ruta)
+        print("Ruta creada con éxito.")
+    else:
+        print("La ruta ya existe.")
+
+    df_clean.to_csv(f"{ruta}/base_maestra_limpia.csv", index=False, encoding='utf-8')
+    df_typo.to_csv(f"{ruta}/base_usuario_con_typos.csv", index=False, encoding='utf-8')
 
     print(f"✅ Generadas {n_rows} filas en 'base_maestra_limpia.csv' y 'base_usuario_con_typos.csv'")
 
