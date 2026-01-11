@@ -40,7 +40,7 @@ def generate_base_data(n_rows=100):
         
         registro = {
             "producto": producto_con_error,
-            "producto_original": nombre_base, # Útil para validar después
+            "producto_original": nombre_base, 
             "categoria": cat,
             "pais": random.choice(paises),
             "anio": random.choice(anios),
