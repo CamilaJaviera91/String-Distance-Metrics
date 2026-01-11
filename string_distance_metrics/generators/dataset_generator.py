@@ -13,3 +13,7 @@ def generate_base_data(n_rows=100):
         "Belleza": (5, 200),
         "Automotriz": (20, 800)
     }
+
+    paises = ["Chile", "Argentina", "México", "Colombia", "Perú"]
+    marcas = ["Generic", "Premium", "EcoLine", "MasterTech", "Ultra"]
+    anios = [2023, 2024, 2025]
