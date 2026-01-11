@@ -1,6 +1,6 @@
 import pandas as pd
 import random
-from generators.typo_generator import generate_realistic_typo
+from typo_generator import generate_realistic_typo
 
 def generate_base_data(n_rows=100):
 
@@ -28,7 +28,8 @@ def generate_base_data(n_rows=100):
         "Automotriz": ["Neumático", "Aceite Motor", "Radio Auto", "Frenos"]
     }
 
-    data = []
+    data_clean = []
+    data_typo = []
 
     for _ in range(n_rows):
 
@@ -52,3 +53,8 @@ def generate_base_data(n_rows=100):
     df = pd.DataFrame(data)
     df.to_csv("base_categoria_con_precio.csv", index=False, encoding='utf-8')
     return df
+
+if __name__ == "__main__":
+    df_resultado = generate_base_data(100)
+    print("✅ Archivo 'base_categoria_con_precio.csv' generado.")
+    print(df_resultado.head())
