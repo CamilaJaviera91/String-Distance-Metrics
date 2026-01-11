@@ -1,6 +1,7 @@
 import pandas as pd
 import random
 from typo_generator import generate_realistic_typo
+import os
 
 def generate_base_data(n_rows=100):
 
