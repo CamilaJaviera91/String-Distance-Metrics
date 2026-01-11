@@ -64,3 +64,6 @@ def generate_base_data(n_rows=100):
     df_typo.to_csv("base_usuario_con_typos.csv", index=False, encoding='utf-8')
 
     print(f"✅ Generadas {n_rows} filas en 'base_maestra_limpia.csv' y 'base_usuario_con_typos.csv'")
+
+if __name__ == "__main__":
+    generate_base_data(100)
