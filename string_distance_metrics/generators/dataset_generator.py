@@ -27,3 +27,24 @@ def generate_base_data(n_rows=100):
         "Belleza": ["Perfume", "Crema Facial", "Secador", "Maquillaje"],
         "Automotriz": ["Neumático", "Aceite Motor", "Radio Auto", "Frenos"]
     }
+
+    data = []
+
+    for _ in range(n_rows):
+
+        cat = random.choice(list(config_categorias.keys()))
+        rango = config_categorias[cat]
+        
+        nombre_base = random.choice(productos_base[cat])
+        producto_con_error = generate_realistic_typo(nombre_base)
+        
+        registro = {
+            "producto": producto_con_error,
+            "producto_original": nombre_base, # Útil para validar después
+            "categoria": cat,
+            "pais": random.choice(paises),
+            "anio": random.choice(anios),
+            "marca": random.choice(marcas),
+            "precio_usd": round(random.uniform(rango[0], rango[1]), 2)
+        }
+        data.append(registro)
