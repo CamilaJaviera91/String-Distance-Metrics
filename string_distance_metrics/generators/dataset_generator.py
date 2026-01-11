@@ -31,30 +31,36 @@ def generate_base_data(n_rows=100):
     data_clean = []
     data_typo = []
 
-    for _ in range(n_rows):
-
+    for i in range(n_rows):
         cat = random.choice(list(config_categorias.keys()))
         rango = config_categorias[cat]
+        nombre_original = random.choice(productos_base[cat])
         
-        nombre_base = random.choice(productos_base[cat])
-        producto_con_error = generate_realistic_typo(nombre_base)
-        
-        registro = {
-            "producto": producto_con_error,
-            "producto_original": nombre_base, 
+        # Metadatos comunes
+        comun = {
+            "id_referencia": i, # ID para poder cruzar las bases después
             "categoria": cat,
             "pais": random.choice(paises),
-            "anio": random.choice(anios),
+            "anio": random.choice([2024, 2025]),
             "marca": random.choice(marcas),
             "precio_usd": round(random.uniform(rango[0], rango[1]), 2)
         }
-        data.append(registro)
 
-    df = pd.DataFrame(data)
-    df.to_csv("base_categoria_con_precio.csv", index=False, encoding='utf-8')
-    return df
+        # 1. Registro para Base Limpia
+        reg_clean = comun.copy()
+        reg_clean["producto"] = nombre_original
+        data_clean.append(reg_clean)
 
-if __name__ == "__main__":
-    df_resultado = generate_base_data(100)
-    print("✅ Archivo 'base_categoria_con_precio.csv' generado.")
-    print(df_resultado.head())
+        # 2. Registro para Base con Typos
+        reg_typo = comun.copy()
+        reg_typo["producto"] = generate_realistic_typo(nombre_original)
+        data_typo.append(reg_typo)
+
+    # Crear y guardar los dos archivos
+    df_clean = pd.DataFrame(data_clean)
+    df_typo = pd.DataFrame(data_typo)
+
+    df_clean.to_csv("base_maestra_limpia.csv", index=False, encoding='utf-8')
+    df_typo.to_csv("base_usuario_con_typos.csv", index=False, encoding='utf-8')
+
+    print(f"✅ Generadas {n_rows} filas en 'base_maestra_limpia.csv' y 'base_usuario_con_typos.csv'")
