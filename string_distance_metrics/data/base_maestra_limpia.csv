@@ -1,0 +1,101 @@
+id_referencia,categoria,pais,anio,marca,precio_usd,producto
+0,Electrónica,Colombia,2025,Premium,302.74,Audífonos
+1,Electrónica,Colombia,2025,EcoLine,1429.04,Parlante
+2,Juguetería,Chile,2024,EcoLine,45.3,Legos
+3,Automotriz,México,2025,MasterTech,276.34,Frenos
+4,Belleza,Colombia,2024,MasterTech,192.49,Secador
+5,Juguetería,Chile,2025,Generic,104.51,Legos
+6,Automotriz,Colombia,2025,EcoLine,230.98,Radio Auto
+7,Juguetería,Colombia,2025,Generic,86.74,Legos
+8,Automotriz,Argentina,2025,EcoLine,278.66,Radio Auto
+9,Automotriz,Chile,2024,Ultra,540.78,Neumático
+10,Belleza,Perú,2024,Premium,153.0,Maquillaje
+11,Automotriz,Perú,2025,Generic,161.62,Aceite Motor
+12,Deporte,México,2025,MasterTech,327.42,Cuerda
+13,Electrónica,Perú,2025,EcoLine,595.15,Audífonos
+14,Deporte,Chile,2024,MasterTech,160.6,Mancuernas
+15,Hogar,Chile,2025,Generic,276.32,Mesa
+16,Computación,Chile,2024,EcoLine,1997.49,Teclado Mecánico
+17,Deporte,Chile,2025,EcoLine,325.21,Bicicleta
+18,Automotriz,Perú,2025,Ultra,27.55,Radio Auto
+19,Juguetería,Argentina,2024,Premium,55.78,Peluche
+20,Juguetería,Colombia,2025,Ultra,19.17,Muñeca
+21,Electrónica,Colombia,2024,EcoLine,355.34,Audífonos
+22,Automotriz,México,2024,Premium,255.48,Frenos
+23,Automotriz,Chile,2025,Generic,416.55,Frenos
+24,Automotriz,México,2025,EcoLine,190.88,Radio Auto
+25,Belleza,Chile,2025,Ultra,25.82,Maquillaje
+26,Hogar,México,2025,Generic,171.26,Lámpara
+27,Deporte,Chile,2025,Ultra,324.28,Balón
+28,Deporte,Chile,2024,EcoLine,40.19,Cuerda
+29,Computación,Chile,2025,Ultra,196.54,Teclado Mecánico
+30,Juguetería,Colombia,2024,Premium,107.76,Peluche
+31,Electrónica,Argentina,2024,Premium,1477.44,Parlante
+32,Juguetería,Chile,2025,Ultra,77.58,Legos
+33,Electrónica,Argentina,2024,Ultra,1363.54,Parlante
+34,Deporte,Perú,2025,Premium,236.62,Cuerda
+35,Hogar,Colombia,2025,Generic,89.26,Lámpara
+36,Deporte,Colombia,2025,Generic,185.16,Mancuernas
+37,Belleza,Chile,2025,MasterTech,15.1,Crema Facial
+38,Computación,Chile,2024,EcoLine,595.7,Teclado Mecánico
+39,Belleza,Argentina,2024,MasterTech,185.62,Maquillaje
+40,Computación,Argentina,2024,Ultra,913.85,Teclado Mecánico
+41,Belleza,Argentina,2024,Premium,123.34,Secador
+42,Electrónica,México,2025,Premium,541.61,Cámara
+43,Deporte,México,2025,Generic,45.04,Cuerda
+44,Electrónica,Argentina,2025,Premium,317.74,Cámara
+45,Computación,México,2024,EcoLine,1355.9,Teclado Mecánico
+46,Electrónica,Perú,2025,Ultra,97.04,Televisor
+47,Hogar,Colombia,2024,Premium,132.56,Silla
+48,Automotriz,Perú,2025,EcoLine,580.68,Frenos
+49,Belleza,Perú,2024,Ultra,92.83,Maquillaje
+50,Electrónica,Argentina,2025,Ultra,516.84,Audífonos
+51,Computación,Perú,2024,MasterTech,575.46,Mouse Pad
+52,Automotriz,México,2024,MasterTech,490.75,Frenos
+53,Belleza,Colombia,2024,Generic,193.14,Perfume
+54,Belleza,Colombia,2025,MasterTech,55.56,Maquillaje
+55,Computación,Perú,2024,EcoLine,1404.63,Mouse Pad
+56,Deporte,Argentina,2024,EcoLine,44.49,Mancuernas
+57,Juguetería,México,2024,MasterTech,109.48,Muñeca
+58,Juguetería,Colombia,2025,MasterTech,101.95,Auto control remoto
+59,Electrónica,Chile,2025,Premium,1125.85,Parlante
+60,Automotriz,Perú,2025,MasterTech,599.07,Radio Auto
+61,Hogar,Argentina,2025,Ultra,14.81,Espejo
+62,Belleza,Perú,2024,Ultra,33.82,Secador
+63,Deporte,Argentina,2025,Generic,280.1,Bicicleta
+64,Automotriz,Chile,2025,EcoLine,459.27,Radio Auto
+65,Belleza,Perú,2025,Premium,11.57,Maquillaje
+66,Electrónica,México,2024,Ultra,1123.74,Cámara
+67,Automotriz,Colombia,2025,Ultra,702.19,Frenos
+68,Hogar,Chile,2025,MasterTech,257.83,Silla
+69,Belleza,Colombia,2024,Premium,34.86,Perfume
+70,Automotriz,Chile,2024,Ultra,589.03,Radio Auto
+71,Deporte,Argentina,2025,Generic,179.99,Balón
+72,Juguetería,México,2024,Ultra,68.14,Auto control remoto
+73,Computación,México,2024,EcoLine,375.56,Laptop
+74,Electrónica,Chile,2025,EcoLine,1133.05,Parlante
+75,Juguetería,Perú,2025,Generic,51.32,Muñeca
+76,Belleza,Perú,2025,Ultra,74.76,Perfume
+77,Deporte,México,2024,Premium,126.74,Cuerda
+78,Computación,Argentina,2024,Ultra,772.25,Teclado Mecánico
+79,Automotriz,Chile,2024,Premium,651.93,Aceite Motor
+80,Computación,Colombia,2024,EcoLine,1427.58,Monitor
+81,Hogar,México,2024,MasterTech,190.23,Mesa
+82,Computación,México,2024,MasterTech,1038.46,Mouse Pad
+83,Juguetería,Argentina,2025,EcoLine,109.84,Legos
+84,Juguetería,Colombia,2024,MasterTech,108.14,Muñeca
+85,Hogar,México,2024,Ultra,208.94,Lámpara
+86,Hogar,Chile,2025,Premium,148.78,Mesa
+87,Electrónica,Colombia,2024,Premium,1488.0,Audífonos
+88,Belleza,Colombia,2025,Generic,142.64,Perfume
+89,Computación,Colombia,2025,MasterTech,1090.56,Teclado Mecánico
+90,Electrónica,México,2025,MasterTech,571.77,Parlante
+91,Belleza,Argentina,2024,Premium,55.9,Crema Facial
+92,Juguetería,Argentina,2025,Generic,98.53,Muñeca
+93,Automotriz,Chile,2025,Generic,435.63,Frenos
+94,Juguetería,México,2025,Ultra,95.15,Legos
+95,Deporte,Perú,2025,MasterTech,369.78,Bicicleta
+96,Deporte,Colombia,2025,Generic,203.88,Bicicleta
+97,Automotriz,México,2024,MasterTech,38.93,Aceite Motor
+98,Automotriz,México,2025,MasterTech,733.18,Radio Auto
+99,Electrónica,México,2025,Premium,539.32,Audífonos
