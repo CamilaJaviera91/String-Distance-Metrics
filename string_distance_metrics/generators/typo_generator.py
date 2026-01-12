@@ -48,3 +48,6 @@ def generate_realistic_typo(text: str) -> str:
         - ``dup``: duplica un carácter aleatorio.
         - ``swap``: intercambia un carácter con el siguiente.
         - ``replace_common``: reemplaza un carácter por una letra aleatoria del alfabeto.
+    
+    Args:
+        text (str): Texto original sobre el que se aplicará el typo.
