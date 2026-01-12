@@ -37,3 +37,7 @@ EYBOARD_NEIGHBORS: dict[str, list[str]] = {
 TYPO_TYPES: list[str] = ["keyboard", "drop", "dup", "swap", "replace_common"]
 
 def generate_realistic_typo(text: str) -> str:
+
+    """
+    Genera un typo realista sobre un string de entrada, simulando errores
+    comunes de escritura humana en teclado QWERTY.
