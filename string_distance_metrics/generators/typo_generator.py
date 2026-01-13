@@ -69,3 +69,5 @@ def generate_realistic_typo(text: str) -> str:
 
     if not text:
         return text
+    
+    text_list: list[str] = list(text)
