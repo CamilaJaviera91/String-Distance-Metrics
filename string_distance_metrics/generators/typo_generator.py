@@ -55,3 +55,8 @@ def generate_realistic_typo(text: str) -> str:
     Returns:
         str: Texto con un error tipográfico introducido. Si el texto está
              vacío, se devuelve sin modificaciones.
+
+    Examples:
+        >>> generate_realistic_typo("Laptop")
+        'Lqptop'   # ejemplo con typo de teclado en 'a' → 'q'
+
