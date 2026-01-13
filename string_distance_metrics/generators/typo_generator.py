@@ -66,3 +66,6 @@ def generate_realistic_typo(text: str) -> str:
         >>> generate_realistic_typo("")
         ''         # texto vacío, sin cambios
     """
+
+    if not text:
+        return text
