@@ -71,3 +71,4 @@ def generate_realistic_typo(text: str) -> str:
         return text
     
     text_list: list[str] = list(text)
+    typo_type: str = random.choice(TYPO_TYPES)
