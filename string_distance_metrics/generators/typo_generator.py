@@ -42,7 +42,7 @@ def generate_realistic_typo(text: str) -> str:
     Genera un typo realista sobre un string de entrada, simulando errores
     comunes de escritura humana en teclado QWERTY.
 
-     Los tipos de error posibles son:
+    Los tipos de error posibles son:
         - ``keyboard``: reemplaza un carácter por uno vecino en el teclado.
         - ``drop``: elimina un carácter aleatorio.
         - ``dup``: duplica un carácter aleatorio.
@@ -51,3 +51,7 @@ def generate_realistic_typo(text: str) -> str:
     
     Args:
         text (str): Texto original sobre el que se aplicará el typo.
+    
+    Returns:
+        str: Texto con un error tipográfico introducido. Si el texto está
+             vacío, se devuelve sin modificaciones.
