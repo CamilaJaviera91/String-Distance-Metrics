@@ -74,3 +74,5 @@ def generate_realistic_typo(text: str) -> str:
     typo_type: str = random.choice(TYPO_TYPES)
     idx: int = random.randint(0, len(text_list) - 1)
     char: str = text_list[idx]
+
+    if typo_type == "keyboard" and char.lower() in KEYBOARD_NEIGHBORS:
