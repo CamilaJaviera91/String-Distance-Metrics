@@ -82,4 +82,6 @@ def generate_realistic_typo(text: str) -> str:
         del text_list[idx]
     
     elif typo_type == "dup":
-        
+        text_list.insert(idx, char)
+ 
+    
