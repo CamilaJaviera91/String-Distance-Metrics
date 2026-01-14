@@ -2,7 +2,7 @@ import random
 
 # Mapa de teclas vecinas en un teclado QWERTY estándar (incluyendo ñ).
 
-EYBOARD_NEIGHBORS: dict[str, list[str]] = {
+KEYBOARD_NEIGHBORS: dict[str, list[str]] = {
     "q": ["w", "a", "1", "2"],
     "w": ["q", "e", "a", "s", "2", "3"],
     "e": ["w", "r", "s", "d", "3", "4"],
@@ -76,3 +76,4 @@ def generate_realistic_typo(text: str) -> str:
     char: str = text_list[idx]
 
     if typo_type == "keyboard" and char.lower() in KEYBOARD_NEIGHBORS:
+        text_list[idx] = random.choice(KEYBOARD_NEIGHBORS[char.lower()])
