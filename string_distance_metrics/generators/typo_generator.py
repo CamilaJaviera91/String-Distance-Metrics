@@ -77,3 +77,5 @@ def generate_realistic_typo(text: str) -> str:
 
     if typo_type == "keyboard" and char.lower() in KEYBOARD_NEIGHBORS:
         text_list[idx] = random.choice(KEYBOARD_NEIGHBORS[char.lower()])
+
+    elif typo_type == "drop":
