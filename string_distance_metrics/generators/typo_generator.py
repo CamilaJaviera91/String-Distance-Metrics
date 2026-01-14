@@ -80,3 +80,6 @@ def generate_realistic_typo(text: str) -> str:
 
     elif typo_type == "drop":
         del text_list[idx]
+    
+    elif typo_type == "dup":
+        
