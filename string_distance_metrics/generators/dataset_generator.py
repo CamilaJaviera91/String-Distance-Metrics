@@ -10,3 +10,12 @@ from typo_generator import generate_realistic_typo
 # ---------------------------------------------------------------------------
 
 # Rango de precios (USD) por categoría: (precio_min, precio_max)
+CONFIG_CATEGORIAS: dict[str, tuple[float, float]] = {
+    "Electrónica": (80, 1500),
+    "Hogar": (10, 300),
+    "Deporte": (15, 400),
+    "Juguetería": (5, 120),
+    "Computación": (90, 2000),
+    "Belleza": (5, 200),
+    "Automotriz": (20, 800),
+}
