@@ -87,4 +87,5 @@ def generate_realistic_typo(text: str) -> str:
     elif typo_type == "swap" and idx < len(text_list) - 1:
         text_list[idx], text_list[idx + 1] = text_list[idx + 1], text_list[idx]
  
-    
+    elif typo_type == "replace_common":
+        
