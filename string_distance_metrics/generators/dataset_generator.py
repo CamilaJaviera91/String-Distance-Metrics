@@ -25,3 +25,13 @@ MARCAS: list[str] = ["Generic", "Premium", "EcoLine", "MasterTech", "Ultra"]
 ANIOS: list[int] = [2023, 2024, 2025]
 
 # Productos disponibles por categoría
+PRODUCTOS_BASE: dict[str, list[str]] = {
+    "Electrónica": ["Audífonos", "Televisor", "Cámara", "Parlante"],
+    "Hogar": ["Lámpara", "Silla", "Mesa", "Espejo"],
+    "Deporte": ["Mancuernas", "Balón", "Bicicleta", "Cuerda"],
+    "Juguetería": ["Muñeca", "Auto control remoto", "Legos", "Peluche"],
+    "Computación": ["Laptop", "Monitor", "Teclado Mecánico", "Mouse Pad"],
+    "Belleza": ["Perfume", "Crema Facial", "Secador", "Maquillaje"],
+    "Automotriz": ["Neumático", "Aceite Motor", "Radio Auto", "Frenos"],
+}
+
