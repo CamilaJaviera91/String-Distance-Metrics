@@ -19,3 +19,8 @@ CONFIG_CATEGORIAS: dict[str, tuple[float, float]] = {
     "Belleza": (5, 200),
     "Automotriz": (20, 800),
 }
+
+PAISES: list[str] = ["Chile", "Argentina", "México", "Colombia", "Perú"]
+MARCAS: list[str] = ["Generic", "Premium", "EcoLine", "MasterTech", "Ultra"]
+ANIOS: list[int] = [2023, 2024, 2025]
+
