@@ -43,4 +43,7 @@ RUTA_SALIDA: str = "string_distance_metrics/data"
 # ---------------------------------------------------------------------------
 
 def _crear_ruta_si_no_existe(ruta: str) -> None:
-   
+    """
+    Crea el directorio indicado si aún no existe.
+
+    
