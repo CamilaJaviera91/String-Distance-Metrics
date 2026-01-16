@@ -46,4 +46,7 @@ def _crear_ruta_si_no_existe(ruta: str) -> None:
     """
     Crea el directorio indicado si aún no existe.
 
+    Args:
+        ruta (str): Ruta del directorio a verificar o crear.
+
     
