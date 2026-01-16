@@ -24,3 +24,4 @@ PAISES: list[str] = ["Chile", "Argentina", "México", "Colombia", "Perú"]
 MARCAS: list[str] = ["Generic", "Premium", "EcoLine", "MasterTech", "Ultra"]
 ANIOS: list[int] = [2023, 2024, 2025]
 
+# Productos disponibles por categoría
