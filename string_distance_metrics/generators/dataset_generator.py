@@ -37,3 +37,7 @@ PRODUCTOS_BASE: dict[str, list[str]] = {
 
 # Ruta de salida para los CSV generados
 RUTA_SALIDA: str = "string_distance_metrics/data"
+
+# ---------------------------------------------------------------------------
+# Funciones
+# ---------------------------------------------------------------------------
