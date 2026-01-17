@@ -62,4 +62,8 @@ def _generar_registro_base(idx: int) -> tuple[dict, str]:
     """
     Genera un registro base con campos comunes y el nombre del producto original.
 
+    Selecciona aleatoriamente una categoría, un producto dentro de ella,
+    un país, un año y una marca, y calcula un precio aleatorio dentro del
+    rango definido para la categoría.
+
     
