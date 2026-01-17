@@ -69,4 +69,10 @@ def _generar_registro_base(idx: int) -> tuple[dict, str]:
     Args:
         idx (int): Identificador numérico único del registro (``id_referencia``).
 
+    Returns:
+        tuple[dict, str]: Una tupla con:
+            - ``comun`` (dict): Campos compartidos entre el registro limpio y el
+              registro con typo (id, categoría, país, año, marca, precio).
+            - ``nombre_original`` (str): Nombre del producto sin errores tipográficos.
+    """
     
