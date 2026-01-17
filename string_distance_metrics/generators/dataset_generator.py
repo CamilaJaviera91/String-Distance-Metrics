@@ -66,4 +66,7 @@ def _generar_registro_base(idx: int) -> tuple[dict, str]:
     un país, un año y una marca, y calcula un precio aleatorio dentro del
     rango definido para la categoría.
 
+    Args:
+        idx (int): Identificador numérico único del registro (``id_referencia``).
+
     
