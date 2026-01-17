@@ -59,4 +59,7 @@ def _crear_ruta_si_no_existe(ruta: str) -> None:
         print(f"La ruta '{ruta}' ya existe.")
 
 def _generar_registro_base(idx: int) -> tuple[dict, str]:
-   
+    """
+    Genera un registro base con campos comunes y el nombre del producto original.
+
+    
