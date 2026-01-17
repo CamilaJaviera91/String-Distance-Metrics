@@ -57,3 +57,6 @@ def _crear_ruta_si_no_existe(ruta: str) -> None:
         print(f"Ruta '{ruta}' creada con éxito.")
     else:
         print(f"La ruta '{ruta}' ya existe.")
+
+def _generar_registro_base(idx: int) -> tuple[dict, str]:
+   
