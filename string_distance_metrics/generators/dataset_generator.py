@@ -52,4 +52,7 @@ def _crear_ruta_si_no_existe(ruta: str) -> None:
     Returns:
         None
     """
+    if not os.path.exists(ruta):
+        os.makedirs(ruta)
+        print(f"Ruta '{ruta}' creada con éxito.")
     
