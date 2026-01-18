@@ -81,4 +81,5 @@ def _generar_registro_base(idx: int) -> tuple[dict, str]:
 
     comun: dict = {
         "id_referencia": idx,
+        "categoria": cat,
         
