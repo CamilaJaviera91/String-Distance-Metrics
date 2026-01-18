@@ -77,4 +77,4 @@ def _generar_registro_base(idx: int) -> tuple[dict, str]:
     """
     cat: str = random.choice(list(CONFIG_CATEGORIAS.keys()))
     rango: tuple[float, float] = CONFIG_CATEGORIAS[cat]
-    
+    nombre_original: str = random.choice(PRODUCTOS_BASE[cat])
