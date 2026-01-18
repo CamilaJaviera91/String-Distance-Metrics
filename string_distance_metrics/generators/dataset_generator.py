@@ -85,4 +85,7 @@ def _generar_registro_base(idx: int) -> tuple[dict, str]:
         "pais": random.choice(PAISES),
         "anio": random.choice([2024, 2025]),
         "marca": random.choice(MARCAS),
-        
+        "precio_usd": round(random.uniform(rango[0], rango[1]), 2),
+    }
+
+    
