@@ -75,4 +75,5 @@ def _generar_registro_base(idx: int) -> tuple[dict, str]:
               registro con typo (id, categoría, país, año, marca, precio).
             - ``nombre_original`` (str): Nombre del producto sin errores tipográficos.
     """
+    cat: str = random.choice(list(CONFIG_CATEGORIAS.keys()))
     
