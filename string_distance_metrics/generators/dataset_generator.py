@@ -94,4 +94,7 @@ def generate_base_data(n_rows: int = 100) -> None:
     """
     Genera dos datasets sintéticos de productos y los exporta como archivos CSV.
  
+    Crea ``n_rows`` registros con datos ficticios de productos (categoría, país,
+    marca, precio, año). A partir de cada registro produce dos versiones:
+ 
     
