@@ -93,3 +93,5 @@ def _generar_registro_base(idx: int) -> tuple[dict, str]:
 def generate_base_data(n_rows: int = 100) -> None: 
     """
     Genera dos datasets sintéticos de productos y los exporta como archivos CSV.
+ 
+    
