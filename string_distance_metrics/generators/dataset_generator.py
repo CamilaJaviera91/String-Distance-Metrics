@@ -88,4 +88,5 @@ def _generar_registro_base(idx: int) -> tuple[dict, str]:
         "precio_usd": round(random.uniform(rango[0], rango[1]), 2),
     }
 
-    
+    return comun, nombre_original
+
