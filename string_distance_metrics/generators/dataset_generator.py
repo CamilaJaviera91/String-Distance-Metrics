@@ -117,4 +117,5 @@ def generate_base_data(n_rows: int = 100) -> None:
         La ruta 'string_distance_metrics/data' ya existe.
         ✅ Generadas 50 filas en 'base_maestra_limpia.csv' y 'base_usuario_con_typos.csv'
     """
+    data_clean: list[dict] = []
     
