@@ -103,4 +103,7 @@ def generate_base_data(n_rows: int = 100) -> None:
  
     Ambos archivos se guardan en ``string_distance_metrics/data/``.
  
+    Args:
+        n_rows (int): Número de filas a generar. Por defecto, 100.
+ 
     
