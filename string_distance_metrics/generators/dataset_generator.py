@@ -106,4 +106,7 @@ def generate_base_data(n_rows: int = 100) -> None:
     Args:
         n_rows (int): Número de filas a generar. Por defecto, 100.
  
+    Returns:
+        None
+ 
     
