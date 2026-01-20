@@ -109,4 +109,7 @@ def generate_base_data(n_rows: int = 100) -> None:
     Returns:
         None
  
+    Raises:
+        OSError: Si no es posible crear el directorio de salida.
+ 
     
