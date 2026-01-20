@@ -101,4 +101,6 @@ def generate_base_data(n_rows: int = 100) -> None:
     - **base_usuario_con_typos.csv**: contiene el nombre del producto con un
       error tipográfico realista generado por :func:`generate_realistic_typo`.
  
+    Ambos archivos se guardan en ``string_distance_metrics/data/``.
+ 
     
