@@ -121,4 +121,6 @@ def generate_base_data(n_rows: int = 100) -> None:
     data_typo: list[dict] = []
  
     for i in range(n_rows):
+        comun, nombre_original = _generar_registro_base(i)
+ 
         
