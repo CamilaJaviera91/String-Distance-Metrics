@@ -129,4 +129,5 @@ def generate_base_data(n_rows: int = 100) -> None:
         data_clean.append(reg_clean)
         data_typo.append(reg_typo)
  
+    df_clean: pd.DataFrame = pd.DataFrame(data_clean)
     
