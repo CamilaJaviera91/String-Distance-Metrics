@@ -123,4 +123,5 @@ def generate_base_data(n_rows: int = 100) -> None:
     for i in range(n_rows):
         comun, nombre_original = _generar_registro_base(i)
  
+        reg_clean: dict = {**comun, "producto": nombre_original}
         
