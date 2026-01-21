@@ -124,4 +124,6 @@ def generate_base_data(n_rows: int = 100) -> None:
         comun, nombre_original = _generar_registro_base(i)
  
         reg_clean: dict = {**comun, "producto": nombre_original}
+        reg_typo: dict = {**comun, "producto": generate_realistic_typo(nombre_original)}
+ 
         
