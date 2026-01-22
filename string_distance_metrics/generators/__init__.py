@@ -7,4 +7,5 @@ entre cadenas de texto.
 
 Módulos principales:
     - ``typo_generator``: genera errores tipográficos realistas sobre strings.
-    
+    - ``dataset_generator``: produce datasets sintéticos limpios y con typos.
+
