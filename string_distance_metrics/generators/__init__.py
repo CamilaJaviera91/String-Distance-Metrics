@@ -20,3 +20,4 @@ Ejemplo de uso rápido::
 
 from .typo_generator import generate_realistic_typo
 
+__all__ = ["generate_realistic_typo"]
