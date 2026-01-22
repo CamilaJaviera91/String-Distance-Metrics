@@ -18,3 +18,5 @@ Ejemplo de uso rápido::
     print(con_typo)  # e.g. "Lqptop"
 """
 
+from .typo_generator import generate_realistic_typo
+
