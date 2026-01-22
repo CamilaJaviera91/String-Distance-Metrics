@@ -132,4 +132,6 @@ def generate_base_data(n_rows: int = 100) -> None:
     df_clean: pd.DataFrame = pd.DataFrame(data_clean)
     df_typo: pd.DataFrame = pd.DataFrame(data_typo)
  
+    _crear_ruta_si_no_existe(RUTA_SALIDA)
+ 
     
