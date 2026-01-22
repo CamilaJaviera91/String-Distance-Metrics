@@ -15,4 +15,6 @@ Ejemplo de uso rápido::
 
     original = "Laptop"
     con_typo = generate_realistic_typo(original)
-    
+    print(con_typo)  # e.g. "Lqptop"
+"""
+
