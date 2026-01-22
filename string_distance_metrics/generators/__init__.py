@@ -13,4 +13,5 @@ Ejemplo de uso rápido::
 
     from string_distance_metrics import generate_realistic_typo
 
+    original = "Laptop"
     
