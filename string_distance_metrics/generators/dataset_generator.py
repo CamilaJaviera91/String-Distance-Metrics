@@ -139,4 +139,6 @@ def generate_base_data(n_rows: int = 100) -> None:
  
     print(f"✅ Generadas {n_rows} filas en 'base_maestra_limpia.csv' y 'base_usuario_con_typos.csv'")
  
- 
+# ---------------------------------------------------------------------------
+# Entry point
+# ---------------------------------------------------------------------------
