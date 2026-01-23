@@ -6,4 +6,7 @@ def levenshtein_distance(a: str, b: str) -> int:
     (inserción, eliminación o sustitución de un carácter) necesarias para
     transformar el string ``a`` en el string ``b``.
 
+    La implementación utiliza programación dinámica con una sola fila de estado
+    (O(n) en espacio), en lugar de la matriz completa O(n×m).
+
     
