@@ -24,4 +24,7 @@ def levenshtein_distance(a: str, b: str) -> int:
         >>> levenshtein_distance("Laptop", "Lqptop")
         1
 
+        >>> levenshtein_distance("", "abc")
+        3
+
         
