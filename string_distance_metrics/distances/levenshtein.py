@@ -17,4 +17,5 @@ def levenshtein_distance(a: str, b: str) -> int:
         int: Número mínimo de ediciones para transformar ``a`` en ``b``.
              Siempre es un valor >= 0. Retorna 0 si ambos strings son iguales.
 
-    
+    Examples:
+        
