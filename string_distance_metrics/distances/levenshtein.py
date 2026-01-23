@@ -9,4 +9,8 @@ def levenshtein_distance(a: str, b: str) -> int:
     La implementación utiliza programación dinámica con una sola fila de estado
     (O(n) en espacio), en lugar de la matriz completa O(n×m).
 
+    Args:
+        a (str): Primer string a comparar.
+        b (str): Segundo string a comparar.
+
     
