@@ -32,4 +32,6 @@ def levenshtein_distance(a: str, b: str) -> int:
     """
     # Garantiza que `a` sea siempre el string más largo para reducir iteraciones
     if len(a) < len(b):
-        
+        return levenshtein_distance(b, a)
+
+    
