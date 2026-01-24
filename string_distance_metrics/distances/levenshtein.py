@@ -37,4 +37,6 @@ def levenshtein_distance(a: str, b: str) -> int:
     if len(b) == 0:
         return len(a)
 
+    previous_row: range = range(len(b) + 1)
+
     
