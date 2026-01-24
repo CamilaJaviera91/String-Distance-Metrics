@@ -30,4 +30,5 @@ def levenshtein_distance(a: str, b: str) -> int:
         >>> levenshtein_distance("igual", "igual")
         0
     """
+    # Garantiza que `a` sea siempre el string más largo para reducir iteraciones
     
