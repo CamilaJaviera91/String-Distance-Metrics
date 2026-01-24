@@ -35,4 +35,6 @@ def levenshtein_distance(a: str, b: str) -> int:
         return levenshtein_distance(b, a)
 
     if len(b) == 0:
-        
+        return len(a)
+
+    
