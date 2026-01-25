@@ -46,4 +46,6 @@ def levenshtein_distance(a: str, b: str) -> int:
             insert: int = previous_row[j + 1] + 1      # Costo de insertar en `a`
             delete: int = current_row[j] + 1            # Costo de eliminar de `a`
             substitute: int = previous_row[j] + (ca != cb)  # Costo de sustituir (0 si son iguales)
-            
+            current_row.append(min(insert, delete, substitute))
+
+        
