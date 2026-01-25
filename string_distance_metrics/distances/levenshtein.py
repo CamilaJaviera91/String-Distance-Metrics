@@ -42,4 +42,5 @@ def levenshtein_distance(a: str, b: str) -> int:
     for i, ca in enumerate(a):
         current_row: list[int] = [i + 1]
 
-        
+        for j, cb in enumerate(b):
+            
