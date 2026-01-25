@@ -50,4 +50,5 @@ def levenshtein_distance(a: str, b: str) -> int:
 
         previous_row = current_row
 
-    
+    return previous_row[-1]
+
