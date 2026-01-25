@@ -43,4 +43,5 @@ def levenshtein_distance(a: str, b: str) -> int:
         current_row: list[int] = [i + 1]
 
         for j, cb in enumerate(b):
+            insert: int = previous_row[j + 1] + 1      # Costo de insertar en `a`
             
