@@ -52,3 +52,5 @@ def levenshtein_distance(a: str, b: str) -> int:
 
     return previous_row[-1]
 
+def levenshtein_ratio(a: str, b: str) -> float:
+    
