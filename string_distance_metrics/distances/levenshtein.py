@@ -58,4 +58,6 @@ def levenshtein_ratio(a: str, b: str) -> float:
 
     El ratio se calcula como::
 
-        
+        ratio = 1 - (distancia / max(len(a), len(b)))
+
+    
