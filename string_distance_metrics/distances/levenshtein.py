@@ -56,4 +56,6 @@ def levenshtein_ratio(a: str, b: str) -> float:
     """
     Calcula la similitud normalizada entre dos strings usando la distancia de Levenshtein.
 
-    
+    El ratio se calcula como::
+
+        
