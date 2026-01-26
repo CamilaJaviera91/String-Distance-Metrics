@@ -60,4 +60,7 @@ def levenshtein_ratio(a: str, b: str) -> float:
 
         ratio = 1 - (distancia / max(len(a), len(b)))
 
+    Un valor de ``1.0`` indica strings idénticos; un valor de ``0.0`` indica
+    que no comparten ningún carácter en común (máxima distancia posible).
+
     
