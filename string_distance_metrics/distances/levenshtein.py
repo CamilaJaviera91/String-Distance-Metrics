@@ -63,4 +63,8 @@ def levenshtein_ratio(a: str, b: str) -> float:
     Un valor de ``1.0`` indica strings idénticos; un valor de ``0.0`` indica
     que no comparten ningún carácter en común (máxima distancia posible).
 
+    Args:
+        a (str): Primer string a comparar.
+        b (str): Segundo string a comparar.
+
     
