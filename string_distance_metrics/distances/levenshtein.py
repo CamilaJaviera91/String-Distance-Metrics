@@ -67,4 +67,8 @@ def levenshtein_ratio(a: str, b: str) -> float:
         a (str): Primer string a comparar.
         b (str): Segundo string a comparar.
 
+    Returns:
+        float: Valor de similitud en el rango [0.0, 1.0].
+               Retorna ``1.0`` si ambos strings son vacíos (se consideran idénticos).
+
     
