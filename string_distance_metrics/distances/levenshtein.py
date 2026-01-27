@@ -75,4 +75,9 @@ def levenshtein_ratio(a: str, b: str) -> float:
         >>> levenshtein_ratio("Laptop", "Laptop")
         1.0
 
+        >>> levenshtein_ratio("Laptop", "Lqptop")
+        0.8333333333333334
+
+        
+
         
