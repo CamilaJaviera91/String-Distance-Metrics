@@ -88,4 +88,6 @@ def levenshtein_ratio(a: str, b: str) -> float:
     max_len: int = max(len(a), len(b))
 
     if max_len == 0:
-        
+        return 1.0  # Ambos strings vacíos se consideran idénticos
+
+    
