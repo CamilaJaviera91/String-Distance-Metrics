@@ -87,4 +87,5 @@ def levenshtein_ratio(a: str, b: str) -> float:
     dist: int = levenshtein_distance(a, b)
     max_len: int = max(len(a), len(b))
 
-    
+    if max_len == 0:
+        
