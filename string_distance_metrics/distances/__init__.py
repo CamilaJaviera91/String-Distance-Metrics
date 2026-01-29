@@ -17,3 +17,4 @@ Ejemplo de uso::
 
 from .levenshtein import levenshtein_distance, levenshtein_ratio
 
+__all__ = ["levenshtein_distance", "levenshtein_ratio"]
