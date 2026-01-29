@@ -15,3 +15,5 @@ Ejemplo de uso::
     levenshtein_ratio("Laptop", "Lqptop")      # → 0.833...
 """
 
+from .levenshtein import levenshtein_distance, levenshtein_ratio
+
