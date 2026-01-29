@@ -9,4 +9,6 @@ Módulos disponibles:
 
 Ejemplo de uso::
 
+    from distances.levenshtein import levenshtein_distance, levenshtein_ratio
+
     
