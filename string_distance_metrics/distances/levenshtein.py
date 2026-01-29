@@ -18,8 +18,7 @@ def levenshtein_distance(a: str, b: str) -> int:
              Siempre es un valor >= 0. Retorna 0 si ambos strings son iguales.
 
     Examples:
-        >>> levenshtein_distance("kitten", "sitting")
-        3
+        >>> levenshtein_distance("kitten", "sitting"): 3
 
         >>> levenshtein_distance("Laptop", "Lqptop")
         1
