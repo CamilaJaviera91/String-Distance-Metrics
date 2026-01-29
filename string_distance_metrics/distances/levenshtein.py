@@ -20,8 +20,7 @@ def levenshtein_distance(a: str, b: str) -> int:
     Examples:
         >>> levenshtein_distance("kitten", "sitting"): 3
 
-        >>> levenshtein_distance("Laptop", "Lqptop")
-        1
+        >>> levenshtein_distance("Laptop", "Lqptop"): 1
 
         >>> levenshtein_distance("", "abc")
         3
