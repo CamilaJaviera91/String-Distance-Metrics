@@ -137,7 +137,7 @@ def generate_base_data(n_rows: int = 100) -> None:
     df_clean.to_csv(f"{RUTA_SALIDA}/base_maestra_limpia.csv", index=False, encoding="utf-8")
     df_typo.to_csv(f"{RUTA_SALIDA}/base_usuario_con_typos.csv", index=False, encoding="utf-8")
  
-    print(f"✅ Generadas {n_rows} filas en 'base_maestra_limpia.csv' y 'base_usuario_con_typos.csv'")
+    print(f"Generadas {n_rows} filas en 'base_maestra_limpia.csv' y 'base_usuario_con_typos.csv'")
  
 # ---------------------------------------------------------------------------
 # Entry point
