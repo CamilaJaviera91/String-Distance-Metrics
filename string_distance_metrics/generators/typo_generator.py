@@ -3,7 +3,7 @@ import random
 # Mapa de teclas vecinas en un teclado QWERTY estándar (incluyendo ñ).
 
 KEYBOARD_NEIGHBORS: dict[str, list[str]] = {
-    "q": ["w", "a", "1", "2"],
+                                            "q": ["w", "a", "1", "2"],
     "w": ["q", "e", "a", "s", "2", "3"],
     "e": ["w", "r", "s", "d", "3", "4"],
     "r": ["e", "t", "d", "f", "4", "5"],
