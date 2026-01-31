@@ -31,7 +31,7 @@ KEYBOARD_NEIGHBORS: dict[str, list[str]] = {
                                             "v": ["c", "b", "f", "g"],
                                             "b": ["v", "n", "g", "h"],
                                             "n": ["b", "m", "h", "j"],
-    "m": ["n", "j", "k"],
+                                            "m": ["n", "j", "k"],
 }
 
 TYPO_TYPES: list[str] = ["keyboard", "drop", "dup", "swap", "replace_common"]
