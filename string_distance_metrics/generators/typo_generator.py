@@ -26,7 +26,7 @@ KEYBOARD_NEIGHBORS: dict[str, list[str]] = {
                                             "ñ": ["l", "p"],
                                             
                                             "z": ["a", "s", "x"],
-    "x": ["z", "c", "s", "d"],
+                                            "x": ["z", "c", "s", "d"],
     "c": ["x", "v", "d", "f"],
     "v": ["c", "b", "f", "g"],
     "b": ["v", "n", "g", "h"],
