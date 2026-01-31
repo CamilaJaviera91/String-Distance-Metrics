@@ -60,8 +60,8 @@ def generate_realistic_typo(text: str) -> str:
         >>> generate_realistic_typo("Laptop")
         'Lqptop'   # ejemplo con typo de teclado en 'a' → 'q'
     
-    >>> generate_realistic_typo("Monitor")
-        'Monitr'   # ejemplo con drop de 'o'
+        >>> generate_realistic_typo("Monitor")
+            'Monitr'   # ejemplo con drop de 'o'
  
         >>> generate_realistic_typo("")
         ''         # texto vacío, sin cambios
