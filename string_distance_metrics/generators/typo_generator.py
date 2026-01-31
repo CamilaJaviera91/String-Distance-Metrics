@@ -30,7 +30,7 @@ KEYBOARD_NEIGHBORS: dict[str, list[str]] = {
                                             "c": ["x", "v", "d", "f"],
                                             "v": ["c", "b", "f", "g"],
                                             "b": ["v", "n", "g", "h"],
-    "n": ["b", "m", "h", "j"],
+                                            "n": ["b", "m", "h", "j"],
     "m": ["n", "j", "k"],
 }
 
