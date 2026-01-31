@@ -64,7 +64,7 @@ def generate_realistic_typo(text: str) -> str:
             'Monitr'   # ejemplo con drop de 'o'
  
         >>> generate_realistic_typo("")
-        ''         # texto vacío, sin cambios
+            '' # texto vacío, sin cambios
     """
 
     if not text:
