@@ -23,4 +23,8 @@ def normalize_string(text: str) -> str:
              con espacios simples. Si ``text`` no es de tipo ``str``, se
              retorna el valor original sin cambios.
 
-    
+    Examples:
+        >>> normalize_string("Teclado Mecánico")
+        'teclado mecanico'
+
+        
