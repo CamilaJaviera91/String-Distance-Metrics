@@ -11,4 +11,7 @@ def normalize_string(text: str) -> str:
        diacríticos (e.g. ``é`` → ``e`` + acento).
     3. **Eliminación de diacríticos**: remueve todos los caracteres de la
        categoría Unicode ``Mn`` (Mark, Nonspacing), como tildes y diéresis.
+    4. **Normalización de espacios**: colapsa múltiples espacios consecutivos
+       en uno solo y elimina espacios al inicio y al final.
+
     
