@@ -36,4 +36,7 @@ def normalize_string(text: str) -> str:
         >>> normalize_string(None)
         None  # no es str, se retorna tal cual
 
-        
+        >>> normalize_string(123)
+        123   # no es str, se retorna tal cual
+    """
+    
