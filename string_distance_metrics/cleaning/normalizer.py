@@ -6,4 +6,5 @@ def normalize_string(text: str) -> str:
 
     Aplica las siguientes transformaciones en orden:
 
+    1. **Conversión a minúsculas**: elimina diferencias por capitalización.
     
