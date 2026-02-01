@@ -18,4 +18,9 @@ def normalize_string(text: str) -> str:
         text (str): Texto de entrada a normalizar. Si no es un string,
                     se devuelve sin modificaciones.
 
+    Returns:
+        str: Texto normalizado en minúsculas, sin tildes ni diacríticos y
+             con espacios simples. Si ``text`` no es de tipo ``str``, se
+             retorna el valor original sin cambios.
+
     
