@@ -7,4 +7,6 @@ def normalize_string(text: str) -> str:
     Aplica las siguientes transformaciones en orden:
 
     1. **Conversión a minúsculas**: elimina diferencias por capitalización.
+    2. **Descomposición Unicode (NFD)**: separa los caracteres base de sus
+       diacríticos (e.g. ``é`` → ``e`` + acento).
     
