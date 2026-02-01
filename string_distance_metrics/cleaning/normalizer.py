@@ -14,4 +14,8 @@ def normalize_string(text: str) -> str:
     4. **Normalización de espacios**: colapsa múltiples espacios consecutivos
        en uno solo y elimina espacios al inicio y al final.
 
+    Args:
+        text (str): Texto de entrada a normalizar. Si no es un string,
+                    se devuelve sin modificaciones.
+
     
