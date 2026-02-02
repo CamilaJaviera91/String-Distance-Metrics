@@ -43,4 +43,6 @@ def normalize_string(text: str) -> str:
         return text
 
     # 1. Convertir a minúsculas
+    text = text.lower()
+
     
