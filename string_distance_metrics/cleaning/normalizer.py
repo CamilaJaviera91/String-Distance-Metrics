@@ -25,7 +25,7 @@ def normalize_string(text: str) -> str:
 
     Examples:
         >>> normalize_string("Teclado Mecánico")
-        'teclado mecanico'
+            'teclado mecanico'
 
         >>> normalize_string("  Ñoño  ")
         'nono'
