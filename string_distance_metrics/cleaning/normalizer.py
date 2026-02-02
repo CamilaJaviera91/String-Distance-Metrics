@@ -54,4 +54,4 @@ def normalize_string(text: str) -> str:
     # 4. Colapsar espacios múltiples y eliminar espacios al inicio/fin
     text = " ".join(text.split())
 
-    
+    return text
