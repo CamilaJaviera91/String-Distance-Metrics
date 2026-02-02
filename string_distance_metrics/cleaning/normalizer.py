@@ -34,7 +34,7 @@ def normalize_string(text: str) -> str:
             'creme brulee'
 
         >>> normalize_string(None)
-        None  # no es str, se retorna tal cual
+            None  # no es str, se retorna tal cual
 
         >>> normalize_string(123)
         123   # no es str, se retorna tal cual
