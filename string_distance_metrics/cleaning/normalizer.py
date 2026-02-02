@@ -51,4 +51,5 @@ def normalize_string(text: str) -> str:
     # 3. Eliminar todos los diacríticos (categoría Unicode "Mn": Mark, Nonspacing)
     text = "".join(c for c in text if unicodedata.category(c) != "Mn")
 
+    # 4. Colapsar espacios múltiples y eliminar espacios al inicio/fin
     
