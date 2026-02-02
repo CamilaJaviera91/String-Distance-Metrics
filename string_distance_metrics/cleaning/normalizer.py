@@ -48,4 +48,5 @@ def normalize_string(text: str) -> str:
     # 2. Descomponer caracteres acentuados en carácter base + diacrítico (NFD)
     text = unicodedata.normalize("NFD", text)
 
+    # 3. Eliminar todos los diacríticos (categoría Unicode "Mn": Mark, Nonspacing)
     
