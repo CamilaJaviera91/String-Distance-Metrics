@@ -39,4 +39,5 @@ def normalize_string(text: str) -> str:
         >>> normalize_string(123)
         123   # no es str, se retorna tal cual
     """
-    
+    if not isinstance(text, str):
+        
