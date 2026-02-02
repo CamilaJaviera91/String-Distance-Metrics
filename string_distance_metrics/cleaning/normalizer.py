@@ -49,4 +49,6 @@ def normalize_string(text: str) -> str:
     text = unicodedata.normalize("NFD", text)
 
     # 3. Eliminar todos los diacríticos (categoría Unicode "Mn": Mark, Nonspacing)
+    text = "".join(c for c in text if unicodedata.category(c) != "Mn")
+
     
