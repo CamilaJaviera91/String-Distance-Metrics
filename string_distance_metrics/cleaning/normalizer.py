@@ -45,4 +45,5 @@ def normalize_string(text: str) -> str:
     # 1. Convertir a minúsculas
     text = text.lower()
 
+    # 2. Descomponer caracteres acentuados en carácter base + diacrítico (NFD)
     
