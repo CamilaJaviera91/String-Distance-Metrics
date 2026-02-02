@@ -52,4 +52,6 @@ def normalize_string(text: str) -> str:
     text = "".join(c for c in text if unicodedata.category(c) != "Mn")
 
     # 4. Colapsar espacios múltiples y eliminar espacios al inicio/fin
+    text = " ".join(text.split())
+
     
