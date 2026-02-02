@@ -40,4 +40,6 @@ def normalize_string(text: str) -> str:
         123   # no es str, se retorna tal cual
     """
     if not isinstance(text, str):
-        
+        return text
+
+    
