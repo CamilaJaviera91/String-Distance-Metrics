@@ -46,4 +46,6 @@ def normalize_string(text: str) -> str:
     text = text.lower()
 
     # 2. Descomponer caracteres acentuados en carácter base + diacrítico (NFD)
+    text = unicodedata.normalize("NFD", text)
+
     
