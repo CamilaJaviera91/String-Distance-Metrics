@@ -15,4 +15,6 @@ Funciones disponibles:
 
 Ejemplo de uso::
 
+    from normalizer import normalize_string
+
     
