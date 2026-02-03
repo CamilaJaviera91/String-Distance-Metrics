@@ -9,3 +9,7 @@ Preprocesar los textos con este módulo mejora la precisión de las
 comparaciones al eliminar diferencias superficiales como tildes,
 capitalización o espacios extra.
 
+Funciones disponibles:
+    - :func:`normalize_string`: normaliza un string a minúsculas, sin
+      diacríticos y con espacios simples.
+
