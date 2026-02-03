@@ -18,4 +18,6 @@ Ejemplo de uso::
     from normalizer import normalize_string
 
     normalize_string("Teclado Mecánico")  # → 'teclado mecanico'
-    
+    normalize_string("  ÑOÑO  ")         # → 'nono'
+"""
+
