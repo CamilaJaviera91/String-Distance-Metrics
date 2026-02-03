@@ -21,3 +21,5 @@ Ejemplo de uso::
     normalize_string("  ÑOÑO  ")         # → 'nono'
 """
 
+from .normalizer import normalize_string
+
