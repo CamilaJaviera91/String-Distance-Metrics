@@ -23,3 +23,4 @@ Ejemplo de uso::
 
 from .normalizer import normalize_string
 
+__all__ = ["normalize_string"]
