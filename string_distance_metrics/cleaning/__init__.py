@@ -13,3 +13,6 @@ Funciones disponibles:
     - :func:`normalize_string`: normaliza un string a minúsculas, sin
       diacríticos y con espacios simples.
 
+Ejemplo de uso::
+
+    
