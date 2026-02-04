@@ -9,4 +9,8 @@ def jaro_similarity(a: str, b: str) -> float:
     Dos caracteres se consideran **coincidentes** si son iguales y están a una
     distancia máxima de ``floor(max(len(a), len(b)) / 2) - 1`` posiciones.
 
+    La fórmula es::
+
+        jaro = (m/|a| + m/|b| + (m - t/2) / m) / 3
+
     
