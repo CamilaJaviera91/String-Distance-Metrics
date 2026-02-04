@@ -6,4 +6,7 @@ def jaro_similarity(a: str, b: str) -> float:
     tomando en cuenta también las transposiciones (caracteres que coinciden
     pero están en distinto orden).
 
+    Dos caracteres se consideran **coincidentes** si son iguales y están a una
+    distancia máxima de ``floor(max(len(a), len(b)) / 2) - 1`` posiciones.
+
     
