@@ -22,4 +22,9 @@ def jaro_similarity(a: str, b: str) -> float:
         a (str): Primer string a comparar.
         b (str): Segundo string a comparar.
 
+    Returns:
+        float: Similitud de Jaro en el rango [0.0, 1.0].
+               ``1.0`` indica strings idénticos; ``0.0`` indica sin coincidencias.
+               Retorna ``1.0`` si ambos strings son vacíos.
+
     
