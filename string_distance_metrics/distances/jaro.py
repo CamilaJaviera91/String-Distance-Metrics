@@ -37,4 +37,7 @@ def jaro_similarity(a: str, b: str) -> float:
         >>> jaro_similarity("igual", "igual")
         1.0
 
+        >>> jaro_similarity("", "")
+        1.0
+
         
