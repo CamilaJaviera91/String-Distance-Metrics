@@ -27,4 +27,8 @@ def jaro_similarity(a: str, b: str) -> float:
                ``1.0`` indica strings idénticos; ``0.0`` indica sin coincidencias.
                Retorna ``1.0`` si ambos strings son vacíos.
 
-    
+    Examples:
+        >>> jaro_similarity("martha", "marhta")
+        0.9444444444444445
+
+        
