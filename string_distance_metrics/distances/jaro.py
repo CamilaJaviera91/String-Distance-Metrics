@@ -13,4 +13,9 @@ def jaro_similarity(a: str, b: str) -> float:
 
         jaro = (m/|a| + m/|b| + (m - t/2) / m) / 3
 
+    donde:
+        - ``m`` = número de caracteres coincidentes.
+        - ``t`` = número de transposiciones (pares coincidentes fuera de orden).
+        - ``|a|``, ``|b|`` = longitud de cada string.
+
     
