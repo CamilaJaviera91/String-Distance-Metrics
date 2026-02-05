@@ -31,4 +31,7 @@ def jaro_similarity(a: str, b: str) -> float:
         >>> jaro_similarity("martha", "marhta")
         0.9444444444444445
 
+        >>> jaro_similarity("kitten", "sitting")
+        0.746031746031746
+
         
