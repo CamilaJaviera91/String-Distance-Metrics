@@ -18,4 +18,8 @@ def jaro_similarity(a: str, b: str) -> float:
         - ``t`` = número de transposiciones (pares coincidentes fuera de orden).
         - ``|a|``, ``|b|`` = longitud de cada string.
 
+    Args:
+        a (str): Primer string a comparar.
+        b (str): Segundo string a comparar.
+
     
