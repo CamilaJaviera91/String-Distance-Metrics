@@ -55,4 +55,5 @@ def jaro_similarity(a: str, b: str) -> float:
     # Ventana máxima dentro de la cual dos caracteres se consideran coincidentes
     match_distance: int = max(len_a, len_b) // 2 - 1
 
+    matches_a: list[bool] = [False] * len_a
     
