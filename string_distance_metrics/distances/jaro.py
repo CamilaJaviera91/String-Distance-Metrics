@@ -43,4 +43,7 @@ def jaro_similarity(a: str, b: str) -> float:
         >>> jaro_similarity("abc", "xyz")
         0.0
     """
+    if a == b:
+        return 1.0
+
     
