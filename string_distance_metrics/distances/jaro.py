@@ -61,4 +61,5 @@ def jaro_similarity(a: str, b: str) -> float:
     matches: int = 0
     transpositions: int = 0
 
+    # --- Paso 1: encontrar caracteres coincidentes ---
     
