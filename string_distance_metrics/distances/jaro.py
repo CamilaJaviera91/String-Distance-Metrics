@@ -58,4 +58,5 @@ def jaro_similarity(a: str, b: str) -> float:
     matches_a: list[bool] = [False] * len_a
     matches_b: list[bool] = [False] * len_b
 
+    matches: int = 0
     
