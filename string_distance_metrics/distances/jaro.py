@@ -59,4 +59,6 @@ def jaro_similarity(a: str, b: str) -> float:
     matches_b: list[bool] = [False] * len_b
 
     matches: int = 0
+    transpositions: int = 0
+
     
