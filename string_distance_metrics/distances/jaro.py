@@ -46,4 +46,5 @@ def jaro_similarity(a: str, b: str) -> float:
     if a == b:
         return 1.0
 
+    len_a: int = len(a)
     
