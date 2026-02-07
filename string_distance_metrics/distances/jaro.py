@@ -74,4 +74,7 @@ def jaro_similarity(a: str, b: str) -> float:
             matches += 1
             break
 
+    if matches == 0:
+        return 0.0
+
     
