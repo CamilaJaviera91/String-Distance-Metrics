@@ -77,4 +77,5 @@ def jaro_similarity(a: str, b: str) -> float:
     if matches == 0:
         return 0.0
 
+    # --- Paso 2: contar transposiciones ---
     
