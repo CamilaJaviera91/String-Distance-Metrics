@@ -66,4 +66,12 @@ def jaro_similarity(a: str, b: str) -> float:
         start: int = max(0, i - match_distance)
         end: int = min(i + match_distance + 1, len_b)
 
-        
+        for j in range(start, end):
+            if matches_b[j] or a[i] != b[j]:
+                continue
+            matches_a[i] = True
+            matches_b[j] = True
+            matches += 1
+            break
+
+    
