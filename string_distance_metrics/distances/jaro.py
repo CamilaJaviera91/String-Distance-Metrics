@@ -84,4 +84,6 @@ def jaro_similarity(a: str, b: str) -> float:
             continue
         while not matches_b[k]:
             k += 1
+        if a[i] != b[k]:
+            transpositions += 1
         
