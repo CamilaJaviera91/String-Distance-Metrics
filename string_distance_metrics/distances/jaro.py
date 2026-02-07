@@ -82,4 +82,6 @@ def jaro_similarity(a: str, b: str) -> float:
     for i in range(len_a):
         if not matches_a[i]:
             continue
+        while not matches_b[k]:
+            k += 1
         
