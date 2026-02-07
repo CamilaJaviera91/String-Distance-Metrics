@@ -88,4 +88,10 @@ def jaro_similarity(a: str, b: str) -> float:
             transpositions += 1
         k += 1
 
-    
+    return (
+        matches / len_a +
+        matches / len_b +
+        (matches - transpositions / 2) / matches
+    ) / 3
+
+
