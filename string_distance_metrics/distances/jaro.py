@@ -120,4 +120,9 @@ def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
                    que es el valor estándar propuesto por Winkler.
                    Debe estar en el rango ``[0.0, 0.25]``.
 
+    Returns:
+        float: Similitud de Jaro-Winkler en el rango [0.0, 1.0].
+               Valores cercanos a ``1.0`` indican mayor similitud.
+               Siempre es mayor o igual a la similitud de Jaro pura.
+
     
