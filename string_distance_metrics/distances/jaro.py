@@ -138,4 +138,7 @@ def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
         >>> jaro_winkler_similarity("igual", "igual")
         1.0
 
+        >>> jaro_winkler_similarity("abc", "xyz")
+        0.0
+
         
