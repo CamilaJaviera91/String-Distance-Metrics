@@ -99,4 +99,8 @@ def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
     """
     Calcula la similitud de Jaro-Winkler entre dos strings.
 
+    Extiende la similitud de Jaro otorgando un **bonus adicional** a los
+    strings que comparten un prefijo común, bajo la premisa de que los
+    errores tipográficos son menos frecuentes al inicio de las palabras.
+
     
