@@ -141,4 +141,7 @@ def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
         >>> jaro_winkler_similarity("abc", "xyz")
         0.0
 
-        
+        >>> jaro_winkler_similarity("Laptop", "Lqptop", p=0.0)
+        0.888...  # sin bonus de prefijo, equivale a Jaro puro
+    """
+    
