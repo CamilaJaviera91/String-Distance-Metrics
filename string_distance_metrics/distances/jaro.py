@@ -107,4 +107,10 @@ def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
 
         jaro_winkler = jaro + (l × p × (1 - jaro))
 
+    donde:
+        - ``jaro`` = similitud de Jaro entre ``a`` y ``b``.
+        - ``l``    = longitud del prefijo común (máximo 4 caracteres).
+        - ``p``    = factor de escala del prefijo (por convención, ``p ≤ 0.25``
+          para garantizar que el resultado no supere ``1.0``).
+
     
