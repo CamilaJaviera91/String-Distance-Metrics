@@ -125,4 +125,7 @@ def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
                Valores cercanos a ``1.0`` indican mayor similitud.
                Siempre es mayor o igual a la similitud de Jaro pura.
 
+    Raises:
+        ValueError: Si ``p`` no está en el rango ``[0.0, 0.25]``.
+
     
