@@ -113,4 +113,11 @@ def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
         - ``p``    = factor de escala del prefijo (por convención, ``p ≤ 0.25``
           para garantizar que el resultado no supere ``1.0``).
 
+    Args:
+        a (str): Primer string a comparar.
+        b (str): Segundo string a comparar.
+        p (float): Factor de escala del prefijo. Por defecto ``0.1``,
+                   que es el valor estándar propuesto por Winkler.
+                   Debe estar en el rango ``[0.0, 0.25]``.
+
     
