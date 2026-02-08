@@ -103,4 +103,8 @@ def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
     strings que comparten un prefijo común, bajo la premisa de que los
     errores tipográficos son menos frecuentes al inicio de las palabras.
 
+    La fórmula es::
+
+        jaro_winkler = jaro + (l × p × (1 - jaro))
+
     
