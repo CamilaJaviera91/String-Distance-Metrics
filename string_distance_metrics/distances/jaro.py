@@ -96,4 +96,7 @@ def jaro_similarity(a: str, b: str) -> float:
 
 
 def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
+    """
+    Calcula la similitud de Jaro-Winkler entre dos strings.
+
     
