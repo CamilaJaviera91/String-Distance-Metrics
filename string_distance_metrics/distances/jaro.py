@@ -157,4 +157,5 @@ def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
         else:
             break
 
-    
+    return jaro + (prefix_len * p * (1 - jaro))
+
