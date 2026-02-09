@@ -150,4 +150,5 @@ def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
     jaro: float = jaro_similarity(a, b)
 
     # Calcular longitud del prefijo común (máximo 4 caracteres)
+    prefix_len: int = 0
     
