@@ -144,4 +144,7 @@ def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
         >>> jaro_winkler_similarity("Laptop", "Lqptop", p=0.0)
         0.888...  # sin bonus de prefijo, equivale a Jaro puro
     """
+    if not 0.0 <= p <= 0.25:
+        raise ValueError(f"El factor de escala 'p' debe estar en [0.0, 0.25], se recibió: {p}")
+
     
