@@ -154,4 +154,7 @@ def jaro_winkler_similarity(a: str, b: str, p: float = 0.1) -> float:
     for a_char, b_char in zip(a[:4], b[:4]):
         if a_char == b_char:
             prefix_len += 1
-        
+        else:
+            break
+
+    
