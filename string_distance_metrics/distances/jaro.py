@@ -177,4 +177,7 @@ def jaro_winkler_distance(a: str, b: str, p: float = 0.1) -> float:
         p (float): Factor de escala del prefijo. Por defecto ``0.1``.
                    Debe estar en el rango ``[0.0, 0.25]``.
 
+    Returns:
+        float: Distancia de Jaro-Winkler en el rango [0.0, 1.0].
+
     
