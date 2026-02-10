@@ -171,4 +171,10 @@ def jaro_winkler_distance(a: str, b: str, p: float = 0.1) -> float:
     disimilitud. Es útil cuando se necesita una **distancia** (menor = más
     parecido) en lugar de una similitud (mayor = más parecido).
 
+    Args:
+        a (str): Primer string a comparar.
+        b (str): Segundo string a comparar.
+        p (float): Factor de escala del prefijo. Por defecto ``0.1``.
+                   Debe estar en el rango ``[0.0, 0.25]``.
+
     
