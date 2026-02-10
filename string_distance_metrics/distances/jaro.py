@@ -183,4 +183,8 @@ def jaro_winkler_distance(a: str, b: str, p: float = 0.1) -> float:
     Raises:
         ValueError: Si ``p`` no está en el rango ``[0.0, 0.25]``.
 
-    
+    Examples:
+        >>> jaro_winkler_distance("martha", "marhta")
+        0.038888888888888896
+
+        
