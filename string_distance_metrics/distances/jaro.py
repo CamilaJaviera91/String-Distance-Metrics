@@ -180,4 +180,7 @@ def jaro_winkler_distance(a: str, b: str, p: float = 0.1) -> float:
     Returns:
         float: Distancia de Jaro-Winkler en el rango [0.0, 1.0].
 
+    Raises:
+        ValueError: Si ``p`` no está en el rango ``[0.0, 0.25]``.
+
     
