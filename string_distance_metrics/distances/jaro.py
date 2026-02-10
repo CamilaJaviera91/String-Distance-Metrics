@@ -187,4 +187,13 @@ def jaro_winkler_distance(a: str, b: str, p: float = 0.1) -> float:
         >>> jaro_winkler_distance("martha", "marhta")
         0.038888888888888896
 
-        
+        >>> jaro_winkler_distance("Laptop", "Lqptop")
+        0.07777777777777779
+
+        >>> jaro_winkler_distance("igual", "igual")
+        0.0
+
+        >>> jaro_winkler_distance("abc", "xyz")
+        1.0
+    """
+    return 1 - jaro_winkler_similarity(a, b, p)
