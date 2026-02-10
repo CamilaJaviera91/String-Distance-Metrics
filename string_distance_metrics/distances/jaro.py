@@ -165,4 +165,6 @@ def jaro_winkler_distance(a: str, b: str, p: float = 0.1) -> float:
 
     Es el complemento de la similitud de Jaro-Winkler::
 
-        
+        distancia = 1 - jaro_winkler_similarity(a, b)
+
+    
