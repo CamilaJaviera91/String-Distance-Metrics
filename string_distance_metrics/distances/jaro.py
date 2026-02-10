@@ -167,4 +167,8 @@ def jaro_winkler_distance(a: str, b: str, p: float = 0.1) -> float:
 
         distancia = 1 - jaro_winkler_similarity(a, b)
 
+    Un valor de ``0.0`` indica strings idénticos; ``1.0`` indica máxima
+    disimilitud. Es útil cuando se necesita una **distancia** (menor = más
+    parecido) en lugar de una similitud (mayor = más parecido).
+
     
