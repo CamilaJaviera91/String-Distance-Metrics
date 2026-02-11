@@ -21,3 +21,4 @@ Ejemplo de uso::
     jaro_winkler_distance("Laptop", "Lqptop")       # → 0.077...
 """
 
+from .levenshtein import levenshtein_distance, levenshtein_ratio
