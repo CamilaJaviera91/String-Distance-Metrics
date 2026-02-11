@@ -15,4 +15,6 @@ Ejemplo de uso::
     from distances.jaro_winkler import jaro_winkler_similarity, jaro_winkler_distance
 
     levenshtein_distance("kitten", "sitting")       # → 3
+    levenshtein_ratio("Laptop", "Lqptop")           # → 0.833...
+
     
