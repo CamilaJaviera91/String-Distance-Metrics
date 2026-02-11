@@ -16,5 +16,6 @@ Ejemplo de uso::
 """
 
 from .levenshtein import levenshtein_distance, levenshtein_ratio
+from .jaro import jaro_similarity, jaro_winkler_distance, jaro_winkler_similarity
 
 __all__ = ["levenshtein_distance", "levenshtein_ratio"]
