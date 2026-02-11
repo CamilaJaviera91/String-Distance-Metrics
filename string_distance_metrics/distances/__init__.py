@@ -12,4 +12,6 @@ Módulos disponibles:
 Ejemplo de uso::
 
     from distances.levenshtein import levenshtein_distance, levenshtein_ratio
+    from distances.jaro_winkler import jaro_winkler_similarity, jaro_winkler_distance
+
     
