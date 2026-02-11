@@ -9,3 +9,7 @@ Módulos disponibles:
     - ``jaro_winkler``: similitud de Jaro, Jaro-Winkler y su distancia complementaria.
       Especialmente útil para comparar nombres o productos con typos al inicio del string.
 
+Ejemplo de uso::
+
+    from distances.levenshtein import levenshtein_distance, levenshtein_ratio
+    
