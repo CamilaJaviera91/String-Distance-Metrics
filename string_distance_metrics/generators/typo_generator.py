@@ -41,25 +41,4 @@ def generate_realistic_typo(text: str) -> str:
 
     # Tipos de typo disponibles
 
-    if not text_list:
-        return text
-
-    idx = random.randint(0, len(text_list) - 1)
-    char = text_list[idx]
-
-    if typo_type == "keyboard" and char.lower() in keyboard_neighbors:
-        text_list[idx] = random.choice(keyboard_neighbors[char.lower()])
-
-    elif typo_type == "drop":
-        del text_list[idx]
-
-    elif typo_type == "dup":
-        text_list.insert(idx, char)
-    
-    elif typo_type == "swap" and idx < len(text_list) - 1:
-        text_list[idx], text_list[idx + 1] = text_list[idx + 1], text_list[idx]
-
-    elif typo_type == "replace_common":
-        text_list[idx] = random.choice("abcdefghijklmnñopqrstuvwxyz")
-
-    return "".join(text_list)
+    TYPO_TYPES: list[str] = ["keyboard", "drop", "dup", "swap", "replace_common"]
