@@ -37,6 +37,9 @@ def generate_realistic_typo(text: str) -> str:
                           "b": ["v", "n", "g", "h"],
                           "n": ["b", "m", "h", "j"],
                           "m": ["n", "j", "k"]}
+    
+
+    # Tipos de typo disponibles
 
     if not text_list:
         return text
