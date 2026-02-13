@@ -1,5 +1,7 @@
 import random
 
+# Mapa de teclas vecinas en un teclado QWERTY estándar (incluyendo ñ).
+
 def generate_realistic_typo(text: str) -> str:
         
     text_list = list(text)
