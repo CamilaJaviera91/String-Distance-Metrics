@@ -11,4 +11,8 @@ class TestJaroSimilarity:
         """Strings idénticos deben retornar similitud perfecta."""
         assert jaro_similarity("laptop", "laptop") == 1.0
 
+    def test_ambos_vacios(self):
+        """Dos strings vacíos se consideran idénticos."""
+        assert jaro_similarity("", "") == 1.0
+
     
