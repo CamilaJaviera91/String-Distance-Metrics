@@ -5,3 +5,6 @@ from jaro_winkler import jaro_similarity, jaro_winkler_similarity, jaro_winkler_
 # jaro_similarity
 # ===========================================================================
 
+class TestJaroSimilarity:
+
+    
