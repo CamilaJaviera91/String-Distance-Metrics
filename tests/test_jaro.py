@@ -22,4 +22,6 @@ class TestJaroSimilarity:
 
     def test_sin_coincidencias(self):
         """Strings sin caracteres en común retornan 0.0."""
-        
+        assert jaro_similarity("abc", "xyz") == 0.0
+
+    
