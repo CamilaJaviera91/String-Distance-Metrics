@@ -24,4 +24,5 @@ class TestJaroSimilarity:
         """Strings sin caracteres en común retornan 0.0."""
         assert jaro_similarity("abc", "xyz") == 0.0
 
-    
+    def test_transposicion_clasica(self):
+        
