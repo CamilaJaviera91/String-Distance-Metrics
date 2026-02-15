@@ -27,4 +27,6 @@ class TestJaroSimilarity:
     def test_transposicion_clasica(self):
         """Caso clásico de la literatura: 'martha' vs 'marhta'."""
         result = jaro_similarity("martha", "marhta")
-        
+        assert round(result, 4) == 0.9444
+
+    
