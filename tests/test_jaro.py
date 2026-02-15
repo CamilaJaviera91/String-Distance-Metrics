@@ -25,4 +25,5 @@ class TestJaroSimilarity:
         assert jaro_similarity("abc", "xyz") == 0.0
 
     def test_transposicion_clasica(self):
+        """Caso clásico de la literatura: 'martha' vs 'marhta'."""
         
