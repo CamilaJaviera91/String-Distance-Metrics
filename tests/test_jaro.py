@@ -15,4 +15,9 @@ class TestJaroSimilarity:
         """Dos strings vacíos se consideran idénticos."""
         assert jaro_similarity("", "") == 1.0
 
+    def test_uno_vacio(self):
+        """Un string vacío contra uno no vacío retorna 0.0."""
+        assert jaro_similarity("", "laptop") == 0.0
+        assert jaro_similarity("laptop", "") == 0.0
+
     
