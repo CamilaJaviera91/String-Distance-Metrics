@@ -20,4 +20,5 @@ class TestJaroSimilarity:
         assert jaro_similarity("", "laptop") == 0.0
         assert jaro_similarity("laptop", "") == 0.0
 
-    
+    def test_sin_coincidencias(self):
+        
