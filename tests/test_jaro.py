@@ -29,4 +29,5 @@ class TestJaroSimilarity:
         result = jaro_similarity("martha", "marhta")
         assert round(result, 4) == 0.9444
 
-    
+    def test_caso_asimetrico(self):
+        
