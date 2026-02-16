@@ -42,4 +42,5 @@ class TestJaroSimilarity:
         """Un solo carácter idéntico."""
         assert jaro_similarity("a", "a") == 1.0
 
-    
+    def test_un_caracter_diferente(self):
+        
