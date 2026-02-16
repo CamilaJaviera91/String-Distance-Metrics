@@ -36,4 +36,6 @@ class TestJaroSimilarity:
     def test_resultado_en_rango(self):
         """El resultado siempre debe estar en [0.0, 1.0]."""
         result = jaro_similarity("random", "string")
-        
+        assert 0.0 <= result <= 1.0
+
+    
