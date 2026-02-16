@@ -33,4 +33,5 @@ class TestJaroSimilarity:
         """El orden de los argumentos no debe afectar el resultado."""
         assert jaro_similarity("kitten", "sitting") == jaro_similarity("sitting", "kitten")
 
-    
+    def test_resultado_en_rango(self):
+        
