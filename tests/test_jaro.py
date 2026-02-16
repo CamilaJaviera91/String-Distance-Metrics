@@ -38,4 +38,5 @@ class TestJaroSimilarity:
         result = jaro_similarity("random", "string")
         assert 0.0 <= result <= 1.0
 
-    
+    def test_un_caracter_igual(self):
+        
