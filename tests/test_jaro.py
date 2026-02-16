@@ -30,4 +30,5 @@ class TestJaroSimilarity:
         assert round(result, 4) == 0.9444
 
     def test_caso_asimetrico(self):
+        """El orden de los argumentos no debe afectar el resultado."""
         
