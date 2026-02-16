@@ -31,4 +31,6 @@ class TestJaroSimilarity:
 
     def test_caso_asimetrico(self):
         """El orden de los argumentos no debe afectar el resultado."""
-        
+        assert jaro_similarity("kitten", "sitting") == jaro_similarity("sitting", "kitten")
+
+    
