@@ -46,4 +46,5 @@ class TestJaroSimilarity:
         """Un solo carácter diferente retorna 0.0."""
         assert jaro_similarity("a", "b") == 0.0
 
-    
+    def test_typo_tipico(self):
+        
