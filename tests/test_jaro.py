@@ -58,4 +58,5 @@ class TestJaroSimilarity:
 class TestJaroWinklerSimilarity:
 
     def test_strings_identicos(self):
+        """Strings idénticos deben retornar 1.0."""
         
