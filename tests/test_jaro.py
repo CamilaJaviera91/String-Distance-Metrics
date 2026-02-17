@@ -48,4 +48,5 @@ class TestJaroSimilarity:
 
     def test_typo_tipico(self):
         """Typo de teclado en un producto debe tener similitud alta."""
+        result = jaro_similarity("Laptop", "Lqptop")
         
