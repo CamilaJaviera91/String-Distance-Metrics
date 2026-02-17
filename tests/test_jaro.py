@@ -51,3 +51,7 @@ class TestJaroSimilarity:
         result = jaro_similarity("Laptop", "Lqptop")
         assert result > 0.8
 
+# ===========================================================================
+# jaro_winkler_similarity
+# ===========================================================================
+
