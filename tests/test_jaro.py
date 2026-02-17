@@ -55,3 +55,6 @@ class TestJaroSimilarity:
 # jaro_winkler_similarity
 # ===========================================================================
 
+class TestJaroWinklerSimilarity:
+
+    
