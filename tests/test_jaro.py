@@ -47,4 +47,5 @@ class TestJaroSimilarity:
         assert jaro_similarity("a", "b") == 0.0
 
     def test_typo_tipico(self):
+        """Typo de teclado en un producto debe tener similitud alta."""
         
