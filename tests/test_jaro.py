@@ -57,4 +57,5 @@ class TestJaroSimilarity:
 
 class TestJaroWinklerSimilarity:
 
-    
+    def test_strings_identicos(self):
+        
