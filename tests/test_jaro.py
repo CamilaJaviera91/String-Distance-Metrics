@@ -67,4 +67,6 @@ class TestJaroWinklerSimilarity:
     def test_sin_coincidencias(self):
         """Strings completamente distintos retornan 0.0."""
         
+    assert jaro_winkler_similarity("abc", "xyz") == 0.0
+
     
