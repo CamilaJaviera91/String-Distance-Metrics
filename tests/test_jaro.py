@@ -64,5 +64,6 @@ class TestJaroWinklerSimilarity:
     def test_ambos_vacios(self):
         """Dos strings vacíos retornan 1.0."""
         assert jaro_winkler_similarity("", "") == 1.0
-
+    def test_sin_coincidencias(self):
+        
     
