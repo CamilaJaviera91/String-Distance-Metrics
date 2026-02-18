@@ -62,4 +62,5 @@ class TestJaroWinklerSimilarity:
         assert jaro_winkler_similarity("laptop", "laptop") == 1.0
 
     def test_ambos_vacios(self):
+        """Dos strings vacíos retornan 1.0."""
         
