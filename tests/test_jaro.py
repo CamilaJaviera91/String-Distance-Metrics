@@ -61,4 +61,5 @@ class TestJaroWinklerSimilarity:
         """Strings idénticos deben retornar 1.0."""
         assert jaro_winkler_similarity("laptop", "laptop") == 1.0
 
-    
+    def test_ambos_vacios(self):
+        
