@@ -72,4 +72,5 @@ class TestJaroWinklerSimilarity:
     def test_bonus_prefijo(self):
         """Jaro-Winkler debe ser >= Jaro cuando hay prefijo común."""
         jaro = jaro_similarity("Laptop", "Lqptop")
+        jw   = jaro_winkler_similarity("Laptop", "Lqptop")
         
