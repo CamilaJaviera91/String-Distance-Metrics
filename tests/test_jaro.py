@@ -70,4 +70,5 @@ class TestJaroWinklerSimilarity:
     assert jaro_winkler_similarity("abc", "xyz") == 0.0
 
     def test_bonus_prefijo(self):
+        """Jaro-Winkler debe ser >= Jaro cuando hay prefijo común."""
         
