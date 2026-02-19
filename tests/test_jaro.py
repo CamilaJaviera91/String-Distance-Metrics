@@ -76,4 +76,5 @@ class TestJaroWinklerSimilarity:
         assert jw >= jaro
 
     def test_caso_clasico_martha(self):
+        """Caso clásico 'martha' vs 'marhta'."""
         
