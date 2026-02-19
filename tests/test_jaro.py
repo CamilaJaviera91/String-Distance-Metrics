@@ -80,4 +80,5 @@ class TestJaroWinklerSimilarity:
         result = jaro_winkler_similarity("martha", "marhta")
         assert round(result, 4) == 0.9611
 
-    
+    def test_p_cero_equivale_a_jaro(self):
+        
