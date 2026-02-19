@@ -75,4 +75,5 @@ class TestJaroWinklerSimilarity:
         jw   = jaro_winkler_similarity("Laptop", "Lqptop")
         assert jw >= jaro
 
-    
+    def test_caso_clasico_martha(self):
+        
