@@ -77,4 +77,5 @@ class TestJaroWinklerSimilarity:
 
     def test_caso_clasico_martha(self):
         """Caso clásico 'martha' vs 'marhta'."""
+        result = jaro_winkler_similarity("martha", "marhta")
         
