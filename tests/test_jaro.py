@@ -78,4 +78,6 @@ class TestJaroWinklerSimilarity:
     def test_caso_clasico_martha(self):
         """Caso clásico 'martha' vs 'marhta'."""
         result = jaro_winkler_similarity("martha", "marhta")
-        
+        assert round(result, 4) == 0.9611
+
+    
