@@ -90,4 +90,5 @@ class TestJaroWinklerSimilarity:
         with pytest.raises(ValueError):
             jaro_winkler_similarity("abc", "abc", p=0.5)
 
-    
+    def test_p_negativo_raises(self):
+        
