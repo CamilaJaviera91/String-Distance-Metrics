@@ -85,4 +85,5 @@ class TestJaroWinklerSimilarity:
         a, b = "Laptop", "Lqptop"
         assert jaro_winkler_similarity(a, b, p=0.0) == pytest.approx(jaro_similarity(a, b))
 
-    
+    def test_p_invalido_raises(self):
+        
