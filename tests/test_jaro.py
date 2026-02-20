@@ -87,4 +87,5 @@ class TestJaroWinklerSimilarity:
 
     def test_p_invalido_raises(self):
         """Un valor de p fuera de [0.0, 0.25] debe lanzar ValueError."""
-        
+        with pytest.raises(ValueError):
+            
