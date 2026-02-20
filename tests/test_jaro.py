@@ -91,4 +91,5 @@ class TestJaroWinklerSimilarity:
             jaro_winkler_similarity("abc", "abc", p=0.5)
 
     def test_p_negativo_raises(self):
+        """Un valor negativo de p debe lanzar ValueError."""
         
