@@ -82,4 +82,5 @@ class TestJaroWinklerSimilarity:
 
     def test_p_cero_equivale_a_jaro(self):
         """Con p=0.0 el resultado debe ser igual a la similitud de Jaro pura."""
+        a, b = "Laptop", "Lqptop"
         
