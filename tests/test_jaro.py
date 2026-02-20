@@ -92,4 +92,5 @@ class TestJaroWinklerSimilarity:
 
     def test_p_negativo_raises(self):
         """Un valor negativo de p debe lanzar ValueError."""
-        
+        with pytest.raises(ValueError):
+            
