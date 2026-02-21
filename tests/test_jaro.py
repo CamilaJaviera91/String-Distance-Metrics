@@ -100,4 +100,5 @@ class TestJaroWinklerSimilarity:
         result = jaro_winkler_similarity("Monitor", "Monitr")
         assert 0.0 <= result <= 1.0
 
-    
+    def test_simetria(self):
+        
