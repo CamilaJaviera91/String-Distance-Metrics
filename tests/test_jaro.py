@@ -95,4 +95,5 @@ class TestJaroWinklerSimilarity:
         with pytest.raises(ValueError):
             jaro_winkler_similarity("abc", "abc", p=-0.1)
 
-    
+    def test_resultado_en_rango(self):
+        
