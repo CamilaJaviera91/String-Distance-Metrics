@@ -96,4 +96,5 @@ class TestJaroWinklerSimilarity:
             jaro_winkler_similarity("abc", "abc", p=-0.1)
 
     def test_resultado_en_rango(self):
+        """El resultado siempre debe estar en [0.0, 1.0]."""
         
