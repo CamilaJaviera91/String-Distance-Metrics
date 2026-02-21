@@ -101,4 +101,5 @@ class TestJaroWinklerSimilarity:
         assert 0.0 <= result <= 1.0
 
     def test_simetria(self):
+        """El orden de los argumentos no debe afectar el resultado."""
         
