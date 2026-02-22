@@ -105,4 +105,5 @@ class TestJaroWinklerSimilarity:
         a, b = "Teclado", "Tecaldo"
         assert jaro_winkler_similarity(a, b) == pytest.approx(jaro_winkler_similarity(b, a))
 
-    
+    def test_prefijo_maximo_4(self):
+        
