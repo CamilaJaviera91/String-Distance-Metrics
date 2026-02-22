@@ -102,4 +102,5 @@ class TestJaroWinklerSimilarity:
 
     def test_simetria(self):
         """El orden de los argumentos no debe afectar el resultado."""
+        a, b = "Teclado", "Tecaldo"
         
