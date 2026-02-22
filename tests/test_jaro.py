@@ -106,4 +106,5 @@ class TestJaroWinklerSimilarity:
         assert jaro_winkler_similarity(a, b) == pytest.approx(jaro_winkler_similarity(b, a))
 
     def test_prefijo_maximo_4(self):
+        """El bonus de prefijo se limita a 4 caracteres aunque haya más en común."""
         
