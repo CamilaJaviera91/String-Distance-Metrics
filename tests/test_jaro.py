@@ -112,3 +112,7 @@ class TestJaroWinklerSimilarity:
         result = jaro_winkler_similarity("abcdefg", "abcdefx")
         assert result <= 1.0
 
+# ===========================================================================
+# jaro_winkler_distance
+# ===========================================================================
+
