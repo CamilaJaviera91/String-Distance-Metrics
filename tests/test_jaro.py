@@ -109,4 +109,5 @@ class TestJaroWinklerSimilarity:
         """El bonus de prefijo se limita a 4 caracteres aunque haya más en común."""
         # "abcdefg" vs "abcdefx" tienen 6 caracteres de prefijo común,
         # pero el bonus se calcula solo hasta 4.
+        result = jaro_winkler_similarity("abcdefg", "abcdefx")
         
