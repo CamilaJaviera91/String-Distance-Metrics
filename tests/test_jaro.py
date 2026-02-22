@@ -110,4 +110,5 @@ class TestJaroWinklerSimilarity:
         # "abcdefg" vs "abcdefx" tienen 6 caracteres de prefijo común,
         # pero el bonus se calcula solo hasta 4.
         result = jaro_winkler_similarity("abcdefg", "abcdefx")
-        
+        assert result <= 1.0
+
