@@ -103,4 +103,6 @@ class TestJaroWinklerSimilarity:
     def test_simetria(self):
         """El orden de los argumentos no debe afectar el resultado."""
         a, b = "Teclado", "Tecaldo"
-        
+        assert jaro_winkler_similarity(a, b) == pytest.approx(jaro_winkler_similarity(b, a))
+
+    
