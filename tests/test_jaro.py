@@ -107,4 +107,5 @@ class TestJaroWinklerSimilarity:
 
     def test_prefijo_maximo_4(self):
         """El bonus de prefijo se limita a 4 caracteres aunque haya más en común."""
+        # "abcdefg" vs "abcdefx" tienen 6 caracteres de prefijo común,
         
