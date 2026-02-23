@@ -122,4 +122,5 @@ class TestJaroWinklerDistance:
         """Strings idénticos deben tener distancia 0.0."""
         assert jaro_winkler_distance("laptop", "laptop") == 0.0
 
-    
+    def test_sin_coincidencias(self):
+        
