@@ -125,5 +125,7 @@ class TestJaroWinklerDistance:
     def test_sin_coincidencias(self):
         """Strings completamente distintos deben tener distancia 1.0."""
         assert jaro_winkler_distance("abc", "xyz") == 1.0
-
+    
+    def test_complemento_de_similitud(self):
+        
     
