@@ -118,4 +118,5 @@ class TestJaroWinklerSimilarity:
 
 class TestJaroWinklerDistance:
 
-    
+    def test_strings_identicos(self):
+        
