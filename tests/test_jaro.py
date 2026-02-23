@@ -123,4 +123,5 @@ class TestJaroWinklerDistance:
         assert jaro_winkler_distance("laptop", "laptop") == 0.0
 
     def test_sin_coincidencias(self):
+        """Strings completamente distintos deben tener distancia 1.0."""
         
