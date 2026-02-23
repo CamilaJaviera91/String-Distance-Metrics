@@ -116,3 +116,6 @@ class TestJaroWinklerSimilarity:
 # jaro_winkler_distance
 # ===========================================================================
 
+class TestJaroWinklerDistance:
+
+    
