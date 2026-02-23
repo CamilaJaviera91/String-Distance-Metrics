@@ -119,4 +119,5 @@ class TestJaroWinklerSimilarity:
 class TestJaroWinklerDistance:
 
     def test_strings_identicos(self):
+        """Strings idénticos deben tener distancia 0.0."""
         
