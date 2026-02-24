@@ -135,4 +135,5 @@ class TestJaroWinklerDistance:
         assert dist == pytest.approx(1 - sim)
 
     def test_resultado_en_rango(self):
+        """El resultado siempre debe estar en [0.0, 1.0]."""
         
