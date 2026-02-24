@@ -128,5 +128,6 @@ class TestJaroWinklerDistance:
     
     def test_complemento_de_similitud(self):
         """La distancia debe ser exactamente 1 - similitud."""
+        a, b = "Laptop", "Lqptop"
         
     
