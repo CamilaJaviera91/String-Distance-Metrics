@@ -134,4 +134,5 @@ class TestJaroWinklerDistance:
         dist = jaro_winkler_distance(a, b)
         assert dist == pytest.approx(1 - sim)
 
-    
+    def test_resultado_en_rango(self):
+        
