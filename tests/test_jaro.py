@@ -139,4 +139,5 @@ class TestJaroWinklerDistance:
         result = jaro_winkler_distance("Balón", "Bqlon")
         assert 0.0 <= result <= 1.0
 
-    
+    def test_typo_distancia_baja(self):
+        
