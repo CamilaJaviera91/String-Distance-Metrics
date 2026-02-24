@@ -141,4 +141,5 @@ class TestJaroWinklerDistance:
 
     def test_typo_distancia_baja(self):
         """Un typo de un solo carácter debe tener distancia baja."""
+        result = jaro_winkler_distance("Monitor", "Monitr")
         
