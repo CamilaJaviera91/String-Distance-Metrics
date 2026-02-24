@@ -130,4 +130,5 @@ class TestJaroWinklerDistance:
         """La distancia debe ser exactamente 1 - similitud."""
         a, b = "Laptop", "Lqptop"
         
-    
+        sim  = jaro_winkler_similarity(a, b)
+        
