@@ -127,5 +127,6 @@ class TestJaroWinklerDistance:
         assert jaro_winkler_distance("abc", "xyz") == 1.0
     
     def test_complemento_de_similitud(self):
+        """La distancia debe ser exactamente 1 - similitud."""
         
     
