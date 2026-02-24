@@ -140,4 +140,5 @@ class TestJaroWinklerDistance:
         assert 0.0 <= result <= 1.0
 
     def test_typo_distancia_baja(self):
+        """Un typo de un solo carácter debe tener distancia baja."""
         
