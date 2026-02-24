@@ -131,4 +131,5 @@ class TestJaroWinklerDistance:
         a, b = "Laptop", "Lqptop"
         
         sim  = jaro_winkler_similarity(a, b)
+        dist = jaro_winkler_distance(a, b)
         
