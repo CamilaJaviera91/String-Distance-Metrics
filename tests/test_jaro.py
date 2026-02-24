@@ -132,4 +132,6 @@ class TestJaroWinklerDistance:
         
         sim  = jaro_winkler_similarity(a, b)
         dist = jaro_winkler_distance(a, b)
-        
+        assert dist == pytest.approx(1 - sim)
+
+    
