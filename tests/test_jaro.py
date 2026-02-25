@@ -4,6 +4,8 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from string_distance_metrics.distances.jaro import jaro_similarity, jaro_winkler_similarity, jaro_winkler_distance
 
+# probar con pytest ./tests/test_jaro.py -v 
+
 # ===========================================================================
 # jaro_similarity
 # ===========================================================================
