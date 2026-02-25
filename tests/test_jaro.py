@@ -145,4 +145,5 @@ class TestJaroWinklerDistance:
         assert result < 0.2
 
     def test_p_invalido_raises(self):
+        """Un valor de p inválido debe propagar el ValueError."""
         
