@@ -144,4 +144,5 @@ class TestJaroWinklerDistance:
         result = jaro_winkler_distance("Monitor", "Monitr")
         assert result < 0.2
 
-    
+    def test_p_invalido_raises(self):
+        
