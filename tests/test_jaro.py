@@ -146,4 +146,5 @@ class TestJaroWinklerDistance:
 
     def test_p_invalido_raises(self):
         """Un valor de p inválido debe propagar el ValueError."""
-        
+        with pytest.raises(ValueError):
+            
