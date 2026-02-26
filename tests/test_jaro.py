@@ -1,4 +1,5 @@
 import pytest
+import unittest
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -153,3 +154,6 @@ class TestJaroWinklerDistance:
         """Un valor de p inválido debe propagar el ValueError."""
         with pytest.raises(ValueError):
             jaro_winkler_distance("abc", "abc", p=0.9)
+
+if __name__ == '__main__':
+    unittest.main()
