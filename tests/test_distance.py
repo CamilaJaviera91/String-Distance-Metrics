@@ -12,4 +12,9 @@ class TestLevenshteinDistance:
         """Dos strings vacíos tienen distancia 0."""
         assert levenshtein_distance("", "") == 0
 
+    def test_uno_vacio(self):
+        """La distancia a un string vacío es la longitud del otro."""
+        assert levenshtein_distance("abc", "") == 3
+        assert levenshtein_distance("", "abc") == 3
+
     
