@@ -21,4 +21,8 @@ class TestLevenshteinDistance:
         """Un carácter diferente requiere una sustitución."""
         assert levenshtein_distance("gato", "pato") == 1
 
+    def test_insercion(self):
+        """Insertar un carácter incrementa la distancia en 1."""
+        assert levenshtein_distance("gato", "gaato") == 1
+
     
