@@ -17,4 +17,8 @@ class TestLevenshteinDistance:
         assert levenshtein_distance("abc", "") == 3
         assert levenshtein_distance("", "abc") == 3
 
+    def test_sustitucion_simple(self):
+        """Un carácter diferente requiere una sustitución."""
+        assert levenshtein_distance("gato", "pato") == 1
+
     
