@@ -25,4 +25,8 @@ class TestLevenshteinDistance:
         """Insertar un carácter incrementa la distancia en 1."""
         assert levenshtein_distance("gato", "gaato") == 1
 
+    def test_eliminacion(self):
+        """Eliminar un carácter incrementa la distancia en 1."""
+        assert levenshtein_distance("gatos", "gato") == 1
+
     
