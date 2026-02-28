@@ -34,4 +34,8 @@ class TestLevenshteinDistance:
         # Levenshtein no penaliza transposiciones especialmente (usa Damerau para eso)
         assert levenshtein_distance("ab", "ba") == 2
 
+    def test_completamente_diferente(self):
+        """Strings sin caracteres en común."""
+        assert levenshtein_distance("abc", "xyz") == 3
+
     
