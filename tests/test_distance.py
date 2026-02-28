@@ -55,4 +55,9 @@ class TestLevenshteinDistance:
         assert levenshtein_distance("a", "a") == 0
         assert levenshtein_distance("a", "b") == 1
 
-    
+    def test_caracteres_especiales(self):
+        """Manejo de caracteres especiales y acentos (sin normalizar)."""
+        assert levenshtein_distance("café", "cafe") == 1
+        assert levenshtein_distance("señor", "senor") == 1
+
+
