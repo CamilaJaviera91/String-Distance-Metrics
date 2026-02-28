@@ -29,4 +29,9 @@ class TestLevenshteinDistance:
         """Eliminar un carácter incrementa la distancia en 1."""
         assert levenshtein_distance("gatos", "gato") == 1
 
+    def test_transposicion(self):
+        """Intercambiar dos caracteres requiere al menos 1 operación."""
+        # Levenshtein no penaliza transposiciones especialmente (usa Damerau para eso)
+        assert levenshtein_distance("ab", "ba") == 2
+
     
