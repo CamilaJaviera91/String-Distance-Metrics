@@ -38,4 +38,8 @@ class TestLevenshteinDistance:
         """Strings sin caracteres en común."""
         assert levenshtein_distance("abc", "xyz") == 3
 
+    def test_caso_sensiblidad(self):
+        """Mayúsculas y minúsculas se consideran caracteres diferentes."""
+        assert levenshtein_distance("Hola", "hola") == 1
+
     
