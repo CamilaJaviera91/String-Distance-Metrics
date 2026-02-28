@@ -42,4 +42,8 @@ class TestLevenshteinDistance:
         """Mayúsculas y minúsculas se consideran caracteres diferentes."""
         assert levenshtein_distance("Hola", "hola") == 1
 
+    def test_asimetria(self):
+        """El orden no debe importar (distancia es simétrica)."""
+        assert levenshtein_distance("kitten", "sitting") == levenshtein_distance("sitting", "kitten")
+
     
