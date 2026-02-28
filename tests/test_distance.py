@@ -61,3 +61,7 @@ class TestLevenshteinDistance:
         assert levenshtein_distance("señor", "senor") == 1
 
 
+class TestLevenshteinRatio:
+    """Tests para la función levenshtein_ratio (similitud normalizada)."""
+
+    
