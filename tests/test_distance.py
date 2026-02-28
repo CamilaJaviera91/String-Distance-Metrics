@@ -46,4 +46,8 @@ class TestLevenshteinDistance:
         """El orden no debe importar (distancia es simétrica)."""
         assert levenshtein_distance("kitten", "sitting") == levenshtein_distance("sitting", "kitten")
 
+    def test_caso_clasico(self):
+        """Caso clásico de la literatura: 'kitten' a 'sitting'."""
+        assert levenshtein_distance("kitten", "sitting") == 3
+
     
