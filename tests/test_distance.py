@@ -50,4 +50,9 @@ class TestLevenshteinDistance:
         """Caso clásico de la literatura: 'kitten' a 'sitting'."""
         assert levenshtein_distance("kitten", "sitting") == 3
 
+    def test_un_caracter(self):
+        """Comparar caracteres únicos."""
+        assert levenshtein_distance("a", "a") == 0
+        assert levenshtein_distance("a", "b") == 1
+
     
