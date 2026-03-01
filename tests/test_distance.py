@@ -95,4 +95,9 @@ class TestLevenshteinRatio:
         """El ratio es simétrico (el orden no importa)."""
         assert levenshtein_ratio("kitten", "sitting") == levenshtein_ratio("sitting", "kitten")
 
+    def test_typo_simple(self):
+        """Un typo simple debe dar ratio alto (>0.8)."""
+        result = levenshtein_ratio("Monitor", "Monitr")
+        assert result > 0.8
+
     
