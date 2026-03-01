@@ -100,4 +100,9 @@ class TestLevenshteinRatio:
         result = levenshtein_ratio("Monitor", "Monitr")
         assert result > 0.8
 
+    def test_longitud_diferente(self):
+        """Ratio con strings de longitudes muy diferentes."""
+        result = levenshtein_ratio("a", "abcdefghij")
+        assert 0.0 <= result < 0.5  # Baja similitud
+
     
