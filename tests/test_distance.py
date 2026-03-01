@@ -91,4 +91,8 @@ class TestLevenshteinRatio:
         expected_ratio = 1 - (dist / max_len)
         assert ratio == pytest.approx(expected_ratio)
 
+    def test_asimetria_ratio(self):
+        """El ratio es simétrico (el orden no importa)."""
+        assert levenshtein_ratio("kitten", "sitting") == levenshtein_ratio("sitting", "kitten")
+
     
