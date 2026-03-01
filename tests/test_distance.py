@@ -64,4 +64,8 @@ class TestLevenshteinDistance:
 class TestLevenshteinRatio:
     """Tests para la función levenshtein_ratio (similitud normalizada)."""
 
+    def test_strings_identicos(self):
+        """Strings idénticos deben tener ratio 1.0."""
+        assert levenshtein_ratio("laptop", "laptop") == 1.0
+
     
