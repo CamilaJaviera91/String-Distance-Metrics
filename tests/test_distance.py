@@ -105,4 +105,7 @@ class TestLevenshteinRatio:
         result = levenshtein_ratio("a", "abcdefghij")
         assert 0.0 <= result < 0.5  # Baja similitud
 
-    
+    def test_casi_identicos(self):
+        """Strings muy similares dan ratio alto."""
+        result = levenshtein_ratio("Python", "Pyton")  # Falta la 'h'
+        assert result > 0.8
