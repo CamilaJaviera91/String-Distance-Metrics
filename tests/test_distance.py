@@ -115,3 +115,6 @@ class TestLevenshteinRatio:
         """Strings muy similares dan ratio alto."""
         result = levenshtein_ratio("Python", "Pyton")  # Falta la 'h'
         assert result > 0.8
+
+if __name__ == '__main__':
+    unittest.main()
