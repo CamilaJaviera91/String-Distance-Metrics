@@ -77,4 +77,9 @@ class TestLevenshteinRatio:
         result = levenshtein_ratio("abc", "xyz")
         assert result == 0.0
 
+    def test_ratio_en_rango(self):
+        """El ratio siempre está en [0.0, 1.0]."""
+        result = levenshtein_ratio("gato", "pato")
+        assert 0.0 <= result <= 1.0
+
     
