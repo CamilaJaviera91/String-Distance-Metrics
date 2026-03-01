@@ -72,4 +72,9 @@ class TestLevenshteinRatio:
         """Dos strings vacíos tienen ratio 1.0."""
         assert levenshtein_ratio("", "") == 1.0
 
+    def test_sin_similitud(self):
+        """Strings completamente diferentes tienen ratio bajo."""
+        result = levenshtein_ratio("abc", "xyz")
+        assert result == 0.0
+
     
