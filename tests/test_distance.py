@@ -82,4 +82,13 @@ class TestLevenshteinRatio:
         result = levenshtein_ratio("gato", "pato")
         assert 0.0 <= result <= 1.0
 
+    def test_ratio_complementario_a_distancia(self):
+        """ratio = 1 - (distancia / max_len)."""
+        a, b = "Laptop", "Lqptop"
+        dist = levenshtein_distance(a, b)
+        ratio = levenshtein_ratio(a, b)
+        max_len = max(len(a), len(b))
+        expected_ratio = 1 - (dist / max_len)
+        assert ratio == pytest.approx(expected_ratio)
+
     
