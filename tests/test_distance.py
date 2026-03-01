@@ -5,6 +5,8 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from string_distance_metrics.distances.levenshtein import levenshtein_distance, levenshtein_ratio
 
+# probar con pytest ./tests/test_distance.py -v 
+
 class TestLevenshteinDistance:
     """Tests para la función levenshtein_distance."""
 
