@@ -68,4 +68,8 @@ class TestLevenshteinRatio:
         """Strings idénticos deben tener ratio 1.0."""
         assert levenshtein_ratio("laptop", "laptop") == 1.0
 
+    def test_ambos_vacios(self):
+        """Dos strings vacíos tienen ratio 1.0."""
+        assert levenshtein_ratio("", "") == 1.0
+
     
