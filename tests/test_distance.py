@@ -1,20 +1,120 @@
+import pytest
 import unittest
 import sys
 import os
-
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from string_distance_metrics.distances.levenshtein import levenshtein_distance, levenshtein_ratio
 
-from string_distance_metrics.distances.levenshtein import levenshtein_distance
+# probar con pytest ./tests/test_distance.py -v 
 
-class TestLevenshtein(unittest.TestCase):
-    def test_identical(self):
-        self.assertEqual(levenshtein_distance("hola", "hola"), 0)
+class TestLevenshteinDistance:
+    """Tests para la función levenshtein_distance."""
 
-    def test_simple_edit(self):
-        self.assertEqual(levenshtein_distance("gato", "pato"), 1)
+    def test_strings_identicos(self):
+        """Strings idénticos deben tener distancia 0."""
+        assert levenshtein_distance("hola", "hola") == 0
 
-    def test_empty(self):
-        self.assertEqual(levenshtein_distance("", "abc"), 3)
+    def test_ambos_vacios(self):
+        """Dos strings vacíos tienen distancia 0."""
+        assert levenshtein_distance("", "") == 0
+
+    def test_uno_vacio(self):
+        """La distancia a un string vacío es la longitud del otro."""
+        assert levenshtein_distance("abc", "") == 3
+        assert levenshtein_distance("", "abc") == 3
+
+    def test_sustitucion_simple(self):
+        """Un carácter diferente requiere una sustitución."""
+        assert levenshtein_distance("gato", "pato") == 1
+
+    def test_insercion(self):
+        """Insertar un carácter incrementa la distancia en 1."""
+        assert levenshtein_distance("gato", "gaato") == 1
+
+    def test_eliminacion(self):
+        """Eliminar un carácter incrementa la distancia en 1."""
+        assert levenshtein_distance("gatos", "gato") == 1
+
+    def test_transposicion(self):
+        """Intercambiar dos caracteres requiere al menos 1 operación."""
+        # Levenshtein no penaliza transposiciones especialmente (usa Damerau para eso)
+        assert levenshtein_distance("ab", "ba") == 2
+
+    def test_completamente_diferente(self):
+        """Strings sin caracteres en común."""
+        assert levenshtein_distance("abc", "xyz") == 3
+
+    def test_caso_sensiblidad(self):
+        """Mayúsculas y minúsculas se consideran caracteres diferentes."""
+        assert levenshtein_distance("Hola", "hola") == 1
+
+    def test_asimetria(self):
+        """El orden no debe importar (distancia es simétrica)."""
+        assert levenshtein_distance("kitten", "sitting") == levenshtein_distance("sitting", "kitten")
+
+    def test_caso_clasico(self):
+        """Caso clásico de la literatura: 'kitten' a 'sitting'."""
+        assert levenshtein_distance("kitten", "sitting") == 3
+
+    def test_un_caracter(self):
+        """Comparar caracteres únicos."""
+        assert levenshtein_distance("a", "a") == 0
+        assert levenshtein_distance("a", "b") == 1
+
+    def test_caracteres_especiales(self):
+        """Manejo de caracteres especiales y acentos (sin normalizar)."""
+        assert levenshtein_distance("café", "cafe") == 1
+        assert levenshtein_distance("señor", "senor") == 1
+
+
+class TestLevenshteinRatio:
+    """Tests para la función levenshtein_ratio (similitud normalizada)."""
+
+    def test_strings_identicos(self):
+        """Strings idénticos deben tener ratio 1.0."""
+        assert levenshtein_ratio("laptop", "laptop") == 1.0
+
+    def test_ambos_vacios(self):
+        """Dos strings vacíos tienen ratio 1.0."""
+        assert levenshtein_ratio("", "") == 1.0
+
+    def test_sin_similitud(self):
+        """Strings completamente diferentes tienen ratio bajo."""
+        result = levenshtein_ratio("abc", "xyz")
+        assert result == 0.0
+
+    def test_ratio_en_rango(self):
+        """El ratio siempre está en [0.0, 1.0]."""
+        result = levenshtein_ratio("gato", "pato")
+        assert 0.0 <= result <= 1.0
+
+    def test_ratio_complementario_a_distancia(self):
+        """ratio = 1 - (distancia / max_len)."""
+        a, b = "Laptop", "Lqptop"
+        dist = levenshtein_distance(a, b)
+        ratio = levenshtein_ratio(a, b)
+        max_len = max(len(a), len(b))
+        expected_ratio = 1 - (dist / max_len)
+        assert ratio == pytest.approx(expected_ratio)
+
+    def test_asimetria_ratio(self):
+        """El ratio es simétrico (el orden no importa)."""
+        assert levenshtein_ratio("kitten", "sitting") == levenshtein_ratio("sitting", "kitten")
+
+    def test_typo_simple(self):
+        """Un typo simple debe dar ratio alto (>0.8)."""
+        result = levenshtein_ratio("Monitor", "Monitr")
+        assert result > 0.8
+
+    def test_longitud_diferente(self):
+        """Ratio con strings de longitudes muy diferentes."""
+        result = levenshtein_ratio("a", "abcdefghij")
+        assert 0.0 <= result < 0.5  # Baja similitud
+
+    def test_casi_identicos(self):
+        """Strings muy similares dan ratio alto."""
+        result = levenshtein_ratio("Python", "Pyton")  # Falta la 'h'
+        assert result > 0.8
 
 if __name__ == '__main__':
     unittest.main()
