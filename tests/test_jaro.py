@@ -1,0 +1,153 @@
+import pytest
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from string_distance_metrics.distances.jaro import jaro_similarity, jaro_winkler_similarity, jaro_winkler_distance
+
+# ===========================================================================
+# jaro_similarity
+# ===========================================================================
+
+class TestJaroSimilarity:
+
+    def test_strings_identicos(self):
+        """Strings idénticos deben retornar similitud perfecta."""
+        assert jaro_similarity("laptop", "laptop") == 1.0
+
+    def test_ambos_vacios(self):
+        """Dos strings vacíos se consideran idénticos."""
+        assert jaro_similarity("", "") == 1.0
+
+    def test_uno_vacio(self):
+        """Un string vacío contra uno no vacío retorna 0.0."""
+        assert jaro_similarity("", "laptop") == 0.0
+        assert jaro_similarity("laptop", "") == 0.0
+
+    def test_sin_coincidencias(self):
+        """Strings sin caracteres en común retornan 0.0."""
+        assert jaro_similarity("abc", "xyz") == 0.0
+
+    def test_transposicion_clasica(self):
+        """Caso clásico de la literatura: 'martha' vs 'marhta'."""
+        result = jaro_similarity("martha", "marhta")
+        assert round(result, 4) == 0.9444
+
+    def test_caso_asimetrico(self):
+        """El orden de los argumentos no debe afectar el resultado."""
+        assert jaro_similarity("kitten", "sitting") == jaro_similarity("sitting", "kitten")
+
+    def test_resultado_en_rango(self):
+        """El resultado siempre debe estar en [0.0, 1.0]."""
+        result = jaro_similarity("random", "string")
+        assert 0.0 <= result <= 1.0
+
+    def test_un_caracter_igual(self):
+        """Un solo carácter idéntico."""
+        assert jaro_similarity("a", "a") == 1.0
+
+    def test_un_caracter_diferente(self):
+        """Un solo carácter diferente retorna 0.0."""
+        assert jaro_similarity("a", "b") == 0.0
+
+    def test_typo_tipico(self):
+        """Typo de teclado en un producto debe tener similitud alta."""
+        result = jaro_similarity("Laptop", "Lqptop")
+        assert result > 0.8
+
+# ===========================================================================
+# jaro_winkler_similarity
+# ===========================================================================
+
+class TestJaroWinklerSimilarity:
+
+    def test_strings_identicos(self):
+        """Strings idénticos deben retornar 1.0."""
+        assert jaro_winkler_similarity("laptop", "laptop") == 1.0
+
+    def test_ambos_vacios(self):
+        """Dos strings vacíos retornan 1.0."""
+        assert jaro_winkler_similarity("", "") == 1.0
+    def test_sin_coincidencias(self):
+        """Strings completamente distintos retornan 0.0."""
+        
+    assert jaro_winkler_similarity("abc", "xyz") == 0.0
+
+    def test_bonus_prefijo(self):
+        """Jaro-Winkler debe ser >= Jaro cuando hay prefijo común."""
+        jaro = jaro_similarity("Laptop", "Lqptop")
+        jw   = jaro_winkler_similarity("Laptop", "Lqptop")
+        assert jw >= jaro
+
+    def test_caso_clasico_martha(self):
+        """Caso clásico 'martha' vs 'marhta'."""
+        result = jaro_winkler_similarity("martha", "marhta")
+        assert round(result, 4) == 0.9611
+
+    def test_p_cero_equivale_a_jaro(self):
+        """Con p=0.0 el resultado debe ser igual a la similitud de Jaro pura."""
+        a, b = "Laptop", "Lqptop"
+        assert jaro_winkler_similarity(a, b, p=0.0) == pytest.approx(jaro_similarity(a, b))
+
+    def test_p_invalido_raises(self):
+        """Un valor de p fuera de [0.0, 0.25] debe lanzar ValueError."""
+        with pytest.raises(ValueError):
+            jaro_winkler_similarity("abc", "abc", p=0.5)
+
+    def test_p_negativo_raises(self):
+        """Un valor negativo de p debe lanzar ValueError."""
+        with pytest.raises(ValueError):
+            jaro_winkler_similarity("abc", "abc", p=-0.1)
+
+    def test_resultado_en_rango(self):
+        """El resultado siempre debe estar en [0.0, 1.0]."""
+        result = jaro_winkler_similarity("Monitor", "Monitr")
+        assert 0.0 <= result <= 1.0
+
+    def test_simetria(self):
+        """El orden de los argumentos no debe afectar el resultado."""
+        a, b = "Teclado", "Tecaldo"
+        assert jaro_winkler_similarity(a, b) == pytest.approx(jaro_winkler_similarity(b, a))
+
+    def test_prefijo_maximo_4(self):
+        """El bonus de prefijo se limita a 4 caracteres aunque haya más en común."""
+        # "abcdefg" vs "abcdefx" tienen 6 caracteres de prefijo común,
+        # pero el bonus se calcula solo hasta 4.
+        result = jaro_winkler_similarity("abcdefg", "abcdefx")
+        assert result <= 1.0
+
+# ===========================================================================
+# jaro_winkler_distance
+# ===========================================================================
+
+class TestJaroWinklerDistance:
+
+    def test_strings_identicos(self):
+        """Strings idénticos deben tener distancia 0.0."""
+        assert jaro_winkler_distance("laptop", "laptop") == 0.0
+
+    def test_sin_coincidencias(self):
+        """Strings completamente distintos deben tener distancia 1.0."""
+        assert jaro_winkler_distance("abc", "xyz") == 1.0
+    
+    def test_complemento_de_similitud(self):
+        """La distancia debe ser exactamente 1 - similitud."""
+        a, b = "Laptop", "Lqptop"
+        
+        sim  = jaro_winkler_similarity(a, b)
+        dist = jaro_winkler_distance(a, b)
+        assert dist == pytest.approx(1 - sim)
+
+    def test_resultado_en_rango(self):
+        """El resultado siempre debe estar en [0.0, 1.0]."""
+        result = jaro_winkler_distance("Balón", "Bqlon")
+        assert 0.0 <= result <= 1.0
+
+    def test_typo_distancia_baja(self):
+        """Un typo de un solo carácter debe tener distancia baja."""
+        result = jaro_winkler_distance("Monitor", "Monitr")
+        assert result < 0.2
+
+    def test_p_invalido_raises(self):
+        """Un valor de p inválido debe propagar el ValueError."""
+        with pytest.raises(ValueError):
+            jaro_winkler_distance("abc", "abc", p=0.9)
